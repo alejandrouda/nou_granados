@@ -4,6 +4,7 @@
     <title>NouGranados</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto:wght@500&display=swap" rel="stylesheet">
     <link rel="apple-touch-icon" sizes="57x57" href="<%= image_path 'apple-icon-57x57.png' %>">
     <link rel="apple-touch-icon" sizes="60x60" href="<%= image_path 'apple-icon-60x60.png' %>">
     <link rel="apple-touch-icon" sizes="72x72" href="<%= image_path 'apple-icon-72x72.png' %>">
@@ -32,7 +33,7 @@
   </head>
 
   <body>
-    <%= render 'shared/navbar' %>
+    
     <%= render 'shared/flashes' %>
 
     <%= yield %>

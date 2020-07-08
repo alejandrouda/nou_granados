@@ -3,14 +3,18 @@
     margin: 30px;
 }
 
+
+
 body {
     padding:0px !important;
+    background-color: white;
 }
 
 .banner {
-    background-image: url("https://images.unsplash.com/photo-1514933651103-005eec06c04b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1934&q=80");
-    height: 650px;
+    background-image: url("https://res.cloudinary.com/dfyhqslry/image/upload/v1594164979/Nou%20granados/Background/background_1_dbzmiz.jpg");
+    height: 200px;
+    width: 100%;
     background-size: cover;
     object-fit: contain;
-    padding-top: 200px;
+    margin-bottom: 20px;
 }

@@ -1,6 +1,13 @@
+<div class="header">
+    <h2>9 Granados</h2>
+    <h5>Restaurante</h5>
+</div>
 <% @menus.each do |menu| %>
-    <%#= link_to menu_path(menu) do%>
-        <h5><%= menu.name %></h5>
-        <p><%= menu.price %></p>
-    <%#= end %>
+    <div class="menu">
+        <%# link_to menu_path(menu) do%>
+            <div class='menu-card' style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path menu.photo.key if menu.photo.attached? %>')">
+                 <h5><%= menu.name %></h5>
+            </div>
+        <%# end %>
 <% end %>
+
