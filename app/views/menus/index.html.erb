@@ -1,6 +1,12 @@
+<div class="header">
+    <h2>9 Granados</h2>
+    <h5>Restaurante</h5>
+</div>
 <% @menus.each do |menu| %>
-    <%#= link_to menu_path(menu) do%>
-        <h5><%= menu.name %></h5>
-        <p><%= menu.price %></p>
-    <%#= end %>
+    <div class="menu">
+        <%#= link_to menu_path(menu) do%>
+            <h5><%= menu.name %></h5>
+            <p><%= menu.price %></p>
+        <%#= end %>
+    </div>
 <% end %>
