@@ -6,8 +6,9 @@
     <div class="menu">
         <%# link_to menu_path(menu) do%>
             <div class='menu-card' style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path menu.photo.key if menu.photo.attached? %>')">
-                 <h5><%= menu.name %></h5>
+                    <h5><%= menu.name %></h5>
             </div>
         <%# end %>
+    </div>
 <% end %>
 
