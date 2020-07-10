@@ -19,8 +19,8 @@ p "Users created..."
 p "Creating menus..."
 
 menu_mediodia = Menu.new(
-              name: "Menú del medio día",
-              price: 12
+              name: "Menú del medio día (L - V)",
+              price: 12.75
        )
        menu_mediodia.photo.attach(io: URI.open("https://res.cloudinary.com/dfyhqslry/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1594223632/Nou%20granados/Alimentos%20y%20bebidas/Medio_Dia_jxim3i.jpg"), filename: 'Medio_Dia_jxim3i.jpg', content_type: 'jpg')
        menu_mediodia.save
