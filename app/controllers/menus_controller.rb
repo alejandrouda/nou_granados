@@ -6,9 +6,9 @@ class MenusController < ApplicationController
     end
 
     def show
-        skip_before_action :authenticate_user!
-        @meals = Meal.all
-        @drinks = Drink.all
+        @menu = Menu.find(params[:id])
+        # @meals = Meal.all
+        # @drinks = Drink.all
     end
 
 
