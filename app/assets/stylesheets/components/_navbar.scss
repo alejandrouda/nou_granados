@@ -42,3 +42,11 @@
   padding: 0rem 1rem;
   margin-bottom: 0px !important;
 }
+
+.navbar-meals {
+  justify-content: space-between;
+  position: sticky;
+  height: 65px;
+  z-index: 50;
+  background: rgba(0, 0, 0, 0.726);
+}
