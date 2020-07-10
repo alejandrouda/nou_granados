@@ -1,35 +1,64 @@
+// .red-button{  
+//     line-height: 25px;
+//     margin: 70px auto;
+//     vertical-align: middle;
+//     background-color: #76b18a;
+//     font-family: 'Roboto', sans-serif;
+//     font-weight: 400;
+//     color: rgb(255, 255, 255);
+//     text-decoration: none;
+//     padding: 10px;
+//     border-radius: 12px;
+//     border-style: solid;
+//     border-width: 0.7px;
+//     border-color: rgba(240, 240, 220, 0.2);
+//     display: inline-block;
+//     box-shadow: 5px 10px 5px 0 rgba(66, 48, 48, 0.1);
+//     text-align: center;
+//     align-self: center;
+//     a {
+//       color: rgb(255, 255, 255);
+//       text-decoration: none;
+//     }
+//     &:hover {
+//         color:rgb(255, 255, 255);
+//         background-color: rgba(245, 82, 53, 0.836);
+//         text-decoration: none;
+//     }
+// }
+
 .red-button{
-    margin: 70px auto;
-    display: block;
-    background-color: #76b18a;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    padding: 10px;
-    border-radius: 12px;
-    border-style: solid;
-    border-width: 0.7px;
-    border-color: rgba(240, 240, 220, 0.2);
-    // display: inline-block;
-    box-shadow: 5px 10px 5px 0 rgba(66, 48, 48, 0.1);
-    text-align: center;
-    align-self: center;
-    a {
-      color: rgb(255, 255, 255);
-      text-decoration: none;
-    }
-    &:hover {
-        color:rgb(255, 255, 255);
-        background-color: rgba(245, 82, 53, 0.836);
+        background-color: #76b18a;
+        // font-weight: 400;
+        color: rgb(60, 60, 60);
+        font-family: 'Roboto', sans-serif;
+        font-size: 16px;
+        color: white;
+        width: 100%;
+        font-size: 16px;
+        padding: 10px;
         text-decoration: none;
-    }
+        text-align: center;
+        vertical-align: middle;
+        border-radius: 12px;
+        border-style: solid;
+        border-width: 0.7px;
+        border-color: rgba(240, 240, 220, 0.2);
+        display: inline-block;
+        box-shadow: 1px 0px 10px #0000001f;
+
+        a {
+          color: white;
+          text-decoration: none;
+        }
 }
 
-
-
-.red-button:hover{
-    color:rgb(255, 255, 255);
-    background-color: #7bbb90d0;
-    text-decoration: none;
+.red-button-position {
+    display: flex;
+    position: fixed;
+    bottom: 20px;
+     z-index: 2;
+    width: 90%;
+    left: 50%;
+     transform: translateX(-50%);
 }
