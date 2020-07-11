@@ -4,3 +4,10 @@
     object-fit: cover;
     height: 600px;
 }
+
+.name-price {
+    display:flex;
+    padding-top: 20px;
+    justify-content: space-evenly;
+    align-items: center;
+}
