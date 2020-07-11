@@ -7,12 +7,9 @@
         <h5>Restaurante</h5>
     </div>
 </div>
-<!--   MENU'S NAME ONLY ON FIXED_MENU TYPE
-<div class="main-container">s
-    <h4 style="text-align:center"class="mt-2"><%#= @menu.name %></h4>
-</div>
--->
-<div class="background-show">
-  <div class="navbar navbar-expand-sm navbar-light navbar-meals">
-  </div>
-</div>
+
+<% if @menu.menu_type == true %>
+    <%= render "shared/menushow" %>
+<% else %>
+    <%= render "shared/cartashow" %>
+<% end %>
