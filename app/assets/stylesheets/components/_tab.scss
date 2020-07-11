@@ -1,0 +1,18 @@
+.tab-menu {
+  justify-content: space-around;
+  overflow: auto;
+  white-space: nowrap;
+  display: flex;
+}
+.nav-item {
+    color: #475361;
+    .nav-link  {
+     color: #475361;
+     padding: 8px;
+     border-radius: 0;
+    }
+    .nav-link.active {
+      color: white;
+      background-color: #76b18a;
+    }
+}
