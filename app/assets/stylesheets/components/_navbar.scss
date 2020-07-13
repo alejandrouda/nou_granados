@@ -16,7 +16,7 @@
 }
 
 .nav-item .nav-links:hover {
-  color: green;
+  color: $green;
 }
 
 .navbar-brand {
@@ -45,8 +45,10 @@
 
 .navbar-meals {
   justify-content: space-between;
-  position: sticky;
-  height: 65px;
+  // position: sticky;
+  position: fixed;
+  bottom: 0;
+  height: 88px;
   z-index: 50;
-  background: rgba(0, 0, 0, 0.726);
+  background: #76b18a;
 }

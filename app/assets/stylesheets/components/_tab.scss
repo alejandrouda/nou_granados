@@ -1,18 +1,23 @@
 .tab-menu {
-  justify-content: space-around;
+  // justify-content: space-around;
   overflow: auto;
-  white-space: nowrap;
+  // white-space: nowrap;
   display: flex;
 }
 .nav-item {
-    color: #475361;
+    color: white;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
     .nav-link  {
-     color: #475361;
-     padding: 8px;
+     color: white;
+    //  border: solid black 1px;
+    text-align: center;
+     font-weight: 600;
+     font-size: 18px;
      border-radius: 0;
     }
     .nav-link.active {
       color: white;
-      background-color: #76b18a;
+      background-color: #689778;
     }
 }
