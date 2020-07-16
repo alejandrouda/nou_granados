@@ -1,3 +1,3 @@
 class Meal < ApplicationRecord
-  belongs_to :menus
+  belongs_to :menu
 end

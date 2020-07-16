@@ -39,40 +39,40 @@ ActiveRecord::Schema.define(version: 2020_07_11_095606) do
   create_table "allergens", force: :cascade do |t|
     t.string "name"
     t.string "icon"
-    t.bigint "meals_id", null: false
+    t.bigint "meal_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["meals_id"], name: "index_allergens_on_meals_id"
+    t.index ["meal_id"], name: "index_allergens_on_meal_id"
   end
 
   create_table "drinks", force: :cascade do |t|
     t.string "name"
     t.integer "price"
     t.text "description"
-    t.bigint "menus_id", null: false
+    t.bigint "menu_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.boolean "white"
     t.boolean "red"
     t.boolean "rose"
     t.boolean "cava"
-    t.index ["menus_id"], name: "index_drinks_on_menus_id"
+    t.index ["menu_id"], name: "index_drinks_on_menu_id"
   end
 
   create_table "drinks_ingredients", force: :cascade do |t|
     t.string "name"
     t.string "icon"
-    t.bigint "drinks_id", null: false
+    t.bigint "drink_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["drinks_id"], name: "index_drinks_ingredients_on_drinks_id"
+    t.index ["drink_id"], name: "index_drinks_ingredients_on_drink_id"
   end
 
   create_table "meals", force: :cascade do |t|
     t.string "name"
     t.integer "price"
     t.text "description"
-    t.bigint "menus_id", null: false
+    t.bigint "menu_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.boolean "starter"
@@ -81,16 +81,16 @@ ActiveRecord::Schema.define(version: 2020_07_11_095606) do
     t.boolean "fish"
     t.boolean "meat"
     t.boolean "dessert"
-    t.index ["menus_id"], name: "index_meals_on_menus_id"
+    t.index ["menu_id"], name: "index_meals_on_menu_id"
   end
 
   create_table "meals_ingredients", force: :cascade do |t|
     t.string "name"
     t.string "icon"
-    t.bigint "meals_id", null: false
+    t.bigint "meal_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["meals_id"], name: "index_meals_ingredients_on_meals_id"
+    t.index ["meal_id"], name: "index_meals_ingredients_on_meal_id"
   end
 
   create_table "menus", force: :cascade do |t|
@@ -115,9 +115,9 @@ ActiveRecord::Schema.define(version: 2020_07_11_095606) do
   end
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
-  add_foreign_key "allergens", "meals", column: "meals_id"
-  add_foreign_key "drinks", "menus", column: "menus_id"
-  add_foreign_key "drinks_ingredients", "drinks", column: "drinks_id"
-  add_foreign_key "meals", "menus", column: "menus_id"
-  add_foreign_key "meals_ingredients", "meals", column: "meals_id"
+  add_foreign_key "allergens", "meals"
+  add_foreign_key "drinks", "menus"
+  add_foreign_key "drinks_ingredients", "drinks"
+  add_foreign_key "meals", "menus"
+  add_foreign_key "meals_ingredients", "meals"
 end
