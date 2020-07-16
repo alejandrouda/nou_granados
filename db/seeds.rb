@@ -2,6 +2,8 @@ require 'open-uri'
 
 p "Deleting Users..."
 User.delete_all
+p "Deleting Meals"
+Meal.delete_all
 p "Deleting Menus"
 Menu.delete_all
 
@@ -55,5 +57,39 @@ p bodega
 
 
 p "Menus created..."
+
+p "Creating meals..."
+
+bravas= Meal.new(
+       name:"Bravas",
+       price: 5,
+       tapa: true
+)
+
+bravas.menu_id = carta.id
+bravas.save
+p bravas
+
+berenjenas= Meal.new(
+       name: "Berenjenas en tempura",
+       price: 6,
+       tapa: true
+)
+
+berenjenas.menu_id = carta.id
+berenjenas.save
+p berenjenas
+
+tataki= Meal.new(
+       name: "Tataki de atun",
+       price: 10,
+       fish: true
+)
+
+tataki.menu_id = carta.id
+tataki.save
+p tataki
+
+p "Meals created..."
 
 p "Seeds completed!"

@@ -7,8 +7,8 @@ class MenusController < ApplicationController
 
     def show
         @menu = Menu.find(params[:id])
-        # @meals = Meal.all
-        # @drinks = Drink.all
+        @meals = Meal.all
+        @drinks = Drink.all
     end
 
 

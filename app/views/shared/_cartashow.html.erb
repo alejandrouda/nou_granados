@@ -1,5 +1,11 @@
 <div class="background-show">
     <div class="carta-back">
+    <% @meals.each do |meal|  %>
+    <% if meal.tapa== true %>
+   <h5><%= meal.name %></h5>
+    <% end %>
+    <% end %>
+    
     </div>
 </div>
 <div class="navbar navbar-expand-sm navbar-light navbar-meals">
