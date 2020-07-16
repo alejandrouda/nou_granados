@@ -1,13 +1,50 @@
 <div class="background-show">
     <div class="carta-back">
-    <% @meals.each do |meal|  %>
-    <% if meal.tapa== true %>
-   <h5><%= meal.name %></h5>
-    <% end %>
-    <% end %>
-    
+        <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="tapas" role="tabpanel" aria-labelledby="tapas-tab">
+                <h2 style="text-align: center; padding-top: 10px; color: white;">Tapas</h2>
+                <div class="separate">
+                </div>
+                <div class="main-container">
+                    <% @meals.each do |meal|  %>
+                        <% if meal.tapa== true %>
+                        <div class="name-price-carta">
+                            <h5><%= meal.name %></h5>
+                            <p><%= meal.price %>€</p>
+                        </div>
+                        <% end %>
+                    <% end %>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="entrantes" role="tabpanel" aria-labelledby="entrantes-tab">
+                <h2 style="text-align: center; padding-top: 10px; color: white;">Entrantes</h2>
+                <div class="separate">
+                </div>
+            </div>
+            <div class="tab-pane fade" id="principales" role="tabpanel" aria-labelledby="principales-tab">
+                <h2 style="text-align: center; padding-top: 10px; color: white;">Platos</h2>
+                <div class="separate">
+                </div>
+            </div>
+            <div class="tab-pane fade" id="carnes" role="tabpanel" aria-labelledby="carnes-tab">
+                <h2 style="text-align: center; padding-top: 10px; color: white;">Carnes</h2>
+                <div class="separate">
+                </div>
+            </div>
+            <div class="tab-pane fade" id="pescados" role="tabpanel" aria-labelledby="pescados-tab">
+                <h2 style="text-align: center; padding-top: 10px; color: white;">Pescados</h2>
+                <div class="separate">
+                </div>
+            </div>
+            <div class="tab-pane fade" id="postres" role="tabpanel" aria-labelledby="postres-tab">
+                <h2 style="text-align: center; padding-top: 10px; color: white;">Postres</h2>
+                <div class="separate">
+                </div>
+            </div>
+        </div>
     </div>
 </div>
+
 <div class="navbar navbar-expand-sm navbar-light navbar-meals">
     <ul class="nav nav-pills tab-menu" id="pills-tab" role="tablist">
         <li class="nav-item col-4">

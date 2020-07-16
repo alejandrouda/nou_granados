@@ -10,3 +10,23 @@
     height: 565px;
     padding: 10px;
 }
+
+.name-price-carta {
+    display: flex;
+    justify-content: space-between;
+
+    h5{
+        color: rgb(220, 220, 220);
+    }
+
+    p{
+        color: rgb(220, 220, 220);
+    }
+}
+
+.separate {
+    border-bottom: solid rgb(105, 105, 105) 1px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
