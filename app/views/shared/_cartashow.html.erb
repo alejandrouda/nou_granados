@@ -7,7 +7,7 @@
                 </div>
                 <div class="main-container">
                     <% @meals.each do |meal|  %>
-                        <% if meal.tapa== true %>
+                        <% if meal.tapa == true %>
                         <div class="name-price-carta">
                             <h5><%= meal.name %></h5>
                             <p><%= meal.price %>€</p>
@@ -20,25 +20,75 @@
                 <h2 style="text-align: center; padding-top: 10px; color: white;">Entrantes</h2>
                 <div class="separate">
                 </div>
+                <div class="main-container">
+                    <% @meals.each do |meal|  %>
+                        <% if meal.starter == true %>
+                        <div class="name-price-carta">
+                            <h5><%= meal.name %></h5>
+                            <p><%= meal.price %>€</p>
+                        </div>
+                        <% end %>
+                    <% end %>
+                </div>
             </div>
             <div class="tab-pane fade" id="principales" role="tabpanel" aria-labelledby="principales-tab">
                 <h2 style="text-align: center; padding-top: 10px; color: white;">Platos</h2>
                 <div class="separate">
+                </div>
+                <div class="main-container">
+                    <% @meals.each do |meal|  %>
+                        <% if meal.main == true %>
+                        <div class="name-price-carta">
+                            <h5><%= meal.name %></h5>
+                            <p><%= meal.price %>€</p>
+                        </div>
+                        <% end %>
+                    <% end %>
                 </div>
             </div>
             <div class="tab-pane fade" id="carnes" role="tabpanel" aria-labelledby="carnes-tab">
                 <h2 style="text-align: center; padding-top: 10px; color: white;">Carnes</h2>
                 <div class="separate">
                 </div>
+                <div class="main-container">
+                    <% @meals.each do |meal|  %>
+                        <% if meal.meat == true %>
+                        <div class="name-price-carta">
+                            <h5><%= meal.name %></h5>
+                            <p><%= meal.price %>€</p>
+                        </div>
+                        <% end %>
+                    <% end %>
+                </div>
             </div>
             <div class="tab-pane fade" id="pescados" role="tabpanel" aria-labelledby="pescados-tab">
                 <h2 style="text-align: center; padding-top: 10px; color: white;">Pescados</h2>
                 <div class="separate">
                 </div>
+                <div class="main-container">
+                    <% @meals.each do |meal|  %>
+                        <% if meal.fish == true %>
+                        <div class="name-price-carta">
+                            <h5><%= meal.name %></h5>
+                            <p><%= meal.price %>€</p>
+                        </div>
+                        <% end %>
+                    <% end %>
+                </div>
             </div>
             <div class="tab-pane fade" id="postres" role="tabpanel" aria-labelledby="postres-tab">
                 <h2 style="text-align: center; padding-top: 10px; color: white;">Postres</h2>
                 <div class="separate">
+                </div>
+                <div class="main-container">
+                    <% @meals.each do |meal|  %>
+                        <% if meal.dessert == true %>
+                        <div class="name-price-carta">
+                            <h5><%= meal.name %></h5>
+                            <p><%= meal.price %>€</p>
+                        </div>
+                        <% end %>
+                    <% end %>
                 </div>
             </div>
         </div>
