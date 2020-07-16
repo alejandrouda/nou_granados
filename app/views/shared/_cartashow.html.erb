@@ -10,7 +10,7 @@
                         <% if meal.tapa == true %>
                         <div class="name-price-carta">
                             <h5><%= meal.name %></h5>
-                            <p><%= meal.price %>€</p>
+                            <p><%= meal.price.to_s.sub(/\.?0+$/, '') %> €</p>
                         </div>
                         <% end %>
                     <% end %>
@@ -25,7 +25,7 @@
                         <% if meal.starter == true %>
                         <div class="name-price-carta">
                             <h5><%= meal.name %></h5>
-                            <p><%= meal.price %>€</p>
+                            <p><%= meal.price.to_s.sub(/\.?0+$/, '') %>€</p>
                         </div>
                         <% end %>
                     <% end %>
@@ -40,7 +40,7 @@
                         <% if meal.main == true %>
                         <div class="name-price-carta">
                             <h5><%= meal.name %></h5>
-                            <p><%= meal.price %>€</p>
+                            <p><%= meal.price.to_s.sub(/\.?0+$/, '') %>€</p>
                         </div>
                         <% end %>
                     <% end %>
@@ -55,7 +55,7 @@
                         <% if meal.meat == true %>
                         <div class="name-price-carta">
                             <h5><%= meal.name %></h5>
-                            <p><%= meal.price %>€</p>
+                            <p><%= meal.price.to_s.sub(/\.?0+$/, '') %>€</p>
                         </div>
                         <% end %>
                     <% end %>
@@ -70,7 +70,7 @@
                         <% if meal.fish == true %>
                         <div class="name-price-carta">
                             <h5><%= meal.name %></h5>
-                            <p><%= meal.price %>€</p>
+                            <p><%= meal.price.to_s.sub(/\.?0+$/, '') %>€</p>
                         </div>
                         <% end %>
                     <% end %>
@@ -85,7 +85,7 @@
                         <% if meal.dessert == true %>
                         <div class="name-price-carta">
                             <h5><%= meal.name %></h5>
-                            <p><%= meal.price %>€</p>
+                            <p><%= meal.price.to_s.sub(/\.?0+$/, '') %>€</p>
                         </div>
                         <% end %>
                     <% end %>
