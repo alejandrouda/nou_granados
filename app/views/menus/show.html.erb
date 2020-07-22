@@ -1,13 +1,11 @@
-<div class="first-section">
-    <a href="../menus">
+<div class="first-section sticky">
+    <a href="../">
         <i class="fa fa-arrow-left mr-2 back-arrow"  aria-hidden="true"></i>
     </a>
     <div class="header">
         <h2>9 Granados</h2>
-        <h5>Restaurante</h5>
     </div>
 </div>
-
 <% if @menu.menu_type == true %>
     <%= render "shared/menushow" %>
 <% else %>
