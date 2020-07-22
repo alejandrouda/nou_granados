@@ -21,7 +21,7 @@ p "Users created..."
 p "Creating menus..."
 
 menu_mediodia = Menu.new(
-              name: "Menú del medio día (L - V)",
+              name: "Menú del medio día",
               price: 12.75,
               menu_type: true
        )
