@@ -1,14 +1,18 @@
 .flag {
-    width: 120px;
-    height: 90px;
+    width: 30px;
+    height: 30px;
     box-shadow: 0px 0px 10px rgb(130, 130, 130);
-    margin: 5px;
+    margin: 4px;
     flex-grow: 1;
+    border-radius: 50%;
     
 }
 
 .flag-box {
     display: flex;
+    position: absolute;
+    top: 15px;
+    right:16px;
 }
 
 
