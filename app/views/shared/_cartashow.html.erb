@@ -24,7 +24,7 @@
                 <div class="main-container">
                     <% @meals.each do |meal|  %>
                         <% if meal.starter == true %>
-                        <div class="name-price-carta">
+                        <div class="name-price-carta meal-card">
                             <h5><%= meal.name %></h5>
                             <p><%= meal.description %></p>
                             <h6 class="price"><%= meal.price.to_s.sub(/\.?0+$/, '') %>€</h6>
@@ -40,7 +40,7 @@
                 <div class="main-container">
                     <% @meals.each do |meal|  %>
                         <% if meal.main == true %>
-                        <div class="name-price-carta">
+                        <div class="name-price-carta meal-card">
                             <h5><%= meal.name %></h5>
                             <p><%= meal.description %></p>
                             <h6 class="price"><%= meal.price.to_s.sub(/\.?0+$/, '') %>€</h6>
@@ -56,7 +56,7 @@
                 <div class="main-container">
                     <% @meals.each do |meal|  %>
                         <% if meal.meat == true %>
-                        <div class="name-price-carta">
+                        <div class="name-price-carta meal-card">
                             <h5><%= meal.name %></h5>
                             <p><%= meal.description %></p>
                             <h6 class="price"><%= meal.price.to_s.sub(/\.?0+$/, '') %>€</h6>
@@ -72,7 +72,7 @@
                 <div class="main-container">
                     <% @meals.each do |meal|  %>
                         <% if meal.fish == true %>
-                        <div class="name-price-carta">
+                        <div class="name-price-carta meal-card">
                             <h5><%= meal.name %></h5>
                             <p><%= meal.description %></p>
                             <h6 class="price"><%= meal.price.to_s.sub(/\.?0+$/, '') %>€</h6>
@@ -88,7 +88,7 @@
                 <div class="main-container">
                     <% @meals.each do |meal|  %>
                         <% if meal.dessert == true %>
-                        <div class="name-price-carta">
+                        <div class="name-price-carta meal-card">
                             <h5><%= meal.name %></h5>
                             <p><%= meal.description %></p>
                             <h6 class="price"><%= meal.price.to_s.sub(/\.?0+$/, '') %>€</h6>
