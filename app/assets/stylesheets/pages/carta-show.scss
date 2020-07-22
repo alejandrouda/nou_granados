@@ -16,22 +16,26 @@
 
 .background-show {
     background-image: url("https://res.cloudinary.com/dfyhqslry/image/upload/v1594390930/Nou%20granados/Alimentos%20y%20bebidas/photo-1572913017567-02f0649bc4fd_rjdlxc.jpg");
-    background-size: cover;
+    // background-size: cover;
     object-fit: cover;
-    height: 700px;
+    height: 1200x;
     padding: 10px;
-    padding-bottom: 75px;
+    // padding-bottom: 75px;
 }
 
 .name-price-carta {
-    display: flex;
-    justify-content: space-between;
 
     h5{
         color: rgb(220, 220, 220);
+        font-weight: 600;
     }
 
     p{
+        color: rgb(220, 220, 220);
+        font-style: italic;
+    }
+
+    h6 {
         color: rgb(220, 220, 220);
     }
 }
@@ -46,4 +50,15 @@
     position: fixed;
     width: 100%;
     z-index: 20;
+}
+
+.price {
+    text-align: right;
+}
+
+.meal-card {
+    border-bottom: solid rgb(105, 105, 105) 2px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
 }
