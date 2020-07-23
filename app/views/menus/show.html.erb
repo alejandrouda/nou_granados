@@ -8,6 +8,8 @@
 </div>
 <% if @menu.menu_type == true %>
     <%= render "shared/menushow" %>
+<% elsif @menu.drink_type == true  %>
+    <%= render "shared/carta_drinks_show" %>
 <% else %>
     <%= render "shared/cartashow" %>
 <% end %>

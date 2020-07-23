@@ -1,3 +1,3 @@
 class Drink < ApplicationRecord
-  belongs_to :menus
+  belongs_to :menu
 end

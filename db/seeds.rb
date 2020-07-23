@@ -2,9 +2,11 @@ require 'open-uri'
 
 p "Deleting Users..."
 User.delete_all
-p "Deleting Meals"
+p "Deleting Meals..."
 Meal.delete_all
-p "Deleting Menus"
+p "Deleting Drinks..."
+Drink.delete_all
+p "Deleting Menus..."
 Menu.delete_all
 
 p "Creating Users..."
@@ -23,7 +25,8 @@ p "Creating menus..."
 menu_mediodia = Menu.new(
               name: "Menú del medio día",
               price: 12.75,
-              menu_type: true
+              menu_type: true,
+              drink_type: false
        )
        menu_mediodia.photo.attach(io: URI.open("https://res.cloudinary.com/dfyhqslry/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1594223632/Nou%20granados/Alimentos%20y%20bebidas/Medio_Dia_jxim3i.jpg"), filename: 'Medio_Dia_jxim3i.jpg', content_type: 'jpg')
        menu_mediodia.save
@@ -32,7 +35,8 @@ menu_mediodia = Menu.new(
 menu_9granados = Menu.new(
        name: "Menú 9 granados",
        price: 21.90,
-       menu_type: true
+       menu_type: true,
+       drink_type: false
 )
 menu_9granados.photo.attach(io: URI.open("https://res.cloudinary.com/dfyhqslry/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1594373475/Nou%20granados/Alimentos%20y%20bebidas/menugrupos_vk53sp.jpg"), filename: 'menugrupos_vk53sp.jpg', content_type: 'jpg')
 menu_9granados.save
@@ -41,7 +45,8 @@ p menu_9granados
 
 carta = Menu.new(
        name: "Carta",
-       menu_type: false
+       menu_type: false,
+       drink_type: false
 )
 carta.photo.attach(io: URI.open("https://res.cloudinary.com/dfyhqslry/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1594223631/Nou%20granados/Alimentos%20y%20bebidas/Carta_alvxgs.jpg"), filename: 'Carta_alvxgs.jpg', content_type: 'jpg')
 carta.save
@@ -49,7 +54,8 @@ p carta
 
 bodega = Menu.new(
        name: "Bodega",
-       menu_type: false
+       menu_type: false,
+       drink_type: true
 )
 bodega.photo.attach(io: URI.open("https://res.cloudinary.com/dfyhqslry/image/upload/v1594222955/Nou%20granados/Alimentos%20y%20bebidas/bodega_uuoqqo.jpg"), filename: 'bodega_uuoqqo.jpg', content_type: 'jpg')
 bodega.save
@@ -577,5 +583,347 @@ helado.save
 p helado
 
 p "Meals created..."
+
+p "Creating drinks..."
+
+casa_tinto= Drink.new(
+       name:"Vino de la casa",
+       description: "Garnatxa",
+       price: "10,00",
+       price_glass: "2,50",
+       red: true
+)
+
+casa_tinto.menu_id = bodega.id
+casa_tinto.save
+p casa_tinto
+
+viana= Drink.new(
+       name:"Principe Viana",
+       description: "Syrah",
+       price: "12,00",
+       price_glass: "2,90",
+       red: true
+)
+
+viana.menu_id = bodega.id
+viana.save
+p viana
+
+batan= Drink.new(
+       name:"Batan de salas",
+       description: "Merlot",
+       price: "14,50",
+       red: true
+)
+
+batan.menu_id = bodega.id
+batan.save
+p batan
+
+jan= Drink.new(
+       name:"Jan Petit",
+       description: "Garnatxa i Syrah",
+       price: "14,50",
+       price_glass: "3,50",
+       red: true
+)
+
+jan.menu_id = bodega.id
+jan.save
+p jan
+
+atrepat= Drink.new(
+       name:"Atrepat",
+       description: "Trepat",
+       price: "14,95",
+       price_glass: "3,95",
+       red: true
+)
+
+atrepat.menu_id = bodega.id
+atrepat.save
+p atrepat
+
+gos= Drink.new(
+       name:"El gos",
+       description: "Garnatxa",
+       price: "15,75",
+       red: true
+)
+
+gos.menu_id = bodega.id
+gos.save
+p gos
+
+matsu= Drink.new(
+       name:"Matsu Pícaro",
+       description: "Tinta de toro",
+       price: "15,75",
+       price_glass: "3,95",
+       red: true
+)
+
+matsu.menu_id = bodega.id
+matsu.save
+p matsu
+
+haro_joven= Drink.new(
+       name:"López de Haro tempranillo",
+       description: "Rioja, Ull de llebre",
+       price: "12,90",
+       price_glass: "3,25",
+       red: true
+)
+
+haro_joven.menu_id = bodega.id
+haro_joven.save
+p haro_joven
+
+vega= Drink.new(
+       name:"Rioja Vega",
+       description: "Rioja Ull de llebre i garnatxa",
+       price: "17,95",
+       red: true
+)
+
+vega.menu_id = bodega.id
+vega.save
+p vega
+
+haro_reserva= Drink.new(
+       name:"López de Haro reserva",
+       description: "Rioja Ull de llebre i garnatxa",
+       price: "18,50",
+       price_glass: "4,50",
+       red: true
+)
+
+haro_reserva.menu_id = bodega.id
+haro_reserva.save
+p haro_reserva
+
+berdugo= Drink.new(
+       name:"Martín Berdugo",
+       description: "Ribera del Duero, Mencia",
+       price: "16,90",
+       red: true
+)
+
+berdugo.menu_id = bodega.id
+berdugo.save
+p berdugo
+
+ferratus= Drink.new(
+       name:"Ferratus",
+       description: "Ribera del duero, ull de llebre",
+       price: "18,50",
+       price_glass: "4,50",
+       red: true
+)
+
+ferratus.menu_id = bodega.id
+ferratus.save
+p ferratus
+
+orto= Drink.new(
+       name:"Orto",
+       description: "Carinyena, garnatxa, cabernet sauvignon, ull de llebre",
+       price: "19,50",
+       red: true
+)
+
+orto.menu_id = bodega.id
+orto.save
+p orto
+
+atzar= Drink.new(
+       name:"Atzar",
+       description: "Garnatxa i carinyenya",
+       price: "19,90",
+       price_glass: "4,90",
+       red: true
+)
+
+atzar.menu_id = bodega.id
+atzar.save
+p atzar
+
+magnum= Drink.new(
+       name:"Magnum número 9",
+       description: "Cabernet franc, ull de llebre",
+       price: "45,00",
+       red: true
+)
+
+magnum.menu_id = bodega.id
+magnum.save
+p magnum
+
+casa_blanco= Drink.new(
+       name:"Vino de la casa",
+       description: "Garnatxa",
+       price: "10,00",
+       price_glass: "2,50",
+       white: true
+)
+
+casa_blanco.menu_id = bodega.id
+casa_blanco.save
+p casa_blanco
+
+moraleda= Drink.new(
+       name:"Moraleda Blanc",
+       description: "Chardonnay",
+       price: "12,50",
+       price_glass: "2,90",
+       white: true
+)
+
+moraleda.menu_id = bodega.id
+moraleda.save
+p moraleda
+
+bardos= Drink.new(
+       name:"Bardos",
+       description: "Verdejo",
+       price: "13,90",
+       price_glass: "3,30",
+       white: true
+)
+
+bardos.menu_id = bodega.id
+bardos.save
+p bardos
+
+primavera= Drink.new(
+       name:"Blanc primavera",
+       description: "Xarello, macebeu, parellada",
+       price: "14,50",
+       price_glass: "3,50",
+       white: true
+)
+
+primavera.menu_id = bodega.id
+primavera.save
+p primavera
+
+libalis= Drink.new(
+       name:"Libalis",
+       description: "Moscatell, viuea, malvasia",
+       price: "14,50",
+       price_glass: "3,50",
+       white: true
+)
+
+libalis.menu_id = bodega.id
+libalis.save
+p libalis
+
+pulpo= Drink.new(
+       name:"Bienbebido pulpo",
+       description: "Albariño",
+       price: "14,95",
+       price_glass: "3,75",
+       white: true
+)
+
+pulpo.menu_id = bodega.id
+pulpo.save
+p pulpo
+
+sere= Drink.new(
+       name:"Blanc de Seré",
+       description: "Macabeu, parrellada, chardonnay",
+       price: "15,50",
+       price_glass: "3,95",
+       white: true
+)
+
+sere.menu_id = bodega.id
+sere.save
+p sere
+
+casa_rosado= Drink.new(
+       name:"Vino de la casa",
+       description: "Garnatxa",
+       price: "10,00",
+       price_glass: "2,50",
+       rose: true
+)
+
+casa_rosado.menu_id = bodega.id
+casa_rosado.save
+p casa_rosado
+
+rovellats= Drink.new(
+       name:"Rovellats",
+       description: "Merlot",
+       price: "12,95",
+       price_glass: "3,25",
+       rose: true
+)
+
+rovellats.menu_id = bodega.id
+rovellats.save
+p rovellats
+
+aroa= Drink.new(
+       name:"Aroa Larrosa",
+       description: "Garnatxa i ull de llebre",
+       price: "16,90",
+       rose: true
+)
+
+aroa.menu_id = bodega.id
+aroa.save
+p aroa
+
+lujan= Drink.new(
+       name:"Lujan Brut Nature",
+       description: "Macabeu, parrellada, xarel-lo",
+       price: "11,95",
+       price_glass: "2,95",
+       cava: true
+)
+
+lujan.menu_id = bodega.id
+lujan.save
+p lujan
+
+premier= Drink.new(
+       name:"Premier Brut Rovellats",
+       description: "Macabeu i parrellada",
+       price: "18,00",
+       cava: true
+)
+
+premier.menu_id = bodega.id
+premier.save
+p premier
+
+rovellats= Drink.new(
+       name:"Rovellats Gran Reserva Brut Nature",
+       description: "Xarel-lo, parrellada, macabeu",
+       price: "25,00",
+       cava: true
+)
+
+rovellats.menu_id = bodega.id
+rovellats.save
+p rovellats
+
+rovellats_brut= Drink.new(
+       name:"Rovellats Brut Imperial Rose",
+       description: "Garnatxa",
+       price: "19,50",
+       cava: true
+)
+
+rovellats_brut.menu_id = bodega.id
+rovellats_brut.save
+p rovellats_brut
+
+p "Drinks created..."
 
 p "Seeds completed!"
