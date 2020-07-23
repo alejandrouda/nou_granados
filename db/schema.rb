@@ -70,7 +70,8 @@ ActiveRecord::Schema.define(version: 2020_07_11_095606) do
 
   create_table "meals", force: :cascade do |t|
     t.string "name"
-    t.float "price"
+    t.string "price"
+    t.string "price_racion"
     t.text "description"
     t.bigint "menu_id", null: false
     t.datetime "created_at", precision: 6, null: false

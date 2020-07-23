@@ -64,7 +64,7 @@ p "Creating meals..."
 coca= Meal.new(
        name:"Pan de coca con tomate",
        description: "Pan de coca tostado, con tomate restregado, aceite de oliva y sal gruesa",
-       price: 2.75,
+       price: "2,75",
        tapa: true
 )
 
@@ -75,7 +75,7 @@ p coca
 berenjenas= Meal.new(
        name: "Berenjenas en tempura",
        description: "Berenjenas en tempura de cerveza y miel",
-       price: 5.50,
+       price: "5,50",
        tapa: true
 )
 
@@ -86,7 +86,7 @@ p berenjenas
 bravas= Meal.new(
        name:"Bravas",
        description: "Nuestras bravas con salsa de chile chipotle y ali oli",
-       price: 5.50,
+       price: "5,50",
        tapa: true
 )
 
@@ -97,7 +97,7 @@ p bravas
 cr_carrillera= Meal.new(
        name:"Croquetón de boletus",
        description: "Croquetón casero de boletus y trufa (precio por unidad)",
-       price: 1.80,
+       price: "1,80",
        tapa: true
 )
 
@@ -108,7 +108,7 @@ p cr_carrillera
 cr_ceps= Meal.new(
        name:"Croquetón de carrillera",
        description: "Croquetón casero de carrillera con jugo de asado (precio por unidad)",
-       price: 1.80,
+       price: "1,80",
        tapa: true
 )
 
@@ -119,7 +119,7 @@ p cr_ceps
 hummus= Meal.new(
        name:"Hummus de garbanzos",
        description:"con yogurt, lima, rabanitos, y tostaditas crujientes",
-       price: 6.50,
+       price: "6,50",
        tapa: true
 )
 
@@ -130,7 +130,7 @@ p hummus
 edamame= Meal.new(
        name:"Edamame",
        description:"con salsa miso, cebolla tierna, y mostaza de Dijon",
-       price: 5.50,
+       price: "5,50",
        tapa: true
 )
 
@@ -141,7 +141,7 @@ p edamame
 jamon= Meal.new(
        name:"Jamon iberico",
        description: "tapa 50g / ración 100g",
-       price: 7.75,
+       price: "7,75",
        tapa: true
 )
 
@@ -152,7 +152,7 @@ p jamon
 quesos= Meal.new(
        name:"Tabla de quesos",
        description:"con compota y nueces",
-       price: 7.95,
+       price: "7,95",
        tapa: true
 )
 
@@ -163,7 +163,7 @@ p quesos
 taco= Meal.new(
        name:"Taco de confit de pato",
        description:"con trufa, crema agria y jalapeños",
-       price: 4.50,
+       price: "4,50",
        tapa: true
 )
 
@@ -174,7 +174,7 @@ p taco
 tiras= Meal.new(
        name:"Tiras de pollo",
        description:"marinado estilo oriental con panko, sésamo y mayonesa de wasabi",
-       price: 6.75,
+       price: "6,75",
        tapa: true
 )
 
@@ -185,7 +185,7 @@ p tiras
 gambas_tapa= Meal.new(
        name:"Gamba roja",
        description:"de Huelva a la plancha(7 unidades)",
-       price: 8.90,
+       price: "8,90",
        tapa: true
 )
 
@@ -196,7 +196,7 @@ p gambas_tapa
 calamares_tapa= Meal.new(
        name:"Calamares",
        description:"a la andaluza",
-       price: 6.50,
+       price: "6,50",
        tapa: true
 )
 calamares_tapa.menu_id = carta.id
@@ -206,7 +206,7 @@ p calamares_tapa
 fishnchips_tapa= Meal.new(
        name:"Fish & Chips",
        description:"de lomo de bacalao de Islandia, con chutney de mango y salsa tártara",
-       price: 6.90,
+       price: "6,90",
        tapa: true
 )
 
@@ -217,7 +217,7 @@ p fishnchips_tapa
 tataki_tapa= Meal.new(
        name: "Tataki de atun",
        description:"con aguacate, pico de gallo y salsa ponzu",
-       price: 7.75,
+       price: "7,75",
        tapa: true
 )
 
@@ -228,7 +228,7 @@ p tataki_tapa
 pulpo_tapa= Meal.new(
        name:"Pulpo a la parrilla",
        description:"con patatas confitadas y pimentón",
-       price: 8.50,
+       price: "8,50",
        tapa: true
 )
 
@@ -239,7 +239,7 @@ p pulpo_tapa
 lubina_tapa= Meal.new(
        name:"Suprema de lubina",
        description:"Suprema de lubina fresca a la plancha con verduritas y salsa de maracuyá",
-       price: 7.50,
+       price: "7,50",
        tapa: true
 )
 
@@ -250,7 +250,7 @@ p lubina_tapa
 corte_tapa= Meal.new(
        name:"Corte argentino",
        description:"de ternera a la plancha con patatas fritas, padrones, y salsa de Idiazábal",
-       price: 5.95,
+       price: "5,95",
        tapa: true
 )
 
@@ -261,7 +261,7 @@ p corte_tapa
 tartar_tapa= Meal.new(
        name:"Steak tartar",
        description:"de ternera, yema de huevo, mostaza de hierbas y tostaditas",
-       price: 6.90,
+       price: "6,90",
        tapa: true
 )
 
@@ -272,7 +272,7 @@ p tartar_tapa
 cordero_tapa= Meal.new(
        name:"Cordero",
        description:"a baja temperatura con parmentier, setas, y salsa de miel y romero",
-       price: 7.95,
+       price: "7,95",
        tapa: true
 )
 
@@ -283,7 +283,7 @@ p cordero_tapa
 costillar_tapa= Meal.new(
        name:"Costillar de cerdo",
        description:"Costillar de cerdo lacado con salsa barbacoa casera y patatas fritas",
-       price: 5.95,
+       price: "5,95",
        tapa: true
 )
 
@@ -296,7 +296,7 @@ p costillar_tapa
 ensalada= Meal.new(
        name:"Ensalada de hojas",
        description:"Ensalada de hojas con aguacate, mango, frutos secos y vinagreta de miel y mostaza antigua",
-       price: 6.90,
+       price: "6,90",
        starter: true
 )
 
@@ -307,7 +307,7 @@ p ensalada
 burratina= Meal.new(
        name:"Burratina",
        description:"con pesto de albahaca, pistacho y tomate confitado",
-       price: 10.50,
+       price: "10,50",
        starter: true
 )
 
@@ -318,7 +318,7 @@ p burratina
 timbal= Meal.new(
        name:"Timbal de escalivada",
        description:"con queso de cabra caramelizado y salsa romesco casera",
-       price: 7.95,
+       price: "7,95",
        starter: true
 )
 
@@ -329,7 +329,7 @@ p timbal
 rollo= Meal.new(
        name:"Rollo crujiente",
        description:"al horno con queso taleggio fundido, rúcula, olivada y tomates secos",
-       price: 8.50,
+       price: "8,50",
        starter: true
 )
 
@@ -340,7 +340,7 @@ p rollo
 canelones= Meal.new(
        name:"Canelones",
        description:"de carne asada y setas, con crema trufada y dulce de piquillos (tapa 1u / ración 3u)",
-       price: 4.75,
+       price: "4,75",
        starter: true
 )
 
@@ -351,7 +351,7 @@ p canelones
 huevos= Meal.new(
        name:"Huevos estrellados",
        description:"con patatas fritas, jamón ibérico y virutas de foie",
-       price: 10.90,
+       price: "10,90",
        starter: true
 )
 
@@ -362,7 +362,7 @@ p huevos
 carpaccio= Meal.new(
        name:"Carpaccio de lomo",
        description:" Carpaccio de lomo de vaca madurada, con Idiazábal, piñones y vinagreta de fresones y lima",
-       price: 12.50,
+       price: "12,50",
        starter: true
 )
 
@@ -375,7 +375,7 @@ p carpaccio
 hamburguesa= Meal.new(
        name:"Hamburguesa vegetariana",
        description:"Hamburguesa vegetariana de remolacha con salsa tzatziki y pan artesano de cerveza negra",
-       price: 9.90,
+       price: "9,90",
        main: true
 )
 
@@ -386,7 +386,7 @@ p hamburguesa
 arroz= Meal.new(
        name:"Arroz marinero con sepia",
        description:"Arroz marinero con sepia y gamba de Huelva (mínimo 2 personas | precio por persona)",
-       price: 5,
+       price: "16,75",
        main: true
 )
 
@@ -399,7 +399,7 @@ p arroz
 fishnchips= Meal.new(
        name:"Fish & Chips",
        description:"de lomo de bacalao de Islandia, con chutney de mango y salsa tártara",
-       price: 6.90,
+       price: "6,90",
        fish: true
 )
 
@@ -410,7 +410,7 @@ p fishnchips
 tataki= Meal.new(
        name: "Tataki de atun",
        description:"con aguacate, pico de gallo y salsa ponzu",
-       price: 7.75,
+       price: "7,75",
        fish: true
 )
 
@@ -421,7 +421,7 @@ p tataki
 pulpo= Meal.new(
        name:"Pulpo a la parrilla",
        description:"con patatas confitadas y pimentón",
-       price: 8.50,
+       price: "8,50",
        fish: true
 )
 
@@ -432,7 +432,7 @@ p pulpo
 lubina= Meal.new(
        name:"Suprema de lubina",
        description:"Suprema de lubina fresca a la plancha con verduritas y salsa de maracuyá",
-       price: 7.50,
+       price: "7,50",
        fish: true
 )
 
@@ -445,7 +445,7 @@ p lubina
 corte= Meal.new(
        name:"Corte argentino",
        description:"de ternera a la plancha, con patatas fritas, padrones, y salsa de Idiazábal",
-       price: 5.95,
+       price: "5,95",
        meat: true
 )
 
@@ -456,7 +456,7 @@ p corte
 tartar= Meal.new(
        name:"Steak tartar",
        description:"de ternera, yema de huevo, mostaza de hiervas y tostaditas",
-       price: 6.90,
+       price: "6,90",
        meat: true
 )
 
@@ -467,7 +467,7 @@ p tartar
 cordero= Meal.new(
        name:"Cordero",
        description:"Cordero a baja temperatura, con parmentier, setas, y salsa de miel y romero",
-       price: 7.95,
+       price: "7,95",
        meat: true
 )
 
@@ -478,7 +478,7 @@ p cordero
 costillar= Meal.new(
        name:"Costillar de cerdo",
        description:"Costillar de cerdo lacado con salsa barbacoa casera y patatas fritas",
-       price: 5.95,
+       price: "5,95",
        meat: true
 )
 
@@ -491,7 +491,7 @@ p costillar
 cremacat= Meal.new(
        name:"Crema catalana",
        description:"Crema catalana cremada con galleta crujiente",
-       price: 4.95,
+       price: "4,95",
        dessert: true
 )
 
@@ -502,7 +502,7 @@ p cremacat
 flan= Meal.new(
        name:"Flan de coco",
        description:"Flan de coco con nata montada",
-       price: 5.50,
+       price: "5,50",
        dessert: true
 )
 
@@ -513,7 +513,7 @@ p flan
 cheesecake= Meal.new(
        name:"Cheese cake",
        description:"Cheese cake con coulis de frutos rojos",
-       price: 6.25,
+       price: "6,25",
        dessert: true
 )
 
@@ -524,7 +524,7 @@ p cheesecake
 lemonpie= Meal.new(
        name:"Lemon pot pie",
        description:"Lemon pot pie con crumble de galleta",
-       price: 5.75,
+       price: "5,75",
        dessert: true
 )
 
@@ -535,7 +535,7 @@ p lemonpie
 coulant= Meal.new(
        name:"Coulant de chocolate",
        description:"Coulant de chocolate con helado de vainilla",
-       price: 5.95,
+       price: "5,95",
        dessert: true
 )
 
@@ -546,7 +546,7 @@ p coulant
 trufas= Meal.new(
        name:"Trufas de chocolate",
        description:"Trufas artesanas de chocolate con chupito a elección",
-       price: 5,
+       price: "5,75",
        dessert: true
 )
 
@@ -557,7 +557,7 @@ p trufas
 helado= Meal.new(
        name:"Helado",
        description:"2 bolas de helado al gusto (pregunta por los sabores del día)",
-       price: 5,
+       price: "4,95",
        dessert: true
 )
 

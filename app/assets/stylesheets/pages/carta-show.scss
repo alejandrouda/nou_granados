@@ -33,6 +33,7 @@
     p{
         color: rgb(220, 220, 220);
         font-style: italic;
+        margin-block-end: 3px;
     }
 
     h6 {
@@ -44,6 +45,7 @@
     border-bottom: solid rgb(105, 105, 105) 1px;
     margin-left: 10px;
     margin-right: 10px;
+    margin-bottom: 10px;
 }
 
 .sticky {
@@ -57,8 +59,6 @@
 }
 
 .meal-card {
-    border-bottom: solid rgb(105, 105, 105) 2px;
-    margin-left: 10px;
-    margin-right: 10px;
-    padding: 10px;
+    // border-bottom: solid rgb(105, 105, 105) 2px;
+    padding: 10px 20px;
 }
