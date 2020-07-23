@@ -142,6 +142,7 @@ jamon= Meal.new(
        name:"Jamon iberico",
        description: "tapa 50g / ración 100g",
        price: "7,75",
+       price_racion: "15,00",
        tapa: true
 )
 
@@ -297,6 +298,7 @@ ensalada= Meal.new(
        name:"Ensalada de hojas",
        description:"Ensalada de hojas con aguacate, mango, frutos secos y vinagreta de miel y mostaza antigua",
        price: "6,90",
+       price_racion: "9,75",
        starter: true
 )
 
@@ -341,6 +343,7 @@ canelones= Meal.new(
        name:"Canelones",
        description:"de carne asada y setas, con crema trufada y dulce de piquillos (tapa 1u / ración 3u)",
        price: "4,75",
+       price_racion: "12,50",
        starter: true
 )
 
@@ -400,6 +403,7 @@ fishnchips= Meal.new(
        name:"Fish & Chips",
        description:"de lomo de bacalao de Islandia, con chutney de mango y salsa tártara",
        price: "6,90",
+       price_racion: "12,90",
        fish: true
 )
 
@@ -411,6 +415,7 @@ tataki= Meal.new(
        name: "Tataki de atun",
        description:"con aguacate, pico de gallo y salsa ponzu",
        price: "7,75",
+       price_racion: "14,50",
        fish: true
 )
 
@@ -422,6 +427,7 @@ pulpo= Meal.new(
        name:"Pulpo a la parrilla",
        description:"con patatas confitadas y pimentón",
        price: "8,50",
+       price_racion: "15,90",
        fish: true
 )
 
@@ -433,6 +439,7 @@ lubina= Meal.new(
        name:"Suprema de lubina",
        description:"Suprema de lubina fresca a la plancha con verduritas y salsa de maracuyá",
        price: "7,50",
+       price_racion: "13,90",
        fish: true
 )
 
@@ -446,6 +453,7 @@ corte= Meal.new(
        name:"Corte argentino",
        description:"de ternera a la plancha, con patatas fritas, padrones, y salsa de Idiazábal",
        price: "5,95",
+       price_racion: "11,90",
        meat: true
 )
 
@@ -457,6 +465,7 @@ tartar= Meal.new(
        name:"Steak tartar",
        description:"de ternera, yema de huevo, mostaza de hiervas y tostaditas",
        price: "6,90",
+       price_racion: "12,90",
        meat: true
 )
 
@@ -468,6 +477,7 @@ cordero= Meal.new(
        name:"Cordero",
        description:"Cordero a baja temperatura, con parmentier, setas, y salsa de miel y romero",
        price: "7,95",
+       price_racion: "14,75",
        meat: true
 )
 
@@ -479,6 +489,7 @@ costillar= Meal.new(
        name:"Costillar de cerdo",
        description:"Costillar de cerdo lacado con salsa barbacoa casera y patatas fritas",
        price: "5,95",
+       price_racion: "11,90",
        meat: true
 )
 

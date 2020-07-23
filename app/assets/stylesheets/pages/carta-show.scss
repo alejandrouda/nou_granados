@@ -59,6 +59,11 @@
 }
 
 .meal-card {
-    // border-bottom: solid rgb(105, 105, 105) 2px;
     padding: 10px 20px;
+}
+
+.prices-box {
+    margin-top: 5px;
+    display: flex;
+    justify-content: flex-end
 }
