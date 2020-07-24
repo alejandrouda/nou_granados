@@ -26,9 +26,12 @@ require("channels")
 import "bootstrap";
 
 // Internal imports, e.g:
+
+import {scrollUp} from "../components/scroll_up"
 // import { initSelect2 } from '../components/init_select2';
 
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
   // initSelect2();
+  scrollUp();
 });
