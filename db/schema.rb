@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_07_23_114302) do
+ActiveRecord::Schema.define(version: 2020_07_24_080520) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -47,7 +47,7 @@ ActiveRecord::Schema.define(version: 2020_07_23_114302) do
 
   create_table "drinks", force: :cascade do |t|
     t.string "name"
-    t.integer "price"
+    t.string "price"
     t.text "description"
     t.bigint "menu_id", null: false
     t.datetime "created_at", precision: 6, null: false
@@ -57,6 +57,12 @@ ActiveRecord::Schema.define(version: 2020_07_23_114302) do
     t.boolean "rose"
     t.boolean "cava"
     t.string "price_glass"
+    t.boolean "beer"
+    t.boolean "aperitive"
+    t.boolean "gin"
+    t.boolean "rum"
+    t.boolean "whiskey"
+    t.boolean "vodka"
     t.index ["menu_id"], name: "index_drinks_on_menu_id"
   end
 
@@ -97,12 +103,13 @@ ActiveRecord::Schema.define(version: 2020_07_23_114302) do
 
   create_table "menus", force: :cascade do |t|
     t.string "name"
-    t.integer "price"
+    t.string "price"
     t.boolean "active"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.boolean "menu_type"
     t.boolean "drink_type"
+    t.boolean "aperitive_type"
   end
 
   create_table "users", force: :cascade do |t|

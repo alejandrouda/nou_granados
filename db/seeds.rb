@@ -22,19 +22,19 @@ p "Users created..."
 
 p "Creating menus..."
 
-menu_mediodia = Menu.new(
-              name: "Menú del medio día",
-              price: 12.75,
-              menu_type: true,
-              drink_type: false
-       )
-       menu_mediodia.photo.attach(io: URI.open("https://res.cloudinary.com/dfyhqslry/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1594223632/Nou%20granados/Alimentos%20y%20bebidas/Medio_Dia_jxim3i.jpg"), filename: 'Medio_Dia_jxim3i.jpg', content_type: 'jpg')
-       menu_mediodia.save
-       p menu_mediodia
+# menu_mediodia = Menu.new(
+#               name: "Menú del medio día",
+#               price: "12.75",
+#               menu_type: true,
+#               drink_type: false
+#        )
+#        menu_mediodia.photo.attach(io: URI.open("https://res.cloudinary.com/dfyhqslry/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1594223632/Nou%20granados/Alimentos%20y%20bebidas/Medio_Dia_jxim3i.jpg"), filename: 'Medio_Dia_jxim3i.jpg', content_type: 'jpg')
+#        menu_mediodia.save
+#        p menu_mediodia
 
 menu_9granados = Menu.new(
        name: "Menú 9 granados",
-       price: 21.90,
+       price: "21.90",
        menu_type: true,
        drink_type: false
 )
@@ -60,6 +60,15 @@ bodega = Menu.new(
 bodega.photo.attach(io: URI.open("https://res.cloudinary.com/dfyhqslry/image/upload/v1594222955/Nou%20granados/Alimentos%20y%20bebidas/bodega_uuoqqo.jpg"), filename: 'bodega_uuoqqo.jpg', content_type: 'jpg')
 bodega.save
 p bodega
+
+aperitivo = Menu.new(
+       name: "Bebidas",
+       menu_type: false,
+       aperitive_type: true
+)
+aperitivo.photo.attach(io: URI.open("https://res.cloudinary.com/dfyhqslry/image/upload/v1595580265/Nou%20granados/Alimentos%20y%20bebidas/gin-tonic-2_mjqbrt.jpg"), filename: 'gin-tonic-2_mjqbrt.jpg', content_type: 'jpg')
+aperitivo.save
+p aperitivo
 
 
 p "Menus created..."
@@ -584,6 +593,8 @@ p helado
 
 p "Meals created..."
 
+# ----VINOS----
+
 p "Creating drinks..."
 
 casa_tinto= Drink.new(
@@ -923,6 +934,413 @@ rovellats_brut= Drink.new(
 rovellats_brut.menu_id = bodega.id
 rovellats_brut.save
 p rovellats_brut
+
+# ----BEBIDAS----
+
+caña= Drink.new(
+       name:"Caña",
+       description: "Alhambra especial",
+       price: "2,50",
+       beer: true
+)
+
+caña.menu_id = aperitivo.id
+caña.save
+p caña
+
+big_caña= Drink.new(
+       name:"Caña 0,5 L",
+       description: "Alhambra especial",
+       price: "",
+       beer: true
+)
+
+big_caña.menu_id = aperitivo.id
+big_caña.save
+p big_caña
+
+alhambra_verde= Drink.new(
+       name:"Alhambra verde",
+       price: "3,50",
+       beer: true
+)
+
+alhambra_verde.menu_id = aperitivo.id
+alhambra_verde.save
+p alhambra_verde
+
+alhambra_roja= Drink.new(
+       name:"Alhambra roja",
+       price: "3,50",
+       beer: true
+)
+
+alhambra_roja.menu_id = aperitivo.id
+alhambra_roja.save
+p alhambra_roja
+
+estrella= Drink.new(
+       name:"Estrella Galicia",
+       price: "2,90",
+       beer: true
+)
+
+estrella.menu_id = aperitivo.id
+estrella.save
+p estrella
+
+coronita= Drink.new(
+       name:"Coronita",
+       price: "3,30",
+       beer: true
+)
+
+coronita.menu_id = aperitivo.id
+coronita.save
+p coronita
+
+maestra= Drink.new(
+       name:"Mahou Maestra",
+       price: "",
+       beer: true
+)
+
+maestra.menu_id = aperitivo.id
+maestra.save
+p maestra
+
+cero= Drink.new(
+       name:"Mahou tostada 0,0",
+       price: "",
+       beer: true
+)
+
+cero.menu_id = aperitivo.id
+cero.save
+p cero
+
+ipa= Drink.new(
+       name:"Mahou IPA",
+       description: "",
+       price: "",
+       beer: true
+)
+
+ipa.menu_id = aperitivo.id
+ipa.save
+p ipa
+
+aperol= Drink.new(
+       name:"Aperol Spritz",
+       price: "5,50",
+       aperitive: true
+)
+
+aperol.menu_id = aperitivo.id
+aperol.save
+p aperol
+
+mojito= Drink.new(
+       name:"Mojito",
+       price: "5,25",
+       aperitive: true
+)
+
+mojito.menu_id = aperitivo.id
+mojito.save
+p mojito
+
+mimosa= Drink.new(
+       name:"Mimosa",
+       description: "Cava y zumo de naranja natural",
+       price: "4,50",
+       aperitive: true
+)
+
+mimosa.menu_id = aperitivo.id
+mimosa.save
+p mimosa
+
+kir= Drink.new(
+       name:"Kir Royale",
+       description: "Cava y licor de cassís",
+       price: "4",
+       aperitive: true
+)
+
+kir.menu_id = aperitivo.id
+kir.save
+p kir
+
+tinto_verano= Drink.new(
+       name:"Tinto de verano",
+       price: "3,00",
+       aperitive: true
+)
+
+tinto_verano.menu_id = aperitivo.id
+tinto_verano.save
+p tinto_verano
+
+vermut= Drink.new(
+       name:"Vermut artesanal",
+       price: "2,90",
+       aperitive: true
+)
+
+vermut.menu_id = aperitivo.id
+vermut.save
+p vermut
+
+copa_sangria= Drink.new(
+       name:"Copa de sangría",
+       description: "Copa de sangría de vino tinto",
+       price: "",
+       aperitive: true
+)
+
+copa_sangria.menu_id = aperitivo.id
+copa_sangria.save
+p copa_sangria
+
+medio_sangria= Drink.new(
+       name:"Jarra de 1/2 de sangría",
+       description: "Jarra de sangría de vino tinto",
+       price: "",
+       aperitive: true
+)
+
+medio_sangria.menu_id = aperitivo.id
+medio_sangria.save
+p medio_sangria
+
+jarra_sangria= Drink.new(
+       name:"Jarra de 1,5 L de sangría",
+       description: "Jarra de sangría de vino tinto",
+       price: "",
+       aperitive: true
+)
+
+jarra_sangria.menu_id = aperitivo.id
+jarra_sangria.save
+p jarra_sangria
+
+sangria_cava= Drink.new(
+       name:"Jarra de 1/2 L de sangría de cava",
+       description: "Sangría de cava, vermuth blanco, zumo, frutas y menta",
+       price: "",
+       aperitive: true
+)
+
+sangria_cava.menu_id = aperitivo.id
+sangria_cava.save
+p sangria_cava
+
+big_cava_sangria= Drink.new(
+       name:"Jarra de 1,5 L de sangría de cava",
+       description: "Sangría de cava, vermuth blanco, zumo, frutas y menta",
+       price: "",
+       aperitive: true
+)
+
+big_cava_sangria.menu_id = aperitivo.id
+big_cava_sangria.save
+p big_cava_sangria
+
+seagrams= Drink.new(
+       name:"Seagrams",
+       price: "7,00",
+       gin: true
+)
+
+seagrams.menu_id = aperitivo.id
+seagrams.save
+p seagrams
+
+tanqueray= Drink.new(
+       name:"Tanqueray",
+       price: "7",
+       gin: true
+)
+
+tanqueray.menu_id = aperitivo.id
+tanqueray.save
+p tanqueray
+
+ampersand= Drink.new(
+       name:"Ampersand",
+       price: "7",
+       gin: true
+)
+
+ampersand.menu_id = aperitivo.id
+ampersand.save
+p ampersand
+
+= Drink.new(
+       name:"",
+       description: "",
+       price: "",
+       gin: true
+)
+
+.menu_id = aperitivo.id
+.save
+p 
+
+= Drink.new(
+       name:"",
+       description: "",
+       price: "",
+       gin: true
+)
+
+.menu_id = aperitivo.id
+.save
+p 
+
+= Drink.new(
+       name:"",
+       description: "",
+       price: "",
+       gin: true
+)
+
+.menu_id = aperitivo.id
+.save
+p 
+
+= Drink.new(
+       name:"",
+       description: "",
+       price: "",
+       gin: true
+)
+
+.menu_id = aperitivo.id
+.save
+p 
+
+= Drink.new(
+       name:"",
+       description: "",
+       price: "",
+       gin: true
+)
+
+.menu_id = aperitivo.id
+.save
+p 
+
+= Drink.new(
+       name:"",
+       description: "",
+       price: "",
+       gin: true
+)
+
+.menu_id = aperitivo.id
+.save
+p 
+
+= Drink.new(
+       name:"",
+       description: "",
+       price: "",
+       vodka: true
+)
+
+.menu_id = aperitivo.id
+.save
+p 
+
+= Drink.new(
+       name:"",
+       description: "",
+       price: "",
+       vodka: true
+)
+
+.menu_id = aperitivo.id
+.save
+p 
+
+= Drink.new(
+       name:"",
+       description: "",
+       price: "",
+       rum: true
+)
+
+.menu_id = aperitivo.id
+.save
+p 
+
+= Drink.new(
+       name:"",
+       description: "",
+       price: "",
+       rum: true
+)
+
+.menu_id = aperitivo.id
+.save
+p 
+
+= Drink.new(
+       name:"",
+       description: "",
+       price: "",
+       rum: true
+)
+
+.menu_id = aperitivo.id
+.save
+p 
+
+= Drink.new(
+       name:"",
+       description: "",
+       price: "",
+       whiskey: true
+)
+
+.menu_id = aperitivo.id
+.save
+p 
+
+= Drink.new(
+       name:"",
+       description: "",
+       price: "",
+       whiskey: true
+)
+
+.menu_id = aperitivo.id
+.save
+p 
+
+= Drink.new(
+       name:"",
+       description: "",
+       price: "",
+       whiskey: true
+)
+
+.menu_id = aperitivo.id
+.save
+p 
+
+= Drink.new(
+       name:"",
+       description: "",
+       price: "",
+       whiskey: true
+)
+
+.menu_id = aperitivo.id
+.save
+p 
 
 p "Drinks created..."
 

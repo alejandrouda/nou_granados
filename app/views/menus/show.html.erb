@@ -10,6 +10,8 @@
     <%= render "shared/menushow" %>
 <% elsif @menu.drink_type == true  %>
     <%= render "shared/carta_drinks_show" %>
+<% elsif @menu.aperitive_type == true  %>
+    <%= render "shared/carta_aperitive_show" %>
 <% else %>
     <%= render "shared/cartashow" %>
 <% end %>
