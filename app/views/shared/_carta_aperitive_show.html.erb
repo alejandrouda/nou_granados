@@ -1,0 +1,129 @@
+<div class="background-show">
+    <div class="carta-back">
+        <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="tinto" role="tabpanel" aria-labelledby="tinto-tab">
+                <h2 style="text-align: center; padding-top: 10px; color: white;">Vino tinto</h2>
+                <div class="separate">
+                </div>
+                <div class="">
+                    <% @drinks.each do |drink|  %>
+                        <% if drink.red == true %>
+                        <div class="name-price-carta meal-card">
+                            <h5><%= drink.name %></h5>
+                            <p class="mt-3"><%= drink.description %></p>
+                                <% if drink.price_glass.nil? %>
+                                <h6 class="price"><%= drink.price %>€</h6>
+                            <% else %>
+                                <div class="prices-box">
+                                    <h6 class="price"><%= drink.price_glass %>€ / </h6>
+                                    <h6 class="price"><%= drink.price %>€</h6>
+                                </div>
+                            <% end %>
+                        </div>
+                        <div class="separate">
+                        </div>
+                        <% end %>
+                    <% end %>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="blanco" role="tabpanel" aria-labelledby="blanco-tab">
+                <h2 style="text-align: center; padding-top: 10px; color: white;">Vino blanco</h2>
+                <div class="separate">
+                </div>
+                <div class="">
+                    <% @drinks.each do |drink|  %>
+                        <% if drink.white == true %>
+                        <div class="name-price-carta meal-card">
+                            <h5><%= drink.name %></h5>
+                          <p class="mt-3"><%= drink.description %></p>
+                                <% if drink.price_glass.nil? %>
+                                <h6 class="price"><%= drink.price %>€</h6>
+                            <% else %>
+                                <div class="prices-box">
+                                    <h6 class="price"><%= drink.price_glass %>€ / </h6>
+                                    <h6 class="price"><%= drink.price %>€</h6>
+                                </div>
+                            <% end %>
+                        </div>
+                        <div class="separate">
+                        </div>
+                        <% end %>
+                    <% end %>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="rosado" role="tabpanel" aria-labelledby="rosado-tab">
+                <h2 style="text-align: center; padding-top: 10px; color: white;">Vino rosado</h2>
+                <div class="separate">
+                </div>
+                <div class="">
+                    <% @drinks.each do |drink|  %>
+                        <% if drink.rose == true %>
+                        <div class="name-price-carta meal-card">
+                            <h5><%= drink.name %></h5>
+                            <p class="mt-3"><%= drink.description %></p>
+                                <% if drink.price_glass.nil? %>
+                                <h6 class="price"><%= drink.price %>€</h6>
+                            <% else %>
+                                <div class="prices-box">
+                                    <h6 class="price"><%= drink.price_glass %>€ / </h6>
+                                    <h6 class="price"><%= drink.price %>€</h6>
+                                </div>
+                            <% end %>
+                        </div>
+                        <div class="separate">
+                        </div>
+                        <% end %>
+                    <% end %>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="cava" role="tabpanel" aria-labelledby="cava-tab">
+                <h2 style="text-align: center; padding-top: 10px; color: white;">Cava</h2>
+                <div class="separate">
+                </div>
+                <div class="">
+                    <% @drinks.each do |drink|  %>
+                        <% if drink.cava == true %>
+                        <div class="name-price-carta meal-card">
+                            <h5><%= drink.name %></h5>
+                            <p class="mt-3"><%= drink.description %></p>
+                                <% if drink.price_glass.nil? %>
+                                <h6 class="price"><%= drink.price %>€</h6>
+                            <% else %>
+                                <div class="prices-box">
+                                    <h6 class="price"><%= drink.price_glass %>€ / </h6>
+                                    <h6 class="price"><%= drink.price %>€</h6>
+                                </div>
+                            <% end %>
+                        </div>
+                        <div class="separate">
+                        </div>
+                        <% end %>
+                    <% end %>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<%# TAB %>
+            <div class="navbar navbar-expand-sm navbar-light navbar-meals w-100">
+                <ul class="nav nav-pills tab-menu" id="pills-tab" role="tablist">
+                    <li class="nav-item col-4">
+                        <a class="nav-link active" id="own-events-tab" data-toggle="pill" href="#tinto" role="tab" aria-controls="tinto" aria-selected="true">Aperitivo</a>
+                    </li>
+                    <li class="nav-item col-4">
+                        <a class="nav-link" id="applied-events-tab" data-toggle="pill" href="#blanco" role="tab" aria-controls="blanco" aria-selected="false">Cervezas</a>
+                    </li>
+                    <li class="nav-item col-4">
+                        <a class="nav-link" id="favorites-tab" data-toggle="pill" href="#rosado" role="tab" aria-controls="rosado" aria-selected="false">Ron</a>
+                    </li>
+                    <li class="nav-item col-4">
+                        <a class="nav-link" id="favorites-tab" data-toggle="pill" href="#cava" role="tab" aria-controls="cava" aria-selected="false">Gin</a>
+                    </li>
+                    <li class="nav-item col-4">
+                        <a class="nav-link" id="favorites-tab" data-toggle="pill" href="#cava" role="tab" aria-controls="cava" aria-selected="false">Vodka</a>
+                    </li>
+                    <li class="nav-item col-4">
+                        <a class="nav-link" id="favorites-tab" data-toggle="pill" href="#cava" role="tab" aria-controls="cava" aria-selected="false">Whiskey</a>
+                    </li>
+                </ul>
+            </div>
