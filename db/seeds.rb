@@ -951,7 +951,7 @@ p caña
 big_caña= Drink.new(
        name:"Caña 0,5 L",
        description: "Alhambra especial",
-       price: "",
+       price: "4,00",
        beer: true
 )
 
@@ -1001,7 +1001,7 @@ p coronita
 
 maestra= Drink.new(
        name:"Mahou Maestra",
-       price: "",
+       price: "2,95",
        beer: true
 )
 
@@ -1011,7 +1011,7 @@ p maestra
 
 cero= Drink.new(
        name:"Mahou tostada 0,0",
-       price: "",
+       price: "2,95",
        beer: true
 )
 
@@ -1019,10 +1019,19 @@ cero.menu_id = aperitivo.id
 cero.save
 p cero
 
+mahou_gluten= Drink.new(
+       name:"Mahou sin gluten",
+       price: "3,25",
+       beer: true
+)
+
+mahou_gluten.menu_id = aperitivo.id
+mahou_gluten.save
+p mahou_gluten
+
 ipa= Drink.new(
        name:"Mahou IPA",
-       description: "",
-       price: "",
+       price: "3,50",
        beer: true
 )
 
@@ -1095,7 +1104,7 @@ p vermut
 copa_sangria= Drink.new(
        name:"Copa de sangría",
        description: "Copa de sangría de vino tinto",
-       price: "",
+       price: "3,90",
        aperitive: true
 )
 
@@ -1106,7 +1115,7 @@ p copa_sangria
 medio_sangria= Drink.new(
        name:"Jarra de 1/2 de sangría",
        description: "Jarra de sangría de vino tinto",
-       price: "",
+       price: "7,50",
        aperitive: true
 )
 
@@ -1117,7 +1126,7 @@ p medio_sangria
 jarra_sangria= Drink.new(
        name:"Jarra de 1,5 L de sangría",
        description: "Jarra de sangría de vino tinto",
-       price: "",
+       price: "12,90",
        aperitive: true
 )
 
@@ -1128,7 +1137,7 @@ p jarra_sangria
 sangria_cava= Drink.new(
        name:"Jarra de 1/2 L de sangría de cava",
        description: "Sangría de cava, vermuth blanco, zumo, frutas y menta",
-       price: "",
+       price: "12,00",
        aperitive: true
 )
 
@@ -1139,7 +1148,7 @@ p sangria_cava
 big_cava_sangria= Drink.new(
        name:"Jarra de 1,5 L de sangría de cava",
        description: "Sangría de cava, vermuth blanco, zumo, frutas y menta",
-       price: "",
+       price: "18,50",
        aperitive: true
 )
 
@@ -1257,15 +1266,15 @@ absolut.menu_id = aperitivo.id
 absolut.save
 p absolut
 
-otro= Drink.new(
-       name:"Otro",
+absolutt= Drink.new(
+       name:"Absolut",
        price: "9,00",
        vodka: true
 )
 
-otro.menu_id = aperitivo.id
-otro.save
-p otro
+absolutt.menu_id = aperitivo.id
+absolutt.save
+p absolut
 
 santa_teresa= Drink.new(
        name:"Santa Teresa",
@@ -1307,25 +1316,25 @@ jack_daniels.menu_id = aperitivo.id
 jack_daniels.save
 p jack_daniels
 
-jack_daniel= Drink.new(
-       name:"Jack Daniel's",
+jim= Drink.new(
+       name:"Jim Beam",
        price: "9,00",
        whiskey: true
 )
 
-jack_daniel.menu_id = aperitivo.id
-jack_daniel.save
-p jack_daniel
+jim.menu_id = aperitivo.id
+jim.save
+p jim
 
-jack_danie= Drink.new(
-       name:"Jack Daniel's",
+ballentines= Drink.new(
+       name:"Ballentines",
        price: "9,00",
        whiskey: true
 )
 
-jack_danie.menu_id = aperitivo.id
-jack_danie.save
-p jack_danie
+ballentines.menu_id = aperitivo.id
+ballentines.save
+p ballentines
 
 p "Drinks created..."
 
