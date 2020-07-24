@@ -1257,6 +1257,16 @@ absolut.menu_id = aperitivo.id
 absolut.save
 p absolut
 
+otro= Drink.new(
+       name:"Otro",
+       price: "9,00",
+       vodka: true
+)
+
+otro.menu_id = aperitivo.id
+otro.save
+p otro
+
 santa_teresa= Drink.new(
        name:"Santa Teresa",
        price: "7,00",
@@ -1296,6 +1306,26 @@ jack_daniels= Drink.new(
 jack_daniels.menu_id = aperitivo.id
 jack_daniels.save
 p jack_daniels
+
+jack_daniel= Drink.new(
+       name:"Jack Daniel's",
+       price: "9,00",
+       whiskey: true
+)
+
+jack_daniel.menu_id = aperitivo.id
+jack_daniel.save
+p jack_daniel
+
+jack_danie= Drink.new(
+       name:"Jack Daniel's",
+       price: "9,00",
+       whiskey: true
+)
+
+jack_danie.menu_id = aperitivo.id
+jack_danie.save
+p jack_danie
 
 p "Drinks created..."
 
