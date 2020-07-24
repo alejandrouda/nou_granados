@@ -1159,7 +1159,7 @@ p seagrams
 
 tanqueray= Drink.new(
        name:"Tanqueray",
-       price: "7",
+       price: "7,00",
        gin: true
 )
 
@@ -1169,7 +1169,7 @@ p tanqueray
 
 ampersand= Drink.new(
        name:"Ampersand",
-       price: "7",
+       price: "7,00",
        gin: true
 )
 
@@ -1177,170 +1177,125 @@ ampersand.menu_id = aperitivo.id
 ampersand.save
 p ampersand
 
-= Drink.new(
-       name:"",
-       description: "",
-       price: "",
+bombay= Drink.new(
+       name:"Bombay Saphire",
+       price: "9,00",
        gin: true
 )
 
-.menu_id = aperitivo.id
-.save
-p 
+bombay.menu_id = aperitivo.id
+bombay.save
+p bombay
 
-= Drink.new(
-       name:"",
-       description: "",
-       price: "",
+citadelle= Drink.new(
+       name:"Citadelle",
+       price: "9,00",
        gin: true
 )
 
-.menu_id = aperitivo.id
-.save
-p 
+citadelle.menu_id = aperitivo.id
+citadelle.save
+p citadelle
 
-= Drink.new(
-       name:"",
-       description: "",
-       price: "",
+puerto= Drink.new(
+       name:"Puerto de Indias",
+       price: "9,00",
        gin: true
 )
 
-.menu_id = aperitivo.id
-.save
-p 
+puerto.menu_id = aperitivo.id
+puerto.save
+p puerto
 
-= Drink.new(
-       name:"",
-       description: "",
-       price: "",
+hendriks= Drink.new(
+       name:"Hendricks",
+       price: "11,00",
        gin: true
 )
 
-.menu_id = aperitivo.id
-.save
-p 
+hendriks.menu_id = aperitivo.id
+hendriks.save
+p hendriks
 
-= Drink.new(
-       name:"",
-       description: "",
-       price: "",
+london= Drink.new(
+       name:"London nº3",
+       price: "11,00",
        gin: true
 )
 
-.menu_id = aperitivo.id
-.save
-p 
+london.menu_id = aperitivo.id
+london.save
+p london
 
-= Drink.new(
-       name:"",
-       description: "",
-       price: "",
+mare= Drink.new(
+       name:"Gin Mare",
+       price: "11,00",
        gin: true
 )
 
-.menu_id = aperitivo.id
-.save
-p 
+mare.menu_id = aperitivo.id
+mare.save
+p mare
 
-= Drink.new(
-       name:"",
-       description: "",
-       price: "",
+moskovskaya= Drink.new(
+       name:"Moskovskaya",
+      price: "7,00",
        vodka: true
 )
 
-.menu_id = aperitivo.id
-.save
-p 
+moskovskaya.menu_id = aperitivo.id
+moskovskaya.save
+p moskovskaya
 
-= Drink.new(
-       name:"",
-       description: "",
-       price: "",
+absolut= Drink.new(
+       name:"Absolut",
+       price: "9,00",
        vodka: true
 )
 
-.menu_id = aperitivo.id
-.save
-p 
+absolut.menu_id = aperitivo.id
+absolut.save
+p absolut
 
-= Drink.new(
-       name:"",
-       description: "",
-       price: "",
+santa_teresa= Drink.new(
+       name:"Santa Teresa",
+       price: "7,00",
        rum: true
 )
 
-.menu_id = aperitivo.id
-.save
-p 
+santa_teresa.menu_id = aperitivo.id
+santa_teresa.save
+p santa_teresa
 
-= Drink.new(
-       name:"",
-       description: "",
-       price: "",
+cacique= Drink.new(
+       name:"Cacique",
+       price: "7,00",
        rum: true
 )
 
-.menu_id = aperitivo.id
-.save
-p 
+cacique.menu_id = aperitivo.id
+cacique.save
+p cacique
 
-= Drink.new(
-       name:"",
-       description: "",
-       price: "",
+havana= Drink.new(
+       name:"Havana 7",
+       price: "9,00",
        rum: true
 )
 
-.menu_id = aperitivo.id
-.save
-p 
+havana.menu_id = aperitivo.id
+havana.save
+p havana
 
-= Drink.new(
-       name:"",
-       description: "",
-       price: "",
+jack_daniels= Drink.new(
+       name:"Jack Daniel's",
+       price: "9,00",
        whiskey: true
 )
 
-.menu_id = aperitivo.id
-.save
-p 
-
-= Drink.new(
-       name:"",
-       description: "",
-       price: "",
-       whiskey: true
-)
-
-.menu_id = aperitivo.id
-.save
-p 
-
-= Drink.new(
-       name:"",
-       description: "",
-       price: "",
-       whiskey: true
-)
-
-.menu_id = aperitivo.id
-.save
-p 
-
-= Drink.new(
-       name:"",
-       description: "",
-       price: "",
-       whiskey: true
-)
-
-.menu_id = aperitivo.id
-.save
-p 
+jack_daniels.menu_id = aperitivo.id
+jack_daniels.save
+p jack_daniels
 
 p "Drinks created..."
 
