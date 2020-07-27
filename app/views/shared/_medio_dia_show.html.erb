@@ -1,0 +1,7 @@
+<br><br><br>
+<% @meals.each do |meal| %>
+    <% if meal.menu.medio_dia_type == true %>
+        <div class='medio-dia' style="background-image: url('<%= cl_image_path meal.photo.key if meal.photo.attached? %>')">
+        </div>
+    <% end %>
+<% end %>
