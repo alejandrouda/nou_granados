@@ -27,8 +27,8 @@ import "bootstrap";
 
 // Internal imports, e.g:
 
-import {scrollUp} from "../components/scroll_up"
-// import { initSelect2 } from '../components/init_select2';
+import { scrollUp } from "../components/scroll_up"
+
 
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
