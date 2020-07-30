@@ -6,15 +6,26 @@
         <h2>9 Granados</h2>
     </div>
 </div>
-    <% @menus.each do |menu| %>
-            <%= link_to menu_path(menu) do%>
-        <div class="menu">
+
+<% @menus.each do |menu| %>
+    <%@days = ["Monday", "Tuesday","Wednesday","Thursday","Friday"] %>
+    <% if @days.include? Date.today.strftime("%A")%>
+        <%= link_to menu_path(menu) do%>
+            <div class="menu">
                 <div class='menu-card' style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path menu.photo.key if menu.photo.attached? %>')">
-                        <h5><%= menu.name %></h5>
+                    <h5><%= menu.name %></h5>
                 </div>
-        </div>
+            </div>
+        <% end %>
+    <% else %>
+        <% if menu.medio_dia_type != true %>
+            <%= link_to menu_path(menu) do%>
+                <div class="menu">
+                    <div class='menu-card' style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path menu.photo.key if menu.photo.attached? %>')">
+                        <h5><%= menu.name %></h5>
+                    </div>
+                </div>
             <% end %>
+        <% end %>
     <% end %>
-
-
-
+<% end %>
