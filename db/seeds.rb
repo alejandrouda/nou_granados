@@ -1268,6 +1268,16 @@ moskovskaya.menu_id = aperitivo.id
 moskovskaya.save
 p moskovskaya
 
+moskovskayaa= Drink.new(
+       name:"Moskovskaya",
+      price: "7,00",
+       vodka: true
+)
+
+moskovskayaa.menu_id = aperitivo.id
+moskovskayaa.save
+p moskovskayaa
+
 absolut= Drink.new(
        name:"Absolut",
        price: "9,00",
@@ -1318,6 +1328,16 @@ havana.menu_id = aperitivo.id
 havana.save
 p havana
 
+bacardi= Drink.new(
+       name:"Bacardi",
+       price: "7,00",
+       rum: true
+)
+
+bacardi.menu_id = aperitivo.id
+bacardi.save
+p bacardi
+
 jack_daniels= Drink.new(
        name:"Jack Daniel's",
        price: "9,00",
@@ -1347,6 +1367,16 @@ ballentines= Drink.new(
 ballentines.menu_id = aperitivo.id
 ballentines.save
 p ballentines
+
+cardhu= Drink.new(
+       name:"Cardhu",
+       price: "11,00",
+       whiskey: true
+)
+
+cardhu.menu_id = aperitivo.id
+cardhu.save
+p cardhu
 
 p "Drinks created..."
 
