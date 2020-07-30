@@ -22,16 +22,16 @@ p "Users created..."
 
 p "Creating menus..."
 
-# menu_mediodia = Menu.new(
-#               name: "Menú del medio día",
-#               price: "12.75",
-#               menu_type: false,
-#               medio_dia_type: true,
-#               drink_type: false
-#        )
-#        menu_mediodia.photo.attach(io: URI.open("https://res.cloudinary.com/dfyhqslry/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1594223632/Nou%20granados/Alimentos%20y%20bebidas/Medio_Dia_jxim3i.jpg"), filename: 'Medio_Dia_jxim3i.jpg', content_type: 'jpg')
-#        menu_mediodia.save
-#        p menu_mediodia
+menu_mediodia = Menu.new(
+              name: "Menú del medio día",
+              price: "12.75",
+              menu_type: false,
+              medio_dia_type: true,
+              drink_type: false
+       )
+       menu_mediodia.photo.attach(io: URI.open("https://res.cloudinary.com/dfyhqslry/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1594223632/Nou%20granados/Alimentos%20y%20bebidas/Medio_Dia_jxim3i.jpg"), filename: 'Medio_Dia_jxim3i.jpg', content_type: 'jpg')
+       menu_mediodia.save
+       p menu_mediodia
 
 menu_9granados = Menu.new(
        name: "Menú 9 granados",
@@ -594,14 +594,14 @@ p helado
 
 # ----MENU MEDIO DIA----
 
-# mediodia_meal= Meal.new(
-#               name: "Menú del medio día"
-# )
+mediodia_meal= Meal.new(
+              name: "Menú del medio día"
+)
 
-# mediodia_meal.photo.attach(io: URI.open("https://res.cloudinary.com/dfyhqslry/image/upload/v1595862752/Nou%20granados/13dc0c5897c7cd0f90467bf594a2fd10-0_jhfat9.jpg"), filename: '13dc0c5897c7cd0f90467bf594a2fd10-0_jhfat9.jpg', content_type: 'jpg')
-# mediodia_meal.menu_id = menu_mediodia.id
-# mediodia_meal.save
-# p mediodia_meal
+mediodia_meal.photo.attach(io: URI.open("https://res.cloudinary.com/dfyhqslry/image/upload/v1596104026/Nou%20granados/men%C3%BA_jueves_lavorables_foto_qr_g3mxaj.jpg"), filename: 'men%C3%BA_jueves_lavorables_foto_qr_g3mxaj.jpg', content_type: 'jpg')
+mediodia_meal.menu_id = menu_mediodia.id
+mediodia_meal.save
+p mediodia_meal
 
 p "Meals created..."
 
