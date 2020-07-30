@@ -1,0 +1,8 @@
+<div class="main-container w-100" >
+    <h2 class="mb-5 mt-5">Subir menú</h2>
+    <%= simple_form_for([@menu, @meal]) do |f| %>
+        <%= f.error_notification %>
+        <%= f.input :photo, as: :file, input_html: { class: "photo-input"} %>
+        <%= f.submit class: 'green-button w-50 mt-5' %>
+    <% end %>
+</div>
