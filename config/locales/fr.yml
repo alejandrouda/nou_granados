@@ -1,4 +1,10 @@
 fr:
+
+  devise:
+    sessions:
+      user:
+        signed_in: "Sesión iniciada"
+        signed_out: "Sesión terminada"
   home:
     hello: "
   Bienvenue! Nous travaillons chaque jour pour vous offrir une belle expérience, 
@@ -49,3 +55,6 @@ fr:
       tinto: "Vin rouge"
       blanco: "Vin blanc"
       rosado: "Vin rosé"
+      aperitivo: "Apéro"
+      cerveza: "Bière"
+      ron: "Ron"

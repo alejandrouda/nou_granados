@@ -53,4 +53,7 @@ en:
     show_drink:
       tinto: "Red wine"
       blanco: "White wine"
-      rosado: "Rosé wine"
+      rosado: "Rosé wine"      
+      aperitivo: "Aperitive"
+      cerveza: "Beer"
+      ron: "Rum"
