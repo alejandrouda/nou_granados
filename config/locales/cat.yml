@@ -1,4 +1,10 @@
 cat:
+
+  devise:
+    sessions:
+      user:
+        signed_in: "Sesión iniciada"
+        signed_out: "Sesión terminada"
   home:
     hello: "Benvinguts! Estem treballant cada dia per oferir-los una 
     gran experiència, i prenent les mesures de seguretat 

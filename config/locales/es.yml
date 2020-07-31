@@ -1,4 +1,11 @@
 es:
+
+  devise:
+    sessions:
+      user:
+        signed_in: "Sesión iniciada"
+        signed_out: "Sesión terminada"
+
   home:
     hello: "¡Bienvenidos! Estamos trabajando cada día para ofrecerles una gran experiencia, 
     y tomando las medidas de seguridad necesarias para el cuidado de nuestros clientes y 
