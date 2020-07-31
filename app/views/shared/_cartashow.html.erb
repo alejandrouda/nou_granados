@@ -8,18 +8,29 @@
                 <div class="">
                     <% @meals.each do |meal|  %>
                         <% if meal.tapa == true %>
-                        <div class="name-price-carta meal-card">
-                            <h5><%= meal.name %></h5>
-                            <p class="mt-3"><%= meal.description %></p>
+                            <div class="name-price-carta meal-card">
+                                <% if params[:locale] == "cat" %>
+                                    <h5><%= meal.name_cat %></h5>
+                                    <p class="mt-3"><%= meal.description_cat %></p>
+                                <% elsif params[:locale] == "en" %>
+                                    <h5><%= meal.name_en %></h5>
+                                    <p class="mt-3"><%= meal.description_en %></p>
+                                <% elsif params[:locale] == "fr" %>
+                                    <h5><%= meal.name_fr %></h5>
+                                    <p class="mt-3"><%= meal.description_fr %></p>    
+                                <% else %>
+                                    <h5><%= meal.name %></h5>
+                                    <p class="mt-3"><%= meal.description %></p> 
+                                <% end %>
                                 <% if meal.price_racion.nil? %>
-                                <h6 class="price"><%= meal.price %>€</h6>
-                            <% else %>
-                                <div class="prices-box">
-                                    <h6 class="price"><%= meal.price %>€ / </h6>
-                                    <h6 class="price"><%= meal.price_racion %>€</h6>
-                                </div>
-                            <% end %>
-                        </div>
+                                    <h6 class="price"><%= meal.price %>€</h6>
+                                <% else %>
+                                    <div class="prices-box">
+                                        <h6 class="price"><%= meal.price %>€ / </h6>
+                                        <h6 class="price"><%= meal.price_racion %>€</h6>
+                                    </div>
+                                <% end %>
+                            </div>
                         <div class="separate">
                         </div>
                         <% end %>
@@ -34,8 +45,19 @@
                     <% @meals.each do |meal|  %>
                         <% if meal.starter == true %>
                         <div class="name-price-carta meal-card">
-                            <h5><%= meal.name %></h5>
-                            <p><%= meal.description %></p>
+                            <% if params[:locale] == "cat" %>
+                                <h5><%= meal.name_cat %></h5>
+                                <p class="mt-3"><%= meal.description_cat %></p>
+                            <% elsif params[:locale] == "en" %>
+                                <h5><%= meal.name_en %></h5>
+                                <p class="mt-3"><%= meal.description_en %></p>
+                            <% elsif params[:locale] == "fr" %>
+                                <h5><%= meal.name_fr %></h5>
+                                <p class="mt-3"><%= meal.description_fr %></p>    
+                            <% else %>
+                                <h5><%= meal.name %></h5>
+                                <p class="mt-3"><%= meal.description %></p> 
+                            <% end %>
                             <% if meal.price_racion.nil? %>
                                 <h6 class="price"><%= meal.price %>€</h6>
                             <% else %>
@@ -59,8 +81,19 @@
                     <% @meals.each do |meal|  %>
                         <% if meal.main == true %>
                         <div class="name-price-carta meal-card">
-                            <h5><%= meal.name %></h5>
-                            <p><%= meal.description %></p>
+                            <% if params[:locale] == "cat" %>
+                                <h5><%= meal.name_cat %></h5>
+                                <p class="mt-3"><%= meal.description_cat %></p>
+                            <% elsif params[:locale] == "en" %>
+                                <h5><%= meal.name_en %></h5>
+                                <p class="mt-3"><%= meal.description_en %></p>
+                            <% elsif params[:locale] == "fr" %>
+                                <h5><%= meal.name_fr %></h5>
+                                <p class="mt-3"><%= meal.description_fr %></p>    
+                            <% else %>
+                                <h5><%= meal.name %></h5>
+                                <p class="mt-3"><%= meal.description %></p> 
+                            <% end %>
                             <% if meal.price_racion.nil? %>
                                 <h6 class="price"><%= meal.price %>€</h6>
                             <% else %>
@@ -84,8 +117,19 @@
                     <% @meals.each do |meal|  %>
                         <% if meal.meat == true %>
                         <div class="name-price-carta meal-card">
-                            <h5><%= meal.name %></h5>
-                            <p><%= meal.description %></p>
+                            <% if params[:locale] == "cat" %>
+                                <h5><%= meal.name_cat %></h5>
+                                <p class="mt-3"><%= meal.description_cat %></p>
+                            <% elsif params[:locale] == "en" %>
+                                <h5><%= meal.name_en %></h5>
+                                <p class="mt-3"><%= meal.description_en %></p>
+                            <% elsif params[:locale] == "fr" %>
+                                <h5><%= meal.name_fr %></h5>
+                                <p class="mt-3"><%= meal.description_fr %></p>    
+                            <% else %>
+                                <h5><%= meal.name %></h5>
+                                <p class="mt-3"><%= meal.description %></p> 
+                            <% end %>
                             <% if meal.price_racion.nil? %>
                                 <h6 class="price"><%= meal.price %>€</h6>
                             <% else %>
@@ -109,8 +153,19 @@
                     <% @meals.each do |meal|  %>
                         <% if meal.fish == true %>
                         <div class="name-price-carta meal-card">
-                            <h5><%= meal.name %></h5>
-                            <p><%= meal.description %></p>
+                            <% if params[:locale] == "cat" %>
+                                <h5><%= meal.name_cat %></h5>
+                                <p class="mt-3"><%= meal.description_cat %></p>
+                            <% elsif params[:locale] == "en" %>
+                                <h5><%= meal.name_en %></h5>
+                                <p class="mt-3"><%= meal.description_en %></p>
+                            <% elsif params[:locale] == "fr" %>
+                                <h5><%= meal.name_fr %></h5>
+                                <p class="mt-3"><%= meal.description_fr %></p>    
+                            <% else %>
+                                <h5><%= meal.name %></h5>
+                                <p class="mt-3"><%= meal.description %></p> 
+                            <% end %>
                             <% if meal.price_racion.nil? %>
                                 <h6 class="price"><%= meal.price %>€</h6>
                             <% else %>
@@ -134,8 +189,19 @@
                     <% @meals.each do |meal|  %>
                         <% if meal.dessert == true %>
                         <div class="name-price-carta meal-card">
-                            <h5><%= meal.name %></h5>
-                                <p><%= meal.description %></p>
+                            <% if params[:locale] == "cat" %>
+                                <h5><%= meal.name_cat %></h5>
+                                <p class="mt-3"><%= meal.description_cat %></p>
+                            <% elsif params[:locale] == "en" %>
+                                <h5><%= meal.name_en %></h5>
+                                <p class="mt-3"><%= meal.description_en %></p>
+                            <% elsif params[:locale] == "fr" %>
+                                <h5><%= meal.name_fr %></h5>
+                                <p class="mt-3"><%= meal.description_fr %></p>    
+                            <% else %>
+                                <h5><%= meal.name %></h5>
+                                <p class="mt-3"><%= meal.description %></p> 
+                            <% end %>
                                 <h6 class="price"><%= meal.price %>€</h6>
                         </div>
                         <div class="separate">

@@ -94,7 +94,13 @@ p "Creating meals..."
 # ----TAPAS----
 coca= Meal.new(
        name:"Pan de coca con tomate",
+       name_cat:"Pa amb tomàquet",
+       name_fr:"Pain avec tomat",
+       name_en:"Tomato bread",
        description: "Pan de coca tostado, con tomate restregado, aceite de oliva y sal gruesa",
+       description_cat:"Pa amb tomàquet",
+       description_fr:"Pain de coca grillé, avec tomate récurée, huile d'olive et gros sel",
+       description_en:"Crunchy catalan tomato bread",
        price: "2,75",
        tapa: true
 )
@@ -105,7 +111,13 @@ p coca
 
 berenjenas= Meal.new(
        name: "Berenjenas en tempura",
+       name_cat:"Alberginies en tempura",
+       name_fr:"Aubergines en tempura",
+       name_en:"Tempura aubergines",
        description: "Berenjenas en tempura de cerveza y miel",
+       description_cat:"Alberginies en tempura de cervesa i mel",
+       description_fr:"aubergines à la bière et au miel tempura",
+       description_en:"Beer buttered aubergine slices served with honey",
        price: "5,50",
        tapa: true
 )
@@ -116,7 +128,13 @@ p berenjenas
 
 bravas= Meal.new(
        name:"Bravas",
+       name_cat:"Bravas",
+       name_fr:"Patatas Bravas",
+       name_en:"Patatas bravas",
        description: "Nuestras bravas con salsa de chile chipotle y ali oli",
+       description_cat:"Les nostres braves amb salse de xile chipotle",
+       description_fr:"Nos bravas avec sauce chili chipotle et ali oli",
+       description_en:"Crispy fried potatoes served with chipotle sauce and ali-oli",
        price: "5,50",
        tapa: true
 )
@@ -127,7 +145,13 @@ p bravas
 
 cr_carrillera= Meal.new(
        name:"Croquetón de boletus",
-       description: "Croquetón casero de boletus y trufa (precio por unidad)",
+       name_cat:"Croquetó de ceps",
+       name_fr:"Croquette de champignon",
+       name_en:"Mushrooms croquette",
+       description: "Croquetón casero de cèpes y trufa (precio por unidad)",
+       description_cat:"Croquetó casolà de ceps i tòfona (preu per unitat)",
+       description_fr:"Croquette aux cèpes et truffes maison (prix unitaire)",
+       description_en:"Home made mushrooms croquette (price per piece)",
        price: "1,80",
        tapa: true
 )
@@ -138,7 +162,13 @@ p cr_carrillera
 
 cr_ceps= Meal.new(
        name:"Croquetón de carrillera",
+       name_cat:"Croquetó de galta",
+       name_fr:"Croquetón de porc",
+       name_en:"Pork croquette",
        description: "Croquetón casero de carrillera con jugo de asado (precio por unidad)",
+       description_cat:"Croquetó casolà de galta rostida amb el seu suc (preu per unitat)",
+       description_fr:"Croquette de porc maison au jus de rôti (prix unitaire)",
+       description_en:"Home made roast pork croquette, with glazing sauce (price per piece)",
        price: "1,80",
        tapa: true
 )
@@ -149,7 +179,13 @@ p cr_ceps
 
 hummus= Meal.new(
        name:"Hummus de garbanzos",
-       description:"con yogurt, lima, rabanitos, y tostaditas crujientes",
+       name_cat:"Humus de cigrons",
+       name_fr:"Hummus",
+       name_en:"Hummus topped",
+       description:"Con yogurt, lima, rabanitos, y tostaditas crujientes",
+       description_cat:"Amb iogurt, lima, rabanets i torradetes cruixents",
+       description_fr:"Avec yogourt, citron vert, radis et toasts croustillants",
+       description_en:"With yogurt, lime, and radish served with crostini",
        price: "6,50",
        tapa: true
 )
@@ -160,7 +196,13 @@ p hummus
 
 edamame= Meal.new(
        name:"Edamame",
-       description:"con salsa miso, cebolla tierna, y mostaza de Dijon",
+       name_cat:"Edamame",
+       name_fr:"Edamame",
+       name_en:"Edamame",
+       description:"Con salsa miso, cebolla tierna, y mostaza de Dijon",
+       description_cat:"Amb salsa miso, ceba tendra i mostassa de Dijon",
+       description_fr:"Avec sauce miso, oignon tendre et moutarde de Dijon",
+       description_en:"Served with a miso sauce, spring onions, and a Dijon mustard vinagrette",
        price: "5,50",
        tapa: true
 )
@@ -171,7 +213,13 @@ p edamame
 
 jamon= Meal.new(
        name:"Jamon iberico",
+       name_cat:"Pernil ibèric",
+       name_fr:"Jambon ibérique",
+       name_en:"Iberian ham",
        description: "tapa 50g / ración 100g",
+       description_cat:"tapa 50g / ración 100g",
+       description_fr:"tapa 50g / ración 100g",
+       description_en:"tapa 50g / dish 100g",
        price: "7,75",
        price_racion: "15,00",
        tapa: true
@@ -183,7 +231,13 @@ p jamon
 
 quesos= Meal.new(
        name:"Tabla de quesos",
+       name_cat:"Taula de formatges",
+       name_fr:"Table de fromages",
+       name_en:"Cheese dish",
        description:"con compota y nueces",
+       description_cat:"Amb compota i nous",
+       description_fr:"Avec compote et noix",
+       description_en:"Selection of local cheese",
        price: "7,95",
        tapa: true
 )
@@ -194,7 +248,13 @@ p quesos
 
 taco= Meal.new(
        name:"Taco de confit de pato",
+       name_cat:"Taco de confit d'anec",
+       name_fr:"Taco au canard confit",
+       name_en:"Confit duck tacos",
        description:"con trufa, crema agria y jalapeños",
+       description_cat:"Amb trufa, crema agria i jalapeños",
+       description_fr:"à la truffe, à la crème sure et avec piments jalapeños",
+       description_en:"with truffle, sour cream, and jalapeños",
        price: "4,50",
        tapa: true
 )
@@ -205,7 +265,13 @@ p taco
 
 tiras= Meal.new(
        name:"Tiras de pollo",
-       description:"marinado estilo oriental con panko, sésamo y mayonesa de wasabi",
+       name_cat:"Tires de pollastre",
+       name_fr:"Lanières de poulet",
+       name_en:"Chiken strips",
+       description:"Marinado estilo oriental con panko, sésamo y mayonesa de wasabi",
+       description_cat:"Marinades estil oriental amb panko, sèsam i maionesa de wasabi",
+       description_fr:"Style oriental mariné avec panko, mayonnaise au sésame et wasabi",
+       description_en:"Asian style panko fried chicken strips, with mild wasabi mayonnaise sauce",
        price: "6,75",
        tapa: true
 )
@@ -216,7 +282,13 @@ p tiras
 
 gambas_tapa= Meal.new(
        name:"Gamba roja",
+       name_cat:"Gamba vermella",
+       name_fr:"Gamba rouge",
+       name_en:"Grilled red prawns",
        description:"de Huelva a la plancha(7 unidades)",
+       description_cat:"De Huelva a la planxa (7 unitats)",
+       description_fr:"Grillé (7 unités)",
+       description_en:"Grilled red prawns from Huelva (7 pieces)",
        price: "8,90",
        tapa: true
 )
@@ -227,7 +299,13 @@ p gambas_tapa
 
 calamares_tapa= Meal.new(
        name:"Calamares",
-       description:"a la andaluza",
+       name_cat:"Calamars",
+       name_fr:"Calamars",
+       name_en:"Calamari",
+       description:"Calamares a la andaluza",
+       description_cat:"Calamars a l'Andalusa",
+       description_fr:"Calamars au style Andaluza",
+       description_en:"Fried Calamari Andalusian style",
        price: "6,50",
        tapa: true
 )
@@ -237,7 +315,13 @@ p calamares_tapa
 
 fishnchips_tapa= Meal.new(
        name:"Fish & Chips",
-       description:"de lomo de bacalao de Islandia, con chutney de mango y salsa tártara",
+       name_cat:"Fish & Chips",
+       name_fr:"Fish & Chips",
+       name_en:"Fish & Chips",
+       description:"De lomo de bacalao de Islandia, con chutney de mango y salsa tártara",
+       description_cat:"de llom de bacallà d'Islandia amb xutney de mango i salsa tàrtara",
+       description_fr:"Longe de morue islandaise, chutney de mangue et sauce tartare",
+       description_en:"Crunchy Iceland's cod, mango chutney and tartara sauce",
        price: "6,90",
        tapa: true
 )
@@ -248,7 +332,13 @@ p fishnchips_tapa
 
 tataki_tapa= Meal.new(
        name: "Tataki de atun",
+       name_cat:"Tataki de tonyina",
+       name_fr:"Tataki au thon",
+       name_en:"Tuna Tataki",
        description:"con aguacate, pico de gallo y salsa ponzu",
+       description_cat:"amb alvocat, pico de gallo i salsa ponzu",
+       description_fr:"Avec avocat, pico de gallo et sauce ponzu",
+       description_en:"With avocado, pico de gallo, and ponzu sauce",
        price: "7,75",
        tapa: true
 )
@@ -259,7 +349,13 @@ p tataki_tapa
 
 pulpo_tapa= Meal.new(
        name:"Pulpo a la parrilla",
-       description:"con patatas confitadas y pimentón",
+       name_cat:"Pop a la graella",
+       name_fr:"Poulpe sur le gril",
+       name_en:"Grilled octopus",
+       description:"Con patatas confitadas y pimentón",
+       description_cat:"Pop a la graella amb patates confitades, oli extra verge i pebre vermell",
+       description_fr:"Avec pommes de terre confites et paprika",
+       description_en:"With potato confit seasoned with paprika and local olive oil",
        price: "8,50",
        tapa: true
 )
@@ -270,7 +366,13 @@ p pulpo_tapa
 
 lubina_tapa= Meal.new(
        name:"Suprema de lubina",
+       name_cat:"Suprema de llobarro",
+       name_fr:"Loup de mer",
+       name_en:"Seabass",
        description:"Suprema de lubina fresca a la plancha con verduritas y salsa de maracuyá",
+       description_cat:"Suprema de llobarro fresc a la planxa amb verduretes i salsa de maracuyà",
+       description_fr:"Suprême de bar frais grillé aux légumes et sauce aux fruits de la passion",
+       description_en:"Fresh grilled sea bass with vegetables and a passion fruit sauce",
        price: "7,50",
        tapa: true
 )
@@ -281,7 +383,13 @@ p lubina_tapa
 
 corte_tapa= Meal.new(
        name:"Corte argentino",
-       description:"de ternera a la plancha con patatas fritas, padrones, y salsa de Idiazábal",
+       name_cat:"Tall Argenti",
+       name_fr:"Viande argentine",
+       name_en:"Argentinian steak",
+       description:"De ternera a la plancha con patatas fritas, padrones, y salsa de Idiazábal",
+       description_cat:"De vedella a la planxa amb patates fregides, padron, i salsa de formatge Idiazàbal",
+       description_fr:"Veau grillé avec frites, patrons et sauce Idiazábal",
+       description_en:"Veal argentinian steak grilled, with fries, padron peppers, and Idiazabal sauce",
        price: "5,95",
        tapa: true
 )
@@ -292,7 +400,13 @@ p corte_tapa
 
 tartar_tapa= Meal.new(
        name:"Steak tartar",
+       name_cat:"Steak tàrtar",
+       name_fr:"Steak tartar",
+       name_en:"Steak tartar",
        description:"de ternera, yema de huevo, mostaza de hierbas y tostaditas",
+       description_cat:"De vedella, rovell d'ou, mostassa d'herbes i torradetes",
+       description_fr:"boeuf, jaune d'oeuf, moutarde aux herbes et toasts",
+       description_en:"With egg, herbs, mustard, and crostini (served raw)",
        price: "6,90",
        tapa: true
 )
@@ -302,8 +416,14 @@ tartar_tapa.save
 p tartar_tapa
 
 cordero_tapa= Meal.new(
-       name:"Cordero",
-       description:"a baja temperatura con parmentier, setas, y salsa de miel y romero",
+       name:"Meloso de cordero",
+       name_cat:"Melòs de xai",
+       name_fr:"Agneau",
+       name_en:"Honeyed lamb",
+       description:"A baja temperatura con parmentier, setas, y salsa de miel y romero",
+       description_cat:"A baixa temperatura amb parmentier, bolets, i salsa de mel i romani",
+       description_fr:"À basse température avec parmentier, champignons et sauce miel et romarin",
+       description_en:"Cooked at low temperature with parmentier, mushrooms, and glaze sauce",
        price: "7,95",
        tapa: true
 )
@@ -314,7 +434,13 @@ p cordero_tapa
 
 costillar_tapa= Meal.new(
        name:"Costillar de cerdo",
+       name_cat:"Costellar de porc",
+       name_fr:"Côtes de porc",
+       name_en:"Roasted pork ribs",
        description:"Costillar de cerdo lacado con salsa barbacoa casera y patatas fritas",
+       description_cat:"Costellar de porc lacat amb salsa barbacoa feta a casa i patates fregides",
+       description_fr:"Côtes de porc laquées avec sauce barbecue maison et pommes de terre sautées",
+       description_en:"With a homemade barbecue sauce and french fries",
        price: "5,95",
        tapa: true
 )
@@ -327,7 +453,13 @@ p costillar_tapa
 # ----ENTRANTES----
 ensalada= Meal.new(
        name:"Ensalada de hojas",
+       name_cat:"Amanida de fulles",
+       name_fr:"Salade de feuilles",
+       name_en:"Mixed-green salad",
        description:"Ensalada de hojas con aguacate, mango, frutos secos y vinagreta de miel y mostaza antigua",
+       description_cat:"Amb alvocats, mango, fruits secs, i vinagreta de mel i mostassa antiga",
+       description_fr:"Salade de feuilles avec avocat, mangue, fruits secs et miel et vinaigrette à la moutarde ancienne",
+       description_en:"With avocado, mango, nuts, and a honey-mustard vinagrette",
        price: "6,90",
        price_racion: "9,75",
        starter: true
@@ -339,7 +471,13 @@ p ensalada
 
 burratina= Meal.new(
        name:"Burratina",
-       description:"con pesto de albahaca, pistacho y tomate confitado",
+       name_cat:"Burratina",
+       name_fr:"Burratina",
+       name_en:"Burratina",
+       description:"Con pesto de albahaca, pistacho y tomate confitado",
+       description_cat:"Amb pesto d'alfàbrega, pistatxo i tomàquet confitat",
+       description_fr:"Au pesto de basilic, pistache et tomates confites",
+       description_en:"Italian fresh cheese with pesto, tomato confit, and a postaccio dressing",
        price: "10,50",
        starter: true
 )
@@ -350,7 +488,13 @@ p burratina
 
 timbal= Meal.new(
        name:"Timbal de escalivada",
-       description:"con queso de cabra caramelizado y salsa romesco casera",
+       name_cat:"Timbal d´escalivada",
+       name_fr:"Timbale végétale",
+       name_en:"Oven-baked vegetables",
+       description:"Con queso de cabra caramelizado y salsa romesco casera",
+       description_cat:"Amb formatge de cabra caramelitzat i salsa romesco casolana",
+       description_fr:"Avec fromage de chèvre caramélisé et sauce romesco maison",
+       description_en:"Oven-baked vegetables timbal, with caramelized goat cheese and our homemade romesco",
        price: "7,95",
        starter: true
 )
@@ -361,7 +505,13 @@ p timbal
 
 rollo= Meal.new(
        name:"Rollo crujiente",
-       description:"al horno con queso taleggio fundido, rúcula, olivada y tomates secos",
+       name_cat:"Farcell cruixent",
+       name_fr:"Rouleau croustillant",
+       name_en:"Crunchy filo roll",
+       description:"Al horno con queso taleggio fundido, rúcula, olivada y tomates secos",
+       description_cat: "Al forn amb formatge taleggio fos, ruca, olivada i tomàquets secs",
+       description_fr:"Cuit au four avec fromage taleggio fondu, roquette, olive et tomates séchées",
+       description_en:"With melted taleggio cheese, sun dried tomatoes, olive pate and arugula",
        price: "8,50",
        starter: true
 )
@@ -372,7 +522,14 @@ p rollo
 
 canelones= Meal.new(
        name:"Canelones",
-       description:"de carne asada y setas, con crema trufada y dulce de piquillos (tapa 1u / ración 3u)",
+       name_cat:"Canelons",
+       name_fr:"Cannellonis",
+       name_en:"Canelloni",
+       description:"De carne asada y setas, con crema trufada y dulce de piquillos (tapa 1u / ración 3u)",
+       description_cat:"Canelons de carn rostida i bolets, amb crema trufada i dolç de piquillos (tapa 1 u / raci
+       o 3u)",
+       description_fr:"Rôti de boeuf et champignons, avec crème truffée et piquillos sucrés (tapa 1u / portion 3u)",
+       description_en:"Canelloni stuffed with roast meat, truffle sauce, and red bell pepper compote (tapa 1 piece / dish 3 pieces)",
        price: "4,75",
        price_racion: "12,50",
        starter: true
@@ -384,7 +541,13 @@ p canelones
 
 huevos= Meal.new(
        name:"Huevos estrellados",
-       description:"con patatas fritas, jamón ibérico y foie",
+       name_cat:"Ous estrellats",
+       name_fr:"Huevos estrellados",
+       name_en:"Huevos estrellados",
+       description:"Huevos de corral estrellados, con patatas fritas, jamón ibérico y foie",
+       description_cat:"Ous de corral estrellats, amb patatas fregides, pernil ibèric i foie",
+       description_fr:"Œufs fermiers grillés, pommes de terre sautées, jambon ibérique et foie",
+       description_en:"Organic ffried eggs with iberian ham, foie gras, and french fries",
        price: "10,90",
        starter: true
 )
@@ -395,7 +558,13 @@ p huevos
 
 carpaccio= Meal.new(
        name:"Carpaccio de lomo",
+       name_cat:"Carpaccio de llom",
+       name_fr:"Carpaccio de longe",
+       name_en:"Loin Carpaccio",
        description:" Carpaccio de lomo de vaca madurada, con Idiazábal, piñones y vinagreta de fresones y lima",
+       description_cat:"Carpaccio de llom de vaca madurat, amb Idiazàbal, pinyons, i vinagreta de maduixots i llima",
+       description_fr:"Carpaccio de longe de vache affinée, avec Idiazábal, pignons de pin et vinaigrette aux fraises et citron vert",
+       description_en:"Aged beef loin carpaccio, with Idiazábal sauce, nuts, and a strawberry-lime vinagrette",
        price: "12,50",
        starter: true
 )
@@ -408,7 +577,13 @@ p carpaccio
 
 hamburguesa= Meal.new(
        name:"Hamburguesa vegetariana",
+       name_cat:"Hamburguesa vegetariana",
+       name_fr:"Hamburger végétarien",
+       name_en:"Veggie burger",
        description:"Hamburguesa vegetariana de remolacha con salsa tzatziki y pan artesano de cerveza negra",
+       description_cat:"De remolatxa i soja amb salsa tzatziki i pa artesà de cervesa negra",
+       description_fr:"Burger végétarien à la betterave avec sauce tzatziki et pain artisanal brun foncé",
+       description_en:"Beetroot and soy veggie burger, with tzatziki sauce in a black beer artisanal bread ",
        price: "9,90",
        main: true
 )
@@ -419,7 +594,13 @@ p hamburguesa
 
 arroz= Meal.new(
        name:"Arroz marinero con sepia",
-       description:"Arroz marinero con sepia y gamba de Huelva (mínimo 2 personas | precio por persona)",
+       name_cat:"Arròs de Pals",
+       name_fr:"Paella de mer",
+       name_en:"Paella",
+       description:"Arroz marinero con sepia y gamba de Huelva (mínimo 2 personas | precio por persona) 25 minutos",
+       description_cat:"Mariner amb sipia i gambes (minim 2 persones | preu per persona ) 25 minuts",
+       description_fr:"Riz aux fruits de mer avec seiche et gambas de Huelva (minimum 2 personnes | prix par personne) 25 minutes",
+       description_en:"Home made paella with red prawns and cuttlefish (price per person | minimum 2 persons) 25 minutes",
        price: "16,75",
        main: true
 )
@@ -432,7 +613,13 @@ p arroz
 
 fishnchips= Meal.new(
        name:"Fish & Chips",
-       description:"de lomo de bacalao de Islandia, con chutney de mango y salsa tártara",
+       name_cat:"Fish & Chips",
+       name_fr:"Fish & Chips",
+       name_en:"Fish & Chips",
+       description:"De lomo de bacalao de Islandia, con chutney de mango y salsa tártara",
+       description_cat:"de llom de bacallà d'Islandia amb xutney de mango i salsa tàrtara",
+       description_fr:"Longe de morue islandaise, chutney de mangue et sauce tartare",
+       description_en:"Crunchy Iceland's cod, mango chutney and tartara sauce",
        price: "6,90",
        price_racion: "12,90",
        fish: true
@@ -444,7 +631,13 @@ p fishnchips
 
 tataki= Meal.new(
        name: "Tataki de atun",
+       name_cat:"Tataki de tonyina",
+       name_fr:"Tataki au thon",
+       name_en:"Tuna Tataki",
        description:"con aguacate, pico de gallo y salsa ponzu",
+       description_cat:"amb alvocat, pico de gallo i salsa ponzu",
+       description_fr:"Avec avocat, pico de gallo et sauce ponzu",
+       description_en:"With avocado, pico de gallo, and ponzu sauce",
        price: "7,75",
        price_racion: "14,50",
        fish: true
@@ -456,7 +649,13 @@ p tataki
 
 pulpo= Meal.new(
        name:"Pulpo a la parrilla",
-       description:"con patatas confitadas y pimentón",
+       name_cat:"Pop a la graella",
+       name_fr:"Poulpe sur le gril",
+       name_en:"Grilled octopus",
+       description:"Con patatas confitadas y pimentón",
+       description_cat:"Pop a la graella amb patates confitades, oli extra verge i pebre vermell",
+       description_fr:"Avec pommes de terre confites et paprika",
+       description_en:"With potato confit seasoned with paprika and local olive oil",
        price: "8,50",
        price_racion: "15,90",
        fish: true
@@ -468,7 +667,13 @@ p pulpo
 
 lubina= Meal.new(
        name:"Suprema de lubina",
+       name_cat:"Suprema de llobarro",
+       name_fr:"Loup de mer",
+       name_en:"Seabass",
        description:"Suprema de lubina fresca a la plancha con verduritas y salsa de maracuyá",
+       description_cat:"Suprema de llobarro fresc a la planxa amb verduretes i salsa de maracuyà",
+       description_fr:"Suprême de bar frais grillé aux légumes et sauce aux fruits de la passion",
+       description_en:"Fresh grilled sea bass with vegetables and a passion fruit sauce",
        price: "7,50",
        price_racion: "13,90",
        fish: true
@@ -482,7 +687,13 @@ p lubina
 
 corte= Meal.new(
        name:"Corte argentino",
-       description:"de ternera a la plancha, con patatas fritas, padrones, y salsa de Idiazábal",
+       name_cat:"Tall Argenti",
+       name_fr:"Viande argentine",
+       name_en:"Argentinian steak",
+       description:"De ternera a la plancha con patatas fritas, padrones, y salsa de Idiazábal",
+       description_cat:"De vedella a la planxa amb patates fregides, padron, i salsa de formatge Idiazàbal",
+       description_fr:"Veau grillé avec frites, patrons et sauce Idiazábal",
+       description_en:"Veal argentinian steak grilled, with fries, padron peppers, and Idiazabal sauce",
        price: "5,95",
        price_racion: "11,90",
        meat: true
@@ -494,7 +705,13 @@ p corte
 
 tartar= Meal.new(
        name:"Steak tartar",
-       description:"de ternera, yema de huevo, mostaza de hiervas y tostaditas",
+       name_cat:"Steak tàrtar",
+       name_fr:"Steak tartar",
+       name_en:"Steak tartar",
+       description:"de ternera, yema de huevo, mostaza de hierbas y tostaditas",
+       description_cat:"De vedella, rovell d'ou, mostassa d'herbes i torradetes",
+       description_fr:"boeuf, jaune d'oeuf, moutarde aux herbes et toasts",
+       description_en:"With egg, herbs, mustard, and crostini (served raw)",
        price: "6,90",
        price_racion: "12,90",
        meat: true
@@ -505,8 +722,14 @@ tartar.save
 p tartar
 
 cordero= Meal.new(
-       name:"Cordero",
-       description:"Cordero a baja temperatura, con parmentier, setas, y salsa de miel y romero",
+       name:"Meloso de cordero",
+       name_cat:"Melòs de xai",
+       name_fr:"Agneau",
+       name_en:"Honeyed lamb",
+       description:"A baja temperatura con parmentier, setas, y salsa de miel y romero",
+       description_cat:"A baixa temperatura amb parmentier, bolets, i salsa de mel i romani",
+       description_fr:"À basse température avec parmentier, champignons et sauce miel et romarin",
+       description_en:"Cooked at low temperature with parmentier, mushrooms, and glaze sauce",
        price: "7,95",
        price_racion: "14,75",
        meat: true
@@ -518,7 +741,13 @@ p cordero
 
 costillar= Meal.new(
        name:"Costillar de cerdo",
+       name_cat:"Costellar de porc",
+       name_fr:"Côtes de porc",
+       name_en:"Roasted pork ribs",
        description:"Costillar de cerdo lacado con salsa barbacoa casera y patatas fritas",
+       description_cat:"Costellar de porc lacat amb salsa barbacoa feta a casa i patates fregides",
+       description_fr:"Côtes de porc laquées avec sauce barbecue maison et pommes de terre sautées",
+       description_en:"With a homemade barbecue sauce and french fries",
        price: "5,95",
        price_racion: "11,90",
        meat: true
@@ -532,7 +761,13 @@ p costillar
 
 cremacat= Meal.new(
        name:"Crema catalana",
+       name_cat:"Crema Cremada",
+       name_fr:"Crema catalana",
+       name_en:"Crema catalana",
        description:"Crema catalana cremada con galleta crujiente",
+       description_cat:"Crema cremada amb galeta cruixent",
+       description_fr:"Crème catalane avec biscuit croustillant",
+       description_en:"Crema catalana with crispy biscuit ",
        price: "4,95",
        dessert: true
 )
@@ -543,7 +778,13 @@ p cremacat
 
 flan= Meal.new(
        name:"Flan de coco",
+       name_cat:"Flam de coco",
+       name_fr:"Flan de coco",
+       name_en:"Coconut flan",
        description:"Flan de coco con nata montada",
+       description_cat:"Flam de coco amb crumble de galeta",
+       description_fr:"Flan de coco avec de la crème",
+       description_en:"With cookies crumble",
        price: "5,50",
        dessert: true
 )
@@ -554,7 +795,13 @@ p flan
 
 cheesecake= Meal.new(
        name:"Cheese cake",
+       name_cat:"Cheese cake",
+       name_fr:"Cheese cake",
+       name_en:"Cheese cake",
        description:"Cheese cake con coulis de frutos rojos",
+       description_cat:"Cheese cake amb coulis de fruits vermells",
+       description_fr:"Cheese cake avec coulis de fruits rouges",
+       description_en:"With red fruits sauce",
        price: "6,25",
        dessert: true
 )
@@ -565,7 +812,13 @@ p cheesecake
 
 lemonpie= Meal.new(
        name:"Lemon pot pie",
+       name_cat:"Lemon pot pie",
+       name_fr:"Lemon pot pie",
+       name_en:"Lemon pot pie",
        description:"Lemon pot pie con crumble de galleta",
+       description_cat:"Lemon pot pie amb crumble de galeta",
+       description_fr:"Lemon pot pie avec crumble aux biscuits",
+       description_en:"With cookies crumble",
        price: "5,75",
        dessert: true
 )
@@ -576,7 +829,13 @@ p lemonpie
 
 coulant= Meal.new(
        name:"Coulant de chocolate",
+       name_cat:"Coulant de xocolata",
+       name_fr:"Coulant au chocolat",
+       name_en:"Chocolate coulant",
        description:"Coulant de chocolate con helado de vainilla",
+       description_cat:"Coulant de xocolata amb gelat",
+       description_fr:"Coulant au chocolat avec glace à la vanille",
+       description_en:"With vainilla ice cream ",
        price: "5,95",
        dessert: true
 )
@@ -587,7 +846,13 @@ p coulant
 
 trufas= Meal.new(
        name:"Trufas de chocolate",
+       name_cat:"Trufes",
+       name_fr:"Truffes au chocolat",
+       name_en:"Chocolate truffles",
        description:"Trufas artesanas de chocolate con chupito a elección",
+       description_cat:"Trufes artesanes de xocolata amb un xarrup a elecció",
+       description_fr:"Truffes artisanales au chocolat avec un shot de votre choix",
+       description_en:"Artisanal chocolate truffles, with a chupito",
        price: "5,75",
        dessert: true
 )
@@ -598,7 +863,13 @@ p trufas
 
 helado= Meal.new(
        name:"Helado",
+       name_cat:"Gelat",
+       name_fr:"Glacée",
+       name_en:"Ice cream",
        description:"2 bolas de helado al gusto (pregunta por los sabores del día)",
+       description_cat:"2 boles de gelat al gust (demana al cambrer per als sabors del dia)",
+       description_fr:"2 boules de glace au goût (demandez les saveurs du jour)",
+       description_en:"2 Ice cream balls (ask for the daily flavours)",
        price: "4,95",
        dessert: true
 )
