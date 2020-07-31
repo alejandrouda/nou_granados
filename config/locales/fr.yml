@@ -1,0 +1,51 @@
+fr:
+  home:
+    hello: "
+  Bienvenue! Nous travaillons chaque jour pour vous offrir une belle expérience, 
+  et prenons les mesures de sécurité nécessaires 
+  pour prendre soin de nos clients et de notre personnel. Merci de nous avoir choisi!"
+    menus: "Nos menus"
+
+  menues:
+    show_9granados:
+      entrante_title: "Entrée à choisir"
+      entrante_1: "Salade de légumes verts avec avocat, mangue, noix et vinagrette miel-moutarde"
+      entrante_2: "Burratina - Fromage frais italien avec pesto, tomates confites et vinaigrette pistache"
+      entrante_3: "Légumes au four avec fromage de chèvre caramélisé et notre sauce romesco maison"
+      entrante_4: "Rouleau de filo croustillant, avec fromage taleggio fondu, tomates séchées au soleil, pâté d'olives et roquette"
+      entrante_5: "Canelloni farcis de viande rôtie, sauce aux truffes et compote de poivrons rouges"
+      entrante_6: "Estrellados - œufs au plat bio avec jambon ibérique, foie gras et frites"
+      entrante_7: "Carapaccio de longe de bœuf vieilli, avec Idiazabal, pignons de pin et vinagrette fraise-citron vert (plus 2 €)"
+      entrante_8: "Tacos de canard confit à la truffe, crème sure et jalapeños"
+      principal_title: "Principal à choisir"
+      principal_1: "Steak de veau argentin grillé avec frites, piments padron et sauce au fromage Idiazabal"
+      principal_2: "Steak tartare aux oeufs, moutarde aux herbes et crostini"
+      principal_3: "Agneau au miel cuit à basse température avec parmentier, champignons et sauce glacée (plus 2 €)"
+      principal_4: "Côtes de porc rôties avec sauce barbecue maison et frites"
+      principal_5: "Fish & chips avec morue d'Islande croquante, chutney de mangue et sauce tartara"
+      principal_6: "Tataki de thon rouge à l'avocat, pico de gallo et sauce miso"
+      principal_7: "Poulpe grillé au confit de pommes de terre assaisonné au paprika et à l'huile d'olive locale (plus 3 €)"
+      principal_8: "Bar frais grillé aux légumes et sauce aux fruits de la passion"
+      principal_9: "Burger végétarien à la betterave et soja avec sauce tzatziki dans un pain artisanal à la bière noire"
+      principal_10: "Paella maison aux crevettes rouges et seiche (minimum 2 personnes, il faut 25 min) (plus 5 €)"
+      principal_11: "Vous pouvez choisir n'importe laquelle des entrées comme plat principal"
+      postre_title: "Dessert au choix"
+      postre_1: "Crema catalana"
+      postre_2: "Coconut flan"
+      postre_3: "Cheesecake avec une sauce aux fruits rouges (plus 0,75 €)"
+      postre_4: "Lemon pot pie avec biscuit cramble"
+      postre_5: "Coulant au chocolat servi avec glace vanille (plus 0,75 €)"
+      postre_6: "Truffes au chocolat maison servies avec liqueur"
+      postre_7: "Glace (2 boules) - demandez les saveurs du jour"
+      postre_8: "Vous pouvez choisir du café ou du thé à la place du dessert"
+    show_carta:
+      tapa: "Tapas"
+      entrante: "Entrée"
+      principal: "Principal"
+      carne: "Viande"
+      pescado: "Poisson"
+      postre: "Dessert"
+    show_drink:
+      tinto: "Vin rouge"
+      blanco: "Vin blanc"
+      rosado: "Vin rosé"

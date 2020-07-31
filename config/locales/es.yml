@@ -1,0 +1,50 @@
+es:
+  home:
+    hello: "¡Bienvenidos! Estamos trabajando cada día para ofrecerles una gran experiencia, 
+    y tomando las medidas de seguridad necesarias para el cuidado de nuestros clientes y 
+    nuestro personal. Gracias por elegirnos!"
+    menus: "Nuestras cartas"
+
+  menues:
+    show_9granados:
+      entrante_title: "Entrantes a elegir"
+      entrante_1: "Ensalada de hojas con aguacate, mango, frutos secos, y vinagreta de miel y mostaza antigua"
+      entrante_2: "Burratina con pesto de albahaca, pistacho y tomate confitado"
+      entrante_3: "Timbal de escalivada con queso de cabra caramelizado y salsa romesco casera"
+      entrante_4: "Rollo crujiente al horno con queso taleggio fundido, rúcula, olivada y tomates secos"
+      entrante_5: "Canelones de carne asada y setas, con crema trufada y dulce de piquillos"
+      entrante_6: "Huevos de corral estrellados con patatas fritas, jamón ibérico y foie"
+      entrante_7: "Carpaccio de lomo de vaca madurado, con Idiazábal, piñones y vinagreta de fresones y lima"
+      entrante_8: "Tacos de confit de pato con trufa, foie, crema agria y jalapeños"
+      principal_title: "Principales a elegir"
+      principal_1: "Corte argentino de tenera a la plancha con patatas fritas, padrones, y salsa de queso Idiazábal"
+      principal_2: "Steak tartar de ternera, yema de huevo, mostaza de hierbas y tostaditas"
+      principal_3: "Cordero a baja temperatura con parmentier, setas, y salsa de miel y romero (suplemento 2€)"
+      principal_4: "Costillar de cerdo lacado con salsa barbacoa casera y patatas fritas"
+      principal_5: "Fish & Chips de lomo de bacalao de Islandia con chutney de mango y salsa tártara"
+      principal_6: "Tataki de atún con aguacate, pico de gallo y salsa ponzu"
+      principal_7: "Pulpo a la parrilla con patatas confitadas y pimentón (suplemento 3€)"
+      principal_8: "Filetes de lubina fresca a la plancha con verduritas y salsa de maracuyáPulpo a la parrilla con patatas confitadas y pimentón (suplemento 3€)"
+      principal_9: "Hamburguesa vegetariana de remolacha y soja con salsa tzatiki y pan artesano de cerveza negra"
+      principal_10: "Arroz marinero con sepia y gamba de Huelva (mínimo 2 personas) 25 minutos (suplemento 5€)"
+      principal_11: "Puede elegir como principal cualquiera de los platos que figuran como entrantes"
+      postre_title: "Postres a elgir"
+      postre_1: "Crema catalana"
+      postre_2: "Flan de coco"
+      postre_3: "Cheese cake con coulis de frutos rojos (suplemento 0,75€)"
+      postre_4: "Lemon pot pie con crumble de galleta"
+      postre_5: "Coulant de chocolate con helado (suplemento 0,75"
+      postre_6: "Trufas artesanas de chocolate con un chupito a su elección"
+      postre_7: "2 bolas de helado al gusto (pregunta al camarero por los sabores del día)"
+      postre_8: "Puedes cambiar tu postre por café, infusión o té"
+    show_carta:
+      tapa: "Tapas"
+      entrante: "Entrantes"
+      principal: "Platos"
+      carne: "Carnes"
+      pescado: "Pescados"
+      postre: "Postres"
+    show_drink:
+      tinto: "Tinto"
+      blanco: "Blanco"
+      rosado: "Rosado"

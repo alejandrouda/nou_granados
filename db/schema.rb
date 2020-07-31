@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_07_27_145624) do
+ActiveRecord::Schema.define(version: 2020_07_31_121158) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -90,6 +90,12 @@ ActiveRecord::Schema.define(version: 2020_07_27_145624) do
     t.boolean "meat"
     t.boolean "dessert"
     t.boolean "medio_dia_type"
+    t.string "name_en"
+    t.string "name_fr"
+    t.string "name_cat"
+    t.string "description_en"
+    t.string "description_fr"
+    t.string "description_cat"
     t.index ["menu_id"], name: "index_meals_on_menu_id"
   end
 
@@ -112,6 +118,9 @@ ActiveRecord::Schema.define(version: 2020_07_27_145624) do
     t.boolean "drink_type"
     t.boolean "aperitive_type"
     t.boolean "medio_dia_type"
+    t.string "name_en"
+    t.string "name_fr"
+    t.string "name_cat"
   end
 
   create_table "users", force: :cascade do |t|
