@@ -598,7 +598,7 @@ mediodia_meal= Meal.new(
               name: "Menú del medio día"
 )
 
-mediodia_meal.photo.attach(io: URI.open("https://res.cloudinary.com/dfyhqslry/image/upload/v1596104026/Nou%20granados/men%C3%BA_jueves_lavorables_foto_qr_g3mxaj.jpg"), filename: 'men%C3%BA_jueves_lavorables_foto_qr_g3mxaj.jpg', content_type: 'jpg')
+mediodia_meal.photo.attach(io: URI.open("https://res.cloudinary.com/dfyhqslry/image/upload/v1596191716/Nou%20granados/menu_divendres_sm2zwi.jpg"), filename: 'menu_divendres_sm2zwi.jpg', content_type: 'jpg')
 mediodia_meal.menu_id = menu_mediodia.id
 mediodia_meal.save
 p mediodia_meal
