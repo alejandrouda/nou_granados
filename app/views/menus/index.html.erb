@@ -1,5 +1,5 @@
 <div class="first-section">
-    <a href="../">
+    <a href="../<%= params[:locale] %>"> 
         <i class="fa fa-arrow-left mr-2 back-arrow"  aria-hidden="true"></i>
     </a>
     <div class="header">
@@ -13,7 +13,16 @@
         <%= link_to menu_path(menu) do%>
             <div class="menu">
                 <div class='menu-card' style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= cl_image_path menu.photo.key if menu.photo.attached? %>')">
-                    <h5><%= menu.name %></h5>
+                    <% if params[:locale] == "cat" %>
+                        <h5><%= menu.name_cat %></h5> 
+                    <% elsif params[:locale] == "en" %>
+                        <h5><%= menu.name_en %></h5>
+                    <% elsif params[:locale] == "fr" %>
+                        <h5><%= menu.name_fr %></h5>
+                    <% else %>
+                      <h5><%= menu.name %></h5>
+                    <% end %>
+                    
                 </div>
             </div>
         <% end %>

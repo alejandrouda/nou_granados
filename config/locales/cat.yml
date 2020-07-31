@@ -1,0 +1,51 @@
+cat:
+  home:
+    hello: "Benvinguts! Estem treballant cada dia per oferir-los una 
+    gran experiència, i prenent les mesures de seguretat 
+    necessàries per a la cura dels nostres clients i el nostre personal. Gràcies per triar-nos!"
+
+    menus: "Les nostres cartes"
+
+  menues:
+    show_9granados:
+      entrante_title: "Entrant a escollir"
+      entrante_1: "Amanida de fulles amb alvocats, mango, fruits secs, i vinagreta de mel i mostassa antiga"
+      entrante_2: "Burratina amb pesto d'alfàbrega, pistatxo i tomàquet confitat"
+      entrante_3: "Timbal d' escalivada amb formatge de cabra caramelitzat i salsa romesco casolana"
+      entrante_4: "Farcell cruixent al forn amb formatge taleggio fos, ruca, olivada i tomàquets secs"
+      entrante_5: "Canelons de carn rostida i bolets, amb crema trufada i dolç de piquillos"
+      entrante_6: "Ous de corral estrellats amb patatas fregides, pernil ibèric i encenalls de foie"
+      entrante_7: "Carpaccio de llom de vaca madurat, amb Idiazàbal, pinyons i vinagreta de maduixots i llima (suplement 2€)"
+      entrante_8: "Tacos de confit de d'anec amb trufa, foie, crema agria i jalapeños"
+      principal_title: "Principal a escollir"
+      principal_1: "Tall Argentí de vedella a la planxa amb patates fregides, padrons i salsa criolla"
+      principal_2: "Steak tartar de vedella, rovell d'ou curat, mostassa d'herbes i torradetes"
+      principal_3: "Melòs de xai a baixa emperatura amb parmentier, bolets, i salsa de mel i romaní (suplement 2€)"
+      principal_4: "Costellar de porc lacat amb salsa barbacoa feta a casa i patatas fregides"
+      principal_5: "Fish & chips de llom de bacallà d'Islàndia amb xutney de mango i salsa tàrtara"
+      principal_6: "Tataki de tonyna amb alvocat, pico de gallo, i salsa ponzu"
+      principal_7: "Pop a la graella amb patates confitades, oli extra verge i pebre vermell (suplement 3€)"
+      principal_8: "Filets de llobarro fresc a la planxa amb verduretes i salsa de maracuyà"
+      principal_9: "Hamburguesa vegetariana de remolatxa i soja amb salsa tzatziki i pa artesà de cervesa negra"
+      principal_10: "Arròs de Pals mariner amb sipia i gambes (mínim 2 persones) 25 minuts (suplement 5€)"
+      principal_11: "Pot escollir qualsevol dels plats que figuren com a entrant."
+      postre_title: "Postres a escollir"
+      postre_1: "Crema cremada"
+      postre_2: "Flam de coco"
+      postre_3: "Cheese cake amb coulis de fruits vermells (suplement 0,75€)"
+      postre_4: "Lemon pot pie amb crumble de galeta"
+      postre_5: "Coulant de xocolata amb gelat (Suplement 0,75)"
+      postre_6: "Trufes artesanaes de xocolata amb un xarrup a escollir"
+      postre_7: "2 boles de gelat al gust (demana al cambrer per als sabors del dia)"
+      postre_8: "Pots canviar el teu postre per te, infusió o cafè"
+    show_carta:
+      tapa: "Tapas"
+      entrante: "Entrant"
+      principal: "Platos"
+      carne: "Carnes"
+      pescado: "Pescats"
+      postre: "Postres"
+    show_drink:
+      tinto: "Vi negre"
+      blanco: "Vi blanc"
+      rosado: "Vi rosat"

@@ -1,33 +1,50 @@
-# Files in the config/locales directory are used for internationalization
-# and are automatically loaded by Rails. If you want to use locales other
-# than English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t 'hello'
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t('hello') %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# The following keys must be escaped otherwise they will not be retrieved by
-# the default I18n backend:
-#
-# true, false, on, off, yes, no
-#
-# Instead, surround them with single quotes.
-#
-# en:
-#   'true': 'foo'
-#
-# To learn more, please read the Rails Internationalization guide
-# available at https://guides.rubyonrails.org/i18n.html.
-
 en:
-  hello: "Hello world"
+  home:
+    hello: "Welcome! We are working every day to offer you a great experience,
+    and following every safety messure to care our customers and staff.
+    Thanks for choosing us!"
+    menus: "Our menu"
+
+  menues:
+    show_9granados:
+      entrante_title: "Starter to choose"
+      entrante_1: "Salad of mixed-greens with avocado, mango, nuts, and a honey-mustard vinagrette"
+      entrante_2: "Burratina - Italian fresh cheese with pesto, tomato confit, and a pistaccio dressing"
+      entrante_3: "Oven-baked vegetables with caramelized goat cheese, and our homemade romesco sauce"
+      entrante_4: "Crunchy filo roll, with melted taleggio cheese, sun dried tomatoes, olive paté and arugula"
+      entrante_5: "Canelloni stuffed with roast meat, truffle sauce and red bell pepper compote"
+      entrante_6: "Estrellados - organic fried eggs with iberian ham, foie gras, and french fries"
+      entrante_7: "Aged beef loin carapaccio, with Idiazabal, pine nuts, and a strawberry-lime vinagrette (plus 2€)"
+      entrante_8: "Confit duck tacos with truffle, sour cream, and jalapeños"
+      principal_title: "Main to choose"
+      principal_1: "Argentinian veal steak grilled with fries, padron peppers, and Idiazabal cheese sauce"
+      principal_2: "Steak tartar with egg, herbs mustard and crostini (served raw)"
+      principal_3: "Honeyed lamb cooked at low temperature with parmentier, mushrooms, and glaze sauce (plus 2€)"
+      principal_4: "Roasted pork ribs with a homemade barbecue sauce and french fries"
+      principal_5: "Fish & chips with crunchy Iceland cod, mang chutney and tartara sauce"
+      principal_6: "Red tuna tataki with avocado, pico de gallo, and miso sauce"
+      principal_7: "Grilled octopus with potato confit seasoned with paprika & local olive oil (plus 3€)"
+      principal_8: "Fresh grilled sea bass with vegetables and a passion fruit sauce"
+      principal_9: "Beetroot and soy veggie burger with tzatziki sauce in a black beer artisanal bread"
+      principal_10: "Homemade paella with red prawns and cuttlefish (minimum 2 persons, it takes 25 min) (plus 5€)"
+      principal_11: "You can choose any of the starters as a main dish"
+      postre_title: "Dessert to choose"
+      postre_1: "Crema catalana"
+      postre_2: "Coconut flan"
+      postre_3: "Cheesecake with a mixed-berry sauce (plus 0,75€)"
+      postre_4: "Lemon pot pie with cookie cramble"
+      postre_5: "Chocolate coulant served with vainilla ice cream (plus 0,75€)"
+      postre_6: "Homemade chocolate truffles served with liqour"
+      postre_7: "Ice cream (2 scoops) - ask for the daily flavours"
+      postre_8: "You can choose some coffee or tea instead dessert"
+    show_carta:
+      tapa: "Tapas"
+      entrante: "Starters"
+      principal: "Main"
+      carne: "Meat"
+      pescado: "Fish"
+      postre: "Dessert"
+    show_drink:
+      tinto: "Red wine"
+      blanco: "White wine"
+      rosado: "Rosé wine"

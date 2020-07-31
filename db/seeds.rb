@@ -24,6 +24,9 @@ p "Creating menus..."
 
 menu_mediodia = Menu.new(
               name: "Menú del medio día",
+              name_en: "Executive menu",
+              name_fr: "Menu du jour",
+              name_cat: "Menú de l'mig dia",
               price: "12.75",
               menu_type: false,
               medio_dia_type: true,
@@ -35,6 +38,9 @@ menu_mediodia = Menu.new(
 
 menu_9granados = Menu.new(
        name: "Menú 9 granados",
+       name_en: "Menú 9 granados",
+       name_fr: "Menú 9 granados",
+       name_cat: "Menú 9 granados",
        price: "21.90",
        menu_type: true,
        drink_type: false
@@ -46,6 +52,9 @@ p menu_9granados
 
 carta = Menu.new(
        name: "Carta",
+       name_en: "Carta",
+       name_fr: "Carte",
+       name_cat: "Carta",
        menu_type: false,
        drink_type: false
 )
@@ -55,6 +64,9 @@ p carta
 
 bodega = Menu.new(
        name: "Bodega",
+       name_en: "Winery",
+       name_fr: "Cave",
+       name_cat: "Celler",
        menu_type: false,
        drink_type: true
 )
@@ -64,6 +76,9 @@ p bodega
 
 aperitivo = Menu.new(
        name: "Bebidas",
+       name_en: "Drinks",
+       name_fr: "Boissons",
+       name_cat: "Begudes",
        menu_type: false,
        aperitive_type: true
 )
@@ -595,7 +610,7 @@ p helado
 # ----MENU MEDIO DIA----
 
 mediodia_meal= Meal.new(
-              name: "Menú del medio día"
+              name: "Menú del medio día",
 )
 
 mediodia_meal.photo.attach(io: URI.open("https://res.cloudinary.com/dfyhqslry/image/upload/v1596191716/Nou%20granados/menu_divendres_sm2zwi.jpg"), filename: 'menu_divendres_sm2zwi.jpg', content_type: 'jpg')
