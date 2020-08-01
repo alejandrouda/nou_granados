@@ -14,6 +14,8 @@ fr:
 
   menues:
     show_9granados:
+      terraza: "*El consumo en la terraza tiene un 10% de recargo"
+      takeway: "*Preparamos tu pedido para llevar!"
       entrante_title: "Entrée à choisir"
       entrante_1: "Salade de légumes verts avec avocat, mangue, noix et vinagrette miel-moutarde"
       entrante_2: "Burratina - Fromage frais italien avec pesto, tomates confites et vinaigrette pistache"

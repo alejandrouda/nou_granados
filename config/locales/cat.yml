@@ -14,6 +14,8 @@ cat:
 
   menues:
     show_9granados:
+      terraza: "*El consumo en la terraza tiene un 10% de recargo"
+      takeway: "*Preparamos tu pedido para llevar!"
       entrante_title: "Entrant a escollir"
       entrante_1: "Amanida de fulles amb alvocats, mango, fruits secs, i vinagreta de mel i mostassa antiga"
       entrante_2: "Burratina amb pesto d'alfàbrega, pistatxo i tomàquet confitat"

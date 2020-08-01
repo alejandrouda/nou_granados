@@ -14,6 +14,8 @@ es:
 
   menues:
     show_9granados:
+      terraza: "*El consumo en la terraza tiene un 10% de recargo"
+      takeway: "*Preparamos tu pedido para llevar!"
       entrante_title: "Entrantes a elegir"
       entrante_1: "Ensalada de hojas con aguacate, mango, frutos secos, y vinagreta de miel y mostaza antigua"
       entrante_2: "Burratina con pesto de albahaca, pistacho y tomate confitado"
@@ -21,7 +23,7 @@ es:
       entrante_4: "Rollo crujiente al horno con queso taleggio fundido, rúcula, olivada y tomates secos"
       entrante_5: "Canelones de carne asada y setas, con crema trufada y dulce de piquillos"
       entrante_6: "Huevos de corral estrellados con patatas fritas, jamón ibérico y foie"
-      entrante_7: "Carpaccio de lomo de vaca madurado, con Idiazábal, piñones y vinagreta de fresones y lima"
+      entrante_7: "Carpaccio de lomo de vaca madurado, con Idiazábal, piñones y vinagreta de fresones y lima (suplemento 2€)"
       entrante_8: "Tacos de confit de pato con trufa, foie, crema agria y jalapeños"
       principal_title: "Principales a elegir"
       principal_1: "Corte argentino de tenera a la plancha con patatas fritas, padrones, y salsa de queso Idiazábal"
