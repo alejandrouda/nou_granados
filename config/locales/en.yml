@@ -13,8 +13,8 @@ en:
 
   menues:
     show_9granados:
-      terraza: "*El consumo en la terraza tiene un 10% de recargo"
-      takeway: "*Preparamos tu pedido para llevar!"
+      terraza: "*Terrace has a 10% extra charge"
+      takeway: "*We make take away!"
       entrante_title: "Starter to choose"
       entrante_1: "Salad of mixed-greens with avocado, mango, nuts, and a honey-mustard vinagrette"
       entrante_2: "Burratina - Italian fresh cheese with pesto, tomato confit, and a pistaccio dressing"
@@ -58,4 +58,4 @@ en:
       rosado: "Rosé wine"      
       aperitivo: "Aperitive"
       cerveza: "Beer"
-      ron: "Rum"
+      ron: "Combinados"

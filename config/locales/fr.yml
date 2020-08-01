@@ -14,8 +14,8 @@ fr:
 
   menues:
     show_9granados:
-      terraza: "*El consumo en la terraza tiene un 10% de recargo"
-      takeway: "*Preparamos tu pedido para llevar!"
+      terraza: "*La consommation sur la terrasse a un supplément de 10%"
+      takeway: "*Demandez votre take away!"
       entrante_title: "Entrée à choisir"
       entrante_1: "Salade de légumes verts avec avocat, mangue, noix et vinagrette miel-moutarde"
       entrante_2: "Burratina - Fromage frais italien avec pesto, tomates confites et vinaigrette pistache"
@@ -59,4 +59,4 @@ fr:
       rosado: "Vin rosé"
       aperitivo: "Apéro"
       cerveza: "Bière"
-      ron: "Ron"
+      ron: "Combinados"

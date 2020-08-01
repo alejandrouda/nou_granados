@@ -602,7 +602,7 @@ arroz= Meal.new(
        description_fr:"Riz aux fruits de mer avec seiche et gambas de Huelva (minimum 2 personnes | prix par personne) 25 minutes",
        description_en:"Home made paella with red prawns and cuttlefish (price per person | minimum 2 persons) 25 minutes",
        price: "16,75",
-       main: true
+       fish: true
 )
 
 arroz.menu_id = carta.id
@@ -1337,6 +1337,16 @@ ipa.menu_id = aperitivo.id
 ipa.save
 p ipa
 
+konig= Drink.new(
+       name:"Konig Ludwig",
+       price: "3,90",
+       beer: true
+)
+
+konig.menu_id = aperitivo.id
+konig.save
+p konig
+
 aperol= Drink.new(
        name:"Aperol Spritz",
        price: "5,50",
@@ -1624,6 +1634,26 @@ bacardi.menu_id = aperitivo.id
 bacardi.save
 p bacardi
 
+cutty= Drink.new(
+       name:"Cutty Sark",
+       price: "7,00",
+       whiskey: true
+)
+
+cutty.menu_id = aperitivo.id
+cutty.save
+p cutty
+
+jb= Drink.new(
+       name:"J & B",
+       price: "7,00",
+       whiskey: true
+)
+
+jb.menu_id = aperitivo.id
+jb.save
+p jb
+
 jack_daniels= Drink.new(
        name:"Jack Daniel's",
        price: "9,00",
@@ -1653,6 +1683,7 @@ ballentines= Drink.new(
 ballentines.menu_id = aperitivo.id
 ballentines.save
 p ballentines
+
 
 cardhu= Drink.new(
        name:"Cardhu",
