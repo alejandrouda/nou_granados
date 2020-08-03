@@ -884,7 +884,7 @@ mediodia_meal= Meal.new(
               name: "Menú del medio día",
 )
 
-mediodia_meal.photo.attach(io: URI.open("https://res.cloudinary.com/dfyhqslry/image/upload/v1596191716/Nou%20granados/menu_divendres_sm2zwi.jpg"), filename: 'menu_divendres_sm2zwi.jpg', content_type: 'jpg')
+mediodia_meal.photo.attach(io: URI.open("https://res.cloudinary.com/dfyhqslry/image/upload/v1596453662/x1091hzpsntpk2gsq9v23p23o1n5.jpg"), filename: 'x1091hzpsntpk2gsq9v23p23o1n5.jpg', content_type: 'jpg')
 mediodia_meal.menu_id = menu_mediodia.id
 mediodia_meal.save
 p mediodia_meal
@@ -1666,7 +1666,7 @@ p jack_daniels
 
 jim= Drink.new(
        name:"Jim Beam",
-       price: "9,00",
+       price: "7,00",
        whiskey: true
 )
 
@@ -1676,7 +1676,7 @@ p jim
 
 ballentines= Drink.new(
        name:"Ballentines",
-       price: "9,00",
+       price: "7,00",
        whiskey: true
 )
 
