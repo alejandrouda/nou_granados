@@ -1654,16 +1654,6 @@ jb.menu_id = aperitivo.id
 jb.save
 p jb
 
-jack_daniels= Drink.new(
-       name:"Jack Daniel's",
-       price: "9,00",
-       whiskey: true
-)
-
-jack_daniels.menu_id = aperitivo.id
-jack_daniels.save
-p jack_daniels
-
 jim= Drink.new(
        name:"Jim Beam",
        price: "7,00",
@@ -1683,6 +1673,17 @@ ballentines= Drink.new(
 ballentines.menu_id = aperitivo.id
 ballentines.save
 p ballentines
+
+jack_daniels= Drink.new(
+       name:"Jack Daniel's",
+       price: "9,00",
+       whiskey: true
+)
+
+jack_daniels.menu_id = aperitivo.id
+jack_daniels.save
+p jack_daniels
+
 
 
 cardhu= Drink.new(
