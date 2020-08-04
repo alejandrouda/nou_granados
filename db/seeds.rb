@@ -12,7 +12,7 @@ Menu.delete_all
 p "Creating Users..."
 admin = User.new(
        email: "admin@9granados.com",
-       password: "el9admin333"
+       password: "ferratus1"
 )
 
 admin.save
