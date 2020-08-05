@@ -26,7 +26,7 @@ menu_mediodia = Menu.new(
               name: "Menú del medio día",
               name_en: "Executive menu",
               name_fr: "Menu du jour",
-              name_cat: "Menú de l'mig dia",
+              name_cat: "Menú de mig dia",
               price: "12.75",
               menu_type: false,
               medio_dia_type: true,
@@ -111,7 +111,7 @@ p coca
 
 berenjenas= Meal.new(
        name: "Berenjenas en tempura",
-       name_cat:"Alberginies en tempura",
+       name_cat:"Albergínies en tempura",
        name_fr:"Aubergines en tempura",
        name_en:"Tempura aubergines",
        description: "Berenjenas en tempura de cerveza y miel",
@@ -128,7 +128,7 @@ p berenjenas
 
 bravas= Meal.new(
        name:"Bravas",
-       name_cat:"Bravas",
+       name_cat:"Braves",
        name_fr:"Patatas Bravas",
        name_en:"Patatas bravas",
        description: "Nuestras bravas con salsa de chile chipotle y ali oli",
@@ -179,11 +179,11 @@ p cr_ceps
 
 hummus= Meal.new(
        name:"Hummus de garbanzos",
-       name_cat:"Humus de cigrons",
+       name_cat:"Hummus de cigrons",
        name_fr:"Hummus",
        name_en:"Hummus topped",
        description:"Con yogurt, lima, rabanitos, y tostaditas crujientes",
-       description_cat:"Amb iogurt, lima, rabanets i torradetes cruixents",
+       description_cat:"Amb iogurt, llima, rabanets i torradetes cruixents",
        description_fr:"Avec yogourt, citron vert, radis et toasts croustillants",
        description_en:"With yogurt, lime, and radish served with crostini",
        price: "6,50",
@@ -217,7 +217,7 @@ jamon= Meal.new(
        name_fr:"Jambon ibérique",
        name_en:"Iberian ham",
        description: "tapa 50g / ración 100g",
-       description_cat:"tapa 50g / ración 100g",
+       description_cat:"tapa 50g / racció 100g",
        description_fr:"tapa 50g / ración 100g",
        description_en:"tapa 50g / dish 100g",
        price: "7,75",
@@ -248,11 +248,11 @@ p quesos
 
 taco= Meal.new(
        name:"Taco de confit de pato",
-       name_cat:"Taco de confit d'anec",
+       name_cat:"Taco de confit d'ànec",
        name_fr:"Taco au canard confit",
        name_en:"Confit duck tacos",
        description:"con trufa, crema agria y jalapeños",
-       description_cat:"Amb trufa, crema agria i jalapeños",
+       description_cat:"Amb trufa, crema agre i jalapeños",
        description_fr:"à la truffe, à la crème sure et avec piments jalapeños",
        description_en:"with truffle, sour cream, and jalapeños",
        price: "4,50",
@@ -383,11 +383,11 @@ p lubina_tapa
 
 corte_tapa= Meal.new(
        name:"Corte argentino",
-       name_cat:"Tall Argenti",
+       name_cat:"Tall Argentí",
        name_fr:"Viande argentine",
        name_en:"Argentinian steak",
        description:"De ternera a la plancha con patatas fritas, padrones, y salsa de Idiazábal",
-       description_cat:"De vedella a la planxa amb patates fregides, padron, i salsa de formatge Idiazàbal",
+       description_cat:"De vedella a la planxa amb patates fregides, padró, i salsa de formatge Idiazàbal",
        description_fr:"Veau grillé avec frites, patrons et sauce Idiazábal",
        description_en:"Veal argentinian steak grilled, with fries, padron peppers, and Idiazabal sauce",
        price: "5,95",
@@ -417,11 +417,11 @@ p tartar_tapa
 
 cordero_tapa= Meal.new(
        name:"Meloso de cordero",
-       name_cat:"Melòs de xai",
+       name_cat:"Melós de xai",
        name_fr:"Agneau",
        name_en:"Honeyed lamb",
        description:"A baja temperatura con parmentier, setas, y salsa de miel y romero",
-       description_cat:"A baixa temperatura amb parmentier, bolets, i salsa de mel i romani",
+       description_cat:"A baixa temperatura amb parmentier, bolets, i salsa de mel i romaní",
        description_fr:"À basse température avec parmentier, champignons et sauce miel et romarin",
        description_en:"Cooked at low temperature with parmentier, mushrooms, and glaze sauce",
        price: "7,95",
@@ -526,8 +526,7 @@ canelones= Meal.new(
        name_fr:"Cannellonis",
        name_en:"Canelloni",
        description:"De carne asada y setas, con crema trufada y dulce de piquillos (tapa 1u / ración 3u)",
-       description_cat:"Canelons de carn rostida i bolets, amb crema trufada i dolç de piquillos (tapa 1 u / raci
-       o 3u)",
+       description_cat:"Canelons de carn rostida i bolets, amb crema trufada i dolç de piquillos (tapa 1 u / racció 3u)",
        description_fr:"Rôti de boeuf et champignons, avec crème truffée et piquillos sucrés (tapa 1u / portion 3u)",
        description_en:"Canelloni stuffed with roast meat, truffle sauce, and red bell pepper compote (tapa 1 piece / dish 3 pieces)",
        price: "4,75",
@@ -545,7 +544,7 @@ huevos= Meal.new(
        name_fr:"Huevos estrellados",
        name_en:"Huevos estrellados",
        description:"Huevos de corral estrellados, con patatas fritas, jamón ibérico y foie",
-       description_cat:"Ous de corral estrellats, amb patatas fregides, pernil ibèric i foie",
+       description_cat:"Ous de corral estrellats, amb patates fregides, pernil ibèric i foie",
        description_fr:"Œufs fermiers grillés, pommes de terre sautées, jambon ibérique et foie",
        description_en:"Organic ffried eggs with iberian ham, foie gras, and french fries",
        price: "10,90",
@@ -687,7 +686,7 @@ p lubina
 
 corte= Meal.new(
        name:"Corte argentino",
-       name_cat:"Tall Argenti",
+       name_cat:"Tall Argentí",
        name_fr:"Viande argentine",
        name_en:"Argentinian steak",
        description:"De ternera a la plancha con patatas fritas, padrones, y salsa de Idiazábal",
