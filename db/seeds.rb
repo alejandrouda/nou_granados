@@ -116,7 +116,7 @@ berenjenas= Meal.new(
        name_fr:"Aubergines en tempura",
        name_en:"Tempura aubergines",
        description: "Berenjenas en tempura de cerveza y miel",
-       description_cat:"Alberginies en tempura de cervesa i mel",
+       description_cat:"Albergínies en tempura de cervesa i mel",
        description_fr:"aubergines à la bière et au miel tempura",
        description_en:"Beer buttered aubergine slices served with honey",
        price: "5,50",
