@@ -6,8 +6,8 @@ p "Deleting Meals..."
 Meal.delete_all
 p "Deleting Drinks..."
 Drink.delete_all
-# p "Deleting Menus..."
-# Menu.delete_all
+p "Deleting Menus..."
+Menu.delete_all
 
 # p "Creating Users..."
 # admin = User.new(
@@ -18,73 +18,73 @@ Drink.delete_all
 # admin.save
 # p admin
 
-# p "Users created..."
+p "Users created..."
 
-# p "Creating menus..."
+p "Creating menus..."
 
-# menu_mediodia = Menu.new(
-#               name: "Menú del medio día",
-#               name_en: "Executive menu",
-#               name_fr: "Menu du jour",
-#               name_cat: "Menú de mig dia",
-#               price: "12.75",
-#               menu_type: false,
-#               medio_dia_type: true,
-#               drink_type: false
-#        )
-#        menu_mediodia.photo.attach(io: URI.open("https://res.cloudinary.com/dfyhqslry/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1594223632/Nou%20granados/Alimentos%20y%20bebidas/Medio_Dia_jxim3i.jpg"), filename: 'Medio_Dia_jxim3i.jpg', content_type: 'jpg')
-#        menu_mediodia.save
-#        p menu_mediodia
+menu_mediodia = Menu.new(
+              name: "Menú del medio día",
+              name_en: "Executive menu",
+              name_fr: "Menu du jour",
+              name_cat: "Menú de mig dia",
+              price: "12.75",
+              menu_type: false,
+              medio_dia_type: true,
+              drink_type: false
+       )
+       menu_mediodia.photo.attach(io: URI.open("https://res.cloudinary.com/dfyhqslry/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1594223632/Nou%20granados/Alimentos%20y%20bebidas/Medio_Dia_jxim3i.jpg"), filename: 'Medio_Dia_jxim3i.jpg', content_type: 'jpg')
+       menu_mediodia.save
+       p menu_mediodia
 
-# menu_9granados = Menu.new(
-#        name: "Menú 9 granados",
-#        name_en: "Menú 9 granados",
-#        name_fr: "Menú 9 granados",
-#        name_cat: "Menú 9 granados",
-#        price: "21.90",
-#        menu_type: true,
-#        drink_type: false
-# )
-# menu_9granados.photo.attach(io: URI.open("https://res.cloudinary.com/dfyhqslry/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1594373475/Nou%20granados/Alimentos%20y%20bebidas/menugrupos_vk53sp.jpg"), filename: 'menugrupos_vk53sp.jpg', content_type: 'jpg')
-# menu_9granados.save
-# p menu_9granados
+menu_9granados = Menu.new(
+       name: "Menú 9 granados",
+       name_en: "Menú 9 granados",
+       name_fr: "Menú 9 granados",
+       name_cat: "Menú 9 granados",
+       price: "21.90",
+       menu_type: true,
+       drink_type: false
+)
+menu_9granados.photo.attach(io: URI.open("https://res.cloudinary.com/dfyhqslry/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1594373475/Nou%20granados/Alimentos%20y%20bebidas/menugrupos_vk53sp.jpg"), filename: 'menugrupos_vk53sp.jpg', content_type: 'jpg')
+menu_9granados.save
+p menu_9granados
 
 
-# carta = Menu.new(
-#        name: "Carta",
-#        name_en: "Carta",
-#        name_fr: "Carte",
-#        name_cat: "Carta",
-#        menu_type: false,
-#        drink_type: false
-# )
-# carta.photo.attach(io: URI.open("https://res.cloudinary.com/dfyhqslry/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1594223631/Nou%20granados/Alimentos%20y%20bebidas/Carta_alvxgs.jpg"), filename: 'Carta_alvxgs.jpg', content_type: 'jpg')
-# carta.save
-# p carta
+carta = Menu.new(
+       name: "Carta",
+       name_en: "Carta",
+       name_fr: "Carte",
+       name_cat: "Carta",
+       menu_type: false,
+       drink_type: false
+)
+carta.photo.attach(io: URI.open("https://res.cloudinary.com/dfyhqslry/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1594223631/Nou%20granados/Alimentos%20y%20bebidas/Carta_alvxgs.jpg"), filename: 'Carta_alvxgs.jpg', content_type: 'jpg')
+carta.save
+p carta
 
-# bodega = Menu.new(
-#        name: "Bodega",
-#        name_en: "Winery",
-#        name_fr: "Cave",
-#        name_cat: "Celler",
-#        menu_type: false,
-#        drink_type: true
-# )
-# bodega.photo.attach(io: URI.open("https://res.cloudinary.com/dfyhqslry/image/upload/v1594222955/Nou%20granados/Alimentos%20y%20bebidas/bodega_uuoqqo.jpg"), filename: 'bodega_uuoqqo.jpg', content_type: 'jpg')
-# bodega.save
-# p bodega
+bodega = Menu.new(
+       name: "Bodega",
+       name_en: "Winery",
+       name_fr: "Cave",
+       name_cat: "Celler",
+       menu_type: false,
+       drink_type: true
+)
+bodega.photo.attach(io: URI.open("https://res.cloudinary.com/dfyhqslry/image/upload/v1594222955/Nou%20granados/Alimentos%20y%20bebidas/bodega_uuoqqo.jpg"), filename: 'bodega_uuoqqo.jpg', content_type: 'jpg')
+bodega.save
+p bodega
 
-# aperitivo = Menu.new(
-#        name: "Bebidas",
-#        name_en: "Drinks",
-#        name_fr: "Boissons",
-#        name_cat: "Begudes",
-#        menu_type: false,
-#        aperitive_type: true
-# )
-# aperitivo.photo.attach(io: URI.open("https://res.cloudinary.com/dfyhqslry/image/upload/v1595580265/Nou%20granados/Alimentos%20y%20bebidas/gin-tonic-2_mjqbrt.jpg"), filename: 'gin-tonic-2_mjqbrt.jpg', content_type: 'jpg')
-# aperitivo.save
-# p aperitivo
+aperitivo = Menu.new(
+       name: "Bebidas",
+       name_en: "Drinks",
+       name_fr: "Boissons",
+       name_cat: "Begudes",
+       menu_type: false,
+       aperitive_type: true
+)
+aperitivo.photo.attach(io: URI.open("https://res.cloudinary.com/dfyhqslry/image/upload/v1595580265/Nou%20granados/Alimentos%20y%20bebidas/gin-tonic-2_mjqbrt.jpg"), filename: 'gin-tonic-2_mjqbrt.jpg', content_type: 'jpg')
+aperitivo.save
+p aperitivo
 
 
 # p "Menus created..."
@@ -92,6 +92,7 @@ Drink.delete_all
 p "Creating meals..."
 
 # ----TAPAS----
+
 coca= Meal.new(
        name:"Pan de coca con tomate",
        name_cat:"Pa amb tomàquet",
@@ -879,16 +880,16 @@ p helado
 
 # ----MENU MEDIO DIA----
 
-mediodia_meal= Meal.new(
-              name: "Menú del medio día",
-)
+ mediodia_meal= Meal.new(
+               name: "Menú del medio día",
+ )
 
-mediodia_meal.photo.attach(io: URI.open("https://res.cloudinary.com/dfyhqslry/image/upload/v1596621863/lzxbrh5ormlp2ralnbvqwetopi1e.jpg"), filename: 'x1091hzpsntpk2gsq9v23p23o1n5.jpg', content_type: 'jpg')
-mediodia_meal.menu_id = menu_mediodia.id
-mediodia_meal.save
-p mediodia_meal
+ mediodia_meal.photo.attach(io: URI.open("https://res.cloudinary.com/dfyhqslry/image/upload/v1596621863/lzxbrh5ormlp2ralnbvqwetopi1e.jpg"), filename: 'x1091hzpsntpk2gsq9v23p23o1n5.jpg', content_type: 'jpg')
+ mediodia_meal.menu_id = menu_mediodia.id
+ mediodia_meal.save
+ p mediodia_meal
 
-p "Meals created..."
+ p "Meals created..."
 
 # ----VINOS----
 
