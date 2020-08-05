@@ -18,7 +18,7 @@ Drink.delete_all
 # admin.save
 # p admin
 
-p "Users created..."
+# p "Users created..."
 
 # p "Creating menus..."
 
@@ -248,10 +248,10 @@ p quesos
 
 taco= Meal.new(
        name:"Taco de confit de pato",
+       description:"con trufa, crema agria y jalapeños",
        name_cat:"Taco de confit d'ànec",
        name_fr:"Taco au canard confit",
        name_en:"Confit duck tacos",
-       description:"con trufa, crema agria y jalapeños",
        description_cat:"Amb trufa, crema agre i jalapeños",
        description_fr:"à la truffe, à la crème sure et avec piments jalapeños",
        description_en:"with truffle, sour cream, and jalapeños",
@@ -897,6 +897,12 @@ p "Creating drinks..."
 casa_tinto= Drink.new(
        name:"Vino de la casa",
        description: "D.O Navarra; Garnatxa",
+       name_cat:"",
+       name_fr:"",
+       name_en:"",
+       description_cat:"",
+       description_fr:"",
+       description_en:"",
        price: "10,00",
        price_glass: "2,50",
        red: true
@@ -909,6 +915,12 @@ p casa_tinto
 viana= Drink.new(
        name:"Principe Viana",
        description: "D.O Navarra; Syrah",
+       name_cat:"",
+       name_fr:"",
+       name_en:"",
+       description_cat:"",
+       description_fr:"",
+       description_en:"",
        price: "12,00",
        price_glass: "2,90",
        red: true
@@ -921,6 +933,12 @@ p viana
 batan= Drink.new(
        name:"Batan de salas",
        description: "D.O Somontano; Merlot",
+       name_cat:"",
+       name_fr:"",
+       name_en:"",
+       description_cat:"",
+       description_fr:"",
+       description_en:"",
        price: "14,50",
        red: true
 )
@@ -932,6 +950,12 @@ p batan
 jan= Drink.new(
        name:"Jan Petit",
        description: "D.O Costers del Segre; Garnatxa i Syrah",
+       name_cat:"",
+       name_fr:"",
+       name_en:"",
+       description_cat:"",
+       description_fr:"",
+       description_en:"",
        price: "14,50",
        price_glass: "3,50",
        red: true
@@ -944,6 +968,12 @@ p jan
 atrepat= Drink.new(
        name:"Atrepat",
        description: "D.O Conca de barberá; Trepat",
+       name_cat:"",
+       name_fr:"",
+       name_en:"",
+       description_cat:"",
+       description_fr:"",
+       description_en:"",
        price: "14,95",
        price_glass: "3,95",
        red: true
@@ -956,6 +986,12 @@ p atrepat
 gos= Drink.new(
        name:"El gos",
        description: "D.O Montsant; Garnatxa",
+       name_cat:"",
+       name_fr:"",
+       name_en:"",
+       description_cat:"",
+       description_fr:"",
+       description_en:"",
        price: "15,75",
        red: true
 )
@@ -967,6 +1003,12 @@ p gos
 matsu= Drink.new(
        name:"Matsu Pícaro",
        description: "D.O Toro; Tinta de toro",
+       name_cat:"",
+       name_fr:"",
+       name_en:"",
+       description_cat:"",
+       description_fr:"",
+       description_en:"",
        price: "15,75",
        price_glass: "3,95",
        red: true
@@ -979,6 +1021,12 @@ p matsu
 haro_joven= Drink.new(
        name:"López de Haro tempranillo",
        description: "D.O Rioja; Ull de llebre",
+       name_cat:"",
+       name_fr:"",
+       name_en:"",
+       description_cat:"",
+       description_fr:"",
+       description_en:"",
        price: "12,90",
        price_glass: "3,25",
        red: true
@@ -991,6 +1039,12 @@ p haro_joven
 vega= Drink.new(
        name:"Rioja Vega",
        description: "D.O Rioja; Ull de llebre i Garnatxa",
+       name_cat:"",
+       name_fr:"",
+       name_en:"",
+       description_cat:"",
+       description_fr:"",
+       description_en:"",
        price: "17,95",
        red: true
 )
