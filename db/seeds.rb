@@ -884,7 +884,7 @@ p helado
                name: "Menú del medio día",
  )
 
- mediodia_meal.photo.attach(io: URI.open("https://res.cloudinary.com/dfyhqslry/image/upload/v1596621863/lzxbrh5ormlp2ralnbvqwetopi1e.jpg"), filename: 'x1091hzpsntpk2gsq9v23p23o1n5.jpg', content_type: 'jpg')
+ mediodia_meal.photo.attach(io: URI.open("https://res.cloudinary.com/dfyhqslry/image/upload/v1597226685/i63n86ryomj3v8km2ls5r7vzcmfh.jpg"), filename: 'i63n86ryomj3v8km2ls5r7vzcmfh.jpg', content_type: 'jpg')
  mediodia_meal.menu_id = menu_mediodia.id
  mediodia_meal.save
  p mediodia_meal
@@ -898,12 +898,12 @@ p "Creating drinks..."
 casa_tinto= Drink.new(
        name:"Vino de la casa",
        description: "D.O Navarra; Garnatxa",
-       name_cat:"",
-       name_fr:"",
-       name_en:"",
-       description_cat:"",
-       description_fr:"",
-       description_en:"",
+       name_cat:"Vi de la casa",
+       name_fr:"Vin de la maison",
+       name_en:"House wine",
+       description_cat:"D.O Navarra; Garnatxa",
+       description_fr:"D.O Navarra; Garnatxa",
+       description_en:"D.O Navarra; Garnatxa",
        price: "10,00",
        price_glass: "2,50",
        red: true
@@ -916,12 +916,12 @@ p casa_tinto
 viana= Drink.new(
        name:"Principe Viana",
        description: "D.O Navarra; Syrah",
-       name_cat:"",
-       name_fr:"",
-       name_en:"",
-       description_cat:"",
-       description_fr:"",
-       description_en:"",
+       name_cat:"Principe Viana",
+       name_fr:"Principe Viana",
+       name_en:"Principe Viana",
+       description_cat:"D.O Navarra; Syrah",
+       description_fr:"D.O Navarra; Syrah",
+       description_en:"D.O Navarra; Syrah",
        price: "12,00",
        price_glass: "2,90",
        red: true
@@ -934,12 +934,12 @@ p viana
 batan= Drink.new(
        name:"Batan de salas",
        description: "D.O Somontano; Merlot",
-       name_cat:"",
-       name_fr:"",
-       name_en:"",
-       description_cat:"",
-       description_fr:"",
-       description_en:"",
+       name_cat:"Batan de salas",
+       name_fr:"Batan de salas",
+       name_en:"Batan de salas",
+       description_cat:"D.O Somontano; Merlot",
+       description_fr:"D.O Somontano; Merlot",
+       description_en:"D.O Somontano; Merlot",
        price: "14,50",
        red: true
 )
@@ -951,12 +951,12 @@ p batan
 jan= Drink.new(
        name:"Jan Petit",
        description: "D.O Costers del Segre; Garnatxa i Syrah",
-       name_cat:"",
-       name_fr:"",
-       name_en:"",
-       description_cat:"",
-       description_fr:"",
-       description_en:"",
+       name_cat:"Jan Petit",
+       name_fr:"Jan Petit",
+       name_en:"Jan Petit",
+       description_cat:"D.O Costers del Segre; Garnatxa i Syrah",
+       description_fr:"D.O Costers del Segre; Garnatxa i Syrah",
+       description_en:"D.O Costers del Segre; Garnatxa i Syrah",
        price: "14,50",
        price_glass: "3,50",
        red: true
@@ -969,12 +969,12 @@ p jan
 atrepat= Drink.new(
        name:"Atrepat",
        description: "D.O Conca de barberá; Trepat",
-       name_cat:"",
-       name_fr:"",
-       name_en:"",
-       description_cat:"",
-       description_fr:"",
-       description_en:"",
+       name_cat:"Atrepat",
+       name_fr:"Atrepat",
+       name_en:"Atrepat",
+       description_cat:"D.O Conca de barberá; Trepat",
+       description_fr:"D.O Conca de barberá; Trepat",
+       description_en:"D.O Conca de barberá; Trepat",
        price: "14,95",
        price_glass: "3,95",
        red: true
@@ -987,12 +987,12 @@ p atrepat
 gos= Drink.new(
        name:"El gos",
        description: "D.O Montsant; Garnatxa",
-       name_cat:"",
-       name_fr:"",
-       name_en:"",
-       description_cat:"",
-       description_fr:"",
-       description_en:"",
+       name_cat:"El gos",
+       name_fr:"El gos",
+       name_en:"El gos",
+       description_cat:"D.O Montsant; Garnatxa",
+       description_fr:"D.O Montsant; Garnatxa",
+       description_en:"D.O Montsant; Garnatxa",
        price: "15,75",
        red: true
 )
@@ -1004,12 +1004,12 @@ p gos
 matsu= Drink.new(
        name:"Matsu Pícaro",
        description: "D.O Toro; Tinta de toro",
-       name_cat:"",
-       name_fr:"",
-       name_en:"",
-       description_cat:"",
-       description_fr:"",
-       description_en:"",
+       name_cat:"Matsu Pícaro",
+       name_fr:"Matsu Pícaro",
+       name_en:"Matsu Pícaro",
+       description_cat:"D.O Toro; Tinta de toro",
+       description_fr:"D.O Toro; Tinta de toro",
+       description_en:"D.O Toro; Tinta de toro",
        price: "15,75",
        price_glass: "3,95",
        red: true
@@ -1022,12 +1022,12 @@ p matsu
 haro_joven= Drink.new(
        name:"López de Haro tempranillo",
        description: "D.O Rioja; Ull de llebre",
-       name_cat:"",
-       name_fr:"",
-       name_en:"",
-       description_cat:"",
-       description_fr:"",
-       description_en:"",
+       name_cat:"López de Haro tempranillo",
+       name_fr:"López de Haro tempranillo",
+       name_en:"López de Haro tempranillo",
+       description_cat:"D.O Rioja; Ull de llebre",
+       description_fr:"D.O Rioja; Ull de llebre",
+       description_en:"D.O Rioja; Ull de llebre",
        price: "12,90",
        price_glass: "3,25",
        red: true
@@ -1040,12 +1040,12 @@ p haro_joven
 vega= Drink.new(
        name:"Rioja Vega",
        description: "D.O Rioja; Ull de llebre i Garnatxa",
-       name_cat:"",
-       name_fr:"",
-       name_en:"",
-       description_cat:"",
-       description_fr:"",
-       description_en:"",
+       name_cat:"Rioja Vega",
+       name_fr:"Rioja Vega",
+       name_en:"Rioja Vega",
+       description_cat:"D.O Rioja; Ull de llebre i Garnatxa",
+       description_fr:"D.O Rioja; Ull de llebre i Garnatxa",
+       description_en:"D.O Rioja; Ull de llebre i Garnatxa",
        price: "17,95",
        red: true
 )
@@ -1059,7 +1059,13 @@ haro_reserva= Drink.new(
        description: "D.O Rioja; Ull de llebre i Garnatxa",
        price: "18,50",
        price_glass: "4,50",
-       red: true
+       red: true,
+       name_cat:"López de Haro reserva",
+       name_fr:"López de Haro reserva",
+       name_en:"López de Haro reserva",
+       description_cat:"D.O Rioja; Ull de llebre i Garnatxa",
+       description_fr:"D.O Rioja; Ull de llebre i Garnatxa",
+       description_en:"D.O Rioja; Ull de llebre i Garnatxa",
 )
 
 haro_reserva.menu_id = bodega.id
@@ -1070,7 +1076,13 @@ berdugo= Drink.new(
        name:"Martín Berdugo",
        description: "D.O Ribera del Duero; Mencía",
        price: "16,90",
-       red: true
+       red: true,
+       name_cat:"Martín Berdugo",
+       name_fr:"Martín Berdugo",
+       name_en:"Martín Berdugo",
+       description_cat:"D.O Ribera del Duero; Mencía",
+       description_fr:"D.O Ribera del Duero; Mencía",
+       description_en:"D.O Ribera del Duero; Mencía",
 )
 
 berdugo.menu_id = bodega.id
@@ -1082,7 +1094,13 @@ ferratus= Drink.new(
        description: "D.O Ribera del duero; Ull de llebre",
        price: "18,50",
        price_glass: "4,50",
-       red: true
+       red: true,
+       name_cat:"Ferratus",
+       name_fr:"Ferratus",
+       name_en:"Ferratus",
+       description_cat:"D.O Ribera del duero; Ull de llebre",
+       description_fr:"D.O Ribera del duero; Ull de llebre",
+       description_en:"D.O Ribera del duero; Ull de llebre",
 )
 
 ferratus.menu_id = bodega.id
@@ -1093,7 +1111,13 @@ orto= Drink.new(
        name:"Orto",
        description: "D.O Montsant; Carinyena, Garnatxa, Cabernet Sauvignon, Ull de llebre",
        price: "19,50",
-       red: true
+       red: true,
+       name_cat:"Orto",
+       name_fr:"Orto",
+       name_en:"Orto",
+       description_cat:"D.O Montsant; Carinyena, Garnatxa, Cabernet Sauvignon, Ull de llebre",
+       description_fr:"D.O Montsant; Carinyena, Garnatxa, Cabernet Sauvignon, Ull de llebre",
+       description_en:"D.O Montsant; Carinyena, Garnatxa, Cabernet Sauvignon, Ull de llebre",
 )
 
 orto.menu_id = bodega.id
@@ -1105,7 +1129,13 @@ atzar= Drink.new(
        description: "D.O Priorat; Garnatxa i Carinyenya",
        price: "19,90",
        price_glass: "4,90",
-       red: true
+       red: true,
+       name_cat:"Atzar",
+       name_fr:"Atzar",
+       name_en:"Atzar",
+       description_cat:"D.O Priorat; Garnatxa i Carinyenya",
+       description_fr:"D.O Priorat; Garnatxa i Carinyenya",
+       description_en:"D.O Priorat; Garnatxa i Carinyenya",
 )
 
 atzar.menu_id = bodega.id
@@ -1116,7 +1146,13 @@ magnum= Drink.new(
        name:"Magnum número 9",
        description: "D.O Ribera del Queiles; Cabernet franc, Ull de llebre",
        price: "45,00",
-       red: true
+       red: true,
+       name_cat:"Magnum número 9",
+       name_fr:"Magnum número 9",
+       name_en:"Magnum número 9",
+       description_cat:"D.O Ribera del Queiles; Cabernet franc, Ull de llebre",
+       description_fr:"D.O Ribera del Queiles; Cabernet franc, Ull de llebre",
+       description_en:"D.O Ribera del Queiles; Cabernet franc, Ull de llebre",
 )
 
 magnum.menu_id = bodega.id
@@ -1128,7 +1164,13 @@ casa_blanco= Drink.new(
        description: "D.O Navarra; Garnatxa",
        price: "10,00",
        price_glass: "2,50",
-       white: true
+       white: true,
+       name_cat:"Vi de la casa",
+       name_fr:"Vin de la maison",
+       name_en:"House wine",
+       description_cat:"D.O Navarra; Garnatxa",
+       description_fr:"D.O Navarra; Garnatxa",
+       description_en:"D.O Navarra; Garnatxa",
 )
 
 casa_blanco.menu_id = bodega.id
@@ -1140,7 +1182,13 @@ moraleda= Drink.new(
        description: "D.O Navarara; Chardonnay",
        price: "12,50",
        price_glass: "2,90",
-       white: true
+       white: true,
+       name_cat:"Moraleda Blanc",
+       name_fr:"Moraleda Blanc",
+       name_en:"Moraleda Blanc",
+       description_cat:"D.O Navarara; Chardonnay",
+       description_fr:"D.O Navarara; Chardonnay",
+       description_en:"D.O Navarara; Chardonnay",
 )
 
 moraleda.menu_id = bodega.id
@@ -1152,7 +1200,13 @@ bardos= Drink.new(
        description: "D.O Rueda; Verdejo",
        price: "13,90",
        price_glass: "3,30",
-       white: true
+       white: true,
+       name_cat:"Bardos",
+       name_fr:"Bardos",
+       name_en:"Bardos",
+       description_cat:"D.O Rueda; Verdejo",
+       description_fr:"D.O Rueda; Verdejo",
+       description_en:"D.O Rueda; Verdejo",
 )
 
 bardos.menu_id = bodega.id
@@ -1164,7 +1218,13 @@ primavera= Drink.new(
        description: "D.O Penedes; Xarello, Macebeu, Parellada",
        price: "14,50",
        price_glass: "3,50",
-       white: true
+       white: true,
+       name_cat:"Blanc primavera",
+       name_fr:"Blanc primavera",
+       name_en:"Blanc primavera",
+       description_cat:"D.O Penedes; Xarello, Macebeu, Parellada",
+       description_fr:"D.O Penedes; Xarello, Macebeu, Parellada",
+       description_en:"D.O Penedes; Xarello, Macebeu, Parellada",
 )
 
 primavera.menu_id = bodega.id
@@ -1176,7 +1236,13 @@ libalis= Drink.new(
        description: "D.O Vall de Sadacia; Moscatell, Viura, Malvasia",
        price: "14,50",
        price_glass: "3,50",
-       white: true
+       white: true,
+       name_cat:"Libalis",
+       name_fr:"Libalis",
+       name_en:"Libalis",
+       description_cat:"D.O Vall de Sadacia; Moscatell, Viura, Malvasia",
+       description_fr:"D.O Vall de Sadacia; Moscatell, Viura, Malvasia",
+       description_en:"D.O Vall de Sadacia; Moscatell, Viura, Malvasia",
 )
 
 libalis.menu_id = bodega.id
@@ -1188,7 +1254,13 @@ pulpo= Drink.new(
        description: "D.O Galicia; Albariño",
        price: "14,95",
        price_glass: "3,75",
-       white: true
+       white: true,
+       name_cat:"Bienbebido pulpo",
+       name_fr:"Bienbebido pulpo",
+       name_en:"Bienbebido pulpo",
+       description_cat:"D.O Galicia; Albariño",
+       description_fr:"D.O Galicia; Albariño",
+       description_en:"D.O Galicia; Albariño",
 )
 
 pulpo.menu_id = bodega.id
@@ -1200,7 +1272,13 @@ sere= Drink.new(
        description: "D.O Costers del Segre; Macabeu, Parrellada, Chardonnay",
        price: "15,50",
        price_glass: "3,95",
-       white: true
+       white: true,
+       name_cat:"Blanc de Seré",
+       name_fr:"Blanc de Seré",
+       name_en:"Blanc de Seré",
+       description_cat:"D.O Costers del Segre; Macabeu, Parrellada, Chardonnay",
+       description_fr:"D.O Costers del Segre; Macabeu, Parrellada, Chardonnay",
+       description_en:"D.O Costers del Segre; Macabeu, Parrellada, Chardonnay",
 )
 
 sere.menu_id = bodega.id
@@ -1212,7 +1290,13 @@ casa_rosado= Drink.new(
        description: "D.O Navarra; Garnatxa",
        price: "10,00",
        price_glass: "2,50",
-       rose: true
+       rose: true,
+       name_cat:"Vi de la casa",
+       name_fr:"Vin de la maison",
+       name_en:"House wine",
+       description_cat:"D.O Navarra; Garnatxa",
+       description_fr:"D.O Navarra; Garnatxa",
+       description_en:"D.O Navarra; Garnatxa",
 )
 
 casa_rosado.menu_id = bodega.id
@@ -1224,7 +1308,13 @@ rovellats= Drink.new(
        description: "D.O Penedés; Merlot",
        price: "12,95",
        price_glass: "3,25",
-       rose: true
+       rose: true,
+       name_cat:"Rovellats",
+       name_fr:"Rovellats",
+       name_en:"Rovellats",
+       description_cat:"D.O Penedés; Merlot",
+       description_fr:"D.O Penedés; Merlot",
+       description_en:"D.O Penedés; Merlot",
 )
 
 rovellats.menu_id = bodega.id
@@ -1235,7 +1325,13 @@ aroa= Drink.new(
        name:"Aroa Larrosa",
        description: "D.O Navarra; Garnatxa i Ull de llebre",
        price: "16,90",
-       rose: true
+       rose: true,
+       name_cat:"Aroa Larrosa",
+       name_fr:"Aroa Larrosa",
+       name_en:"Aroa Larrosa",
+       description_cat:"D.O Navarra; Garnatxa i Ull de llebre",
+       description_fr:"D.O Navarra; Garnatxa i Ull de llebre",
+       description_en:"D.O Navarra; Garnatxa i Ull de llebre",
 )
 
 aroa.menu_id = bodega.id
@@ -1247,7 +1343,13 @@ lujan= Drink.new(
        description: "Cava, Macabeu, Parrellada, Xarel-lo",
        price: "11,95",
        price_glass: "2,95",
-       cava: true
+       cava: true,
+       name_cat:"Lujan Brut Nature",
+       name_fr:"Lujan Brut Nature",
+       name_en:"Lujan Brut Nature",
+       description_cat:"Cava, Macabeu, Parrellada, Xarel-lo",
+       description_fr:"Cava, Macabeu, Parrellada, Xarel-lo",
+       description_en:"Cava, Macabeu, Parrellada, Xarel-lo",
 )
 
 lujan.menu_id = bodega.id
@@ -1258,7 +1360,13 @@ premier= Drink.new(
        name:"Premier Brut Rovellats",
        description: "Cava, Macabeu i Parrellada",
        price: "18,00",
-       cava: true
+       cava: true,
+       name_cat:"Premier Brut Rovellats",
+       name_fr:"Premier Brut Rovellats",
+       name_en:"Premier Brut Rovellats",
+       description_cat:"Cava, Macabeu i Parrellada",
+       description_fr:"Cava, Macabeu i Parrellada",
+       description_en:"Cava, Macabeu i Parrellada",
 )
 
 premier.menu_id = bodega.id
@@ -1269,7 +1377,13 @@ rovellats= Drink.new(
        name:"Rovellats Gran Reserva Brut Nature",
        description: "Cava, Xarel-lo, Parrellada, Macabeu",
        price: "25,00",
-       cava: true
+       cava: true,
+       name_cat:"Rovellats Gran Reserva Brut Nature",
+       name_fr:"Rovellats Gran Reserva Brut Nature",
+       name_en:"Rovellats Gran Reserva Brut Nature",
+       description_cat:"Cava, Xarel-lo, Parrellada, Macabeu",
+       description_fr:"Cava, Xarel-lo, Parrellada, Macabeu",
+       description_en:"Cava, Xarel-lo, Parrellada, Macabeu",
 )
 
 rovellats.menu_id = bodega.id
@@ -1280,7 +1394,13 @@ rovellats_brut= Drink.new(
        name:"Rovellats Brut Imperial Rose",
        description: "Cava, Garnatxa",
        price: "19,50",
-       cava: true
+       cava: true,
+       name_cat:"Rovellats Brut Imperial Rose",
+       name_fr:"Rovellats Brut Imperial Rose",
+       name_en:"Rovellats Brut Imperial Rose",
+       description_cat:"Cava, Garnatxa",
+       description_fr:"Cava, Garnatxa",
+       description_en:"Cava, Garnatxa",
 )
 
 rovellats_brut.menu_id = bodega.id
@@ -1293,7 +1413,13 @@ caña= Drink.new(
        name:"Caña",
        description: "Alhambra especial",
        price: "2,50",
-       beer: true
+       beer: true,
+       name_cat:"Canya",
+       name_fr:"Caña",
+       name_en:"Caña",
+       description_cat:"Alhambra especial",
+       description_fr:"Alhambra especial",
+       description_en:"Alhambra especial",
 )
 
 caña.menu_id = aperitivo.id
@@ -1304,7 +1430,13 @@ big_caña= Drink.new(
        name:"Caña 0,5 L",
        description: "Alhambra especial",
        price: "4,00",
-       beer: true
+       beer: true,
+       name_cat:"Canya 0.5L",
+       name_fr:"Caña 0,5 L",
+       name_en:"Caña 0,5 L",
+       description_cat:"Alhambra especial",
+       description_fr:"Alhambra especial",
+       description_en:"Alhambra especial",
 )
 
 big_caña.menu_id = aperitivo.id
@@ -1314,7 +1446,10 @@ p big_caña
 alhambra_verde= Drink.new(
        name:"Alhambra verde",
        price: "3,50",
-       beer: true
+       beer: true,
+       name_cat:"Alhambra verde",
+       name_fr:"Alhambra verde",
+       name_en:"Alhambra verde"
 )
 
 alhambra_verde.menu_id = aperitivo.id
@@ -1324,7 +1459,10 @@ p alhambra_verde
 alhambra_roja= Drink.new(
        name:"Alhambra roja",
        price: "3,50",
-       beer: true
+       beer: true,
+       name_cat:"Alhambra roja",
+       name_fr:"Alhambra roja",
+       name_en:"Alhambra roja"
 )
 
 alhambra_roja.menu_id = aperitivo.id
@@ -1334,7 +1472,10 @@ p alhambra_roja
 estrella= Drink.new(
        name:"Estrella Galicia",
        price: "2,90",
-       beer: true
+       beer: true,
+       name_cat:"Estrella Galicia",
+       name_fr:"Estrella Galicia",
+       name_en:"Estrella Galicia"
 )
 
 estrella.menu_id = aperitivo.id
@@ -1344,7 +1485,10 @@ p estrella
 coronita= Drink.new(
        name:"Coronita",
        price: "3,30",
-       beer: true
+       beer: true,
+       name_cat:"Coronita",
+       name_fr:"Coronita",
+       name_en:"Coronita"
 )
 
 coronita.menu_id = aperitivo.id
@@ -1354,7 +1498,10 @@ p coronita
 maestra= Drink.new(
        name:"Mahou Maestra",
        price: "2,95",
-       beer: true
+       beer: true,
+       name_cat:"Mahou Maestra",
+       name_fr:"Mahou Maestra",
+       name_en:"Mahou Maestra"
 )
 
 maestra.menu_id = aperitivo.id
@@ -1364,7 +1511,10 @@ p maestra
 cero= Drink.new(
        name:"Mahou tostada 0,0",
        price: "2,95",
-       beer: true
+       beer: true,
+       name_cat:"Mahou tostada 0,0",
+       name_fr:"Mahou tostada 0,0",
+       name_en:"Mahou tostada 0,0"
 )
 
 cero.menu_id = aperitivo.id
@@ -1374,7 +1524,10 @@ p cero
 mahou_gluten= Drink.new(
        name:"Mahou sin gluten",
        price: "3,25",
-       beer: true
+       beer: true,
+       name_cat:"Mahou sin gluten",
+       name_fr:"Mahou sin gluten",
+       name_en:"Mahou sin gluten"
 )
 
 mahou_gluten.menu_id = aperitivo.id
@@ -1384,7 +1537,10 @@ p mahou_gluten
 ipa= Drink.new(
        name:"Mahou IPA",
        price: "3,50",
-       beer: true
+       beer: true,
+       name_cat:"Mahou IPA",
+       name_fr:"Mahou IPA",
+       name_en:"Mahou IPA"
 )
 
 ipa.menu_id = aperitivo.id
@@ -1394,7 +1550,10 @@ p ipa
 konig= Drink.new(
        name:"Konig Ludwig",
        price: "3,90",
-       beer: true
+       beer: true,
+       name_cat:"Konig Ludwig",
+       name_fr:"Konig Ludwig",
+       name_en:"Konig Ludwig"
 )
 
 konig.menu_id = aperitivo.id
@@ -1404,7 +1563,10 @@ p konig
 aperol= Drink.new(
        name:"Aperol Spritz",
        price: "5,50",
-       aperitive: true
+       aperitive: true,
+       name_cat:"Aperol Spritz",
+       name_fr:"Aperol Spritz",
+       name_en:"Aperol Spritz"
 )
 
 aperol.menu_id = aperitivo.id
@@ -1414,7 +1576,10 @@ p aperol
 mojito= Drink.new(
        name:"Mojito",
        price: "5,25",
-       aperitive: true
+       aperitive: true,
+       name_cat:"Mojito",
+       name_fr:"Mojito",
+       name_en:"Mojito"
 )
 
 mojito.menu_id = aperitivo.id
@@ -1425,7 +1590,13 @@ mimosa= Drink.new(
        name:"Mimosa",
        description: "Cava y zumo de naranja natural",
        price: "4,50",
-       aperitive: true
+       aperitive: true,
+       name_cat:"Mimosa",
+       name_fr:"Mimosa",
+       name_en:"Mimosa",
+       description_cat:"Cava i suc de taronja natural",
+       description_fr:"Cava et jus d'orange naturel",
+       description_en:"Cava and natural orange juice",
 )
 
 mimosa.menu_id = aperitivo.id
@@ -1436,7 +1607,13 @@ kir= Drink.new(
        name:"Kir Royale",
        description: "Cava y licor de cassís",
        price: "4",
-       aperitive: true
+       aperitive: true,
+       name_cat:"Kir Royale",
+       name_fr:"Kir Royale",
+       name_en:"Kir Royale",
+       description_cat:"Cava y licor de cassís",
+       description_fr:"Cava y licor de cassís",
+       description_en:"Cava y licor de cassís",
 )
 
 kir.menu_id = aperitivo.id
@@ -1446,7 +1623,10 @@ p kir
 tinto_verano= Drink.new(
        name:"Tinto de verano",
        price: "3,00",
-       aperitive: true
+       aperitive: true,
+       name_cat:"Tinto de verano",
+       name_fr:"Tinto de verano",
+       name_en:"Tinto de verano"
 )
 
 tinto_verano.menu_id = aperitivo.id
@@ -1456,7 +1636,10 @@ p tinto_verano
 vermut= Drink.new(
        name:"Vermut artesanal",
        price: "2,90",
-       aperitive: true
+       aperitive: true,
+       name_cat:"Vermut artesanal",
+       name_fr:"Vermut artesanal",
+       name_en:"Vermut artesanal"
 )
 
 vermut.menu_id = aperitivo.id
@@ -1467,7 +1650,13 @@ copa_sangria= Drink.new(
        name:"Copa de sangría",
        description: "Copa de sangría de vino tinto",
        price: "3,90",
-       aperitive: true
+       aperitive: true,
+       name_cat:"Copa de sangria",
+       name_fr:"Verre de sangria",
+       name_en:"Glass of sangria",
+       description_cat:"Copa de sangria de vi negre",
+       description_fr:"Verre de vin rouge sangria",
+       description_en:"Glass of red wine sangria",
 )
 
 copa_sangria.menu_id = aperitivo.id
@@ -1475,10 +1664,17 @@ copa_sangria.save
 p copa_sangria
 
 medio_sangria= Drink.new(
-       name:"Jarra de 1/2 de sangría",
+       name:"Jarra de 1/2 L de sangría",
        description: "Jarra de sangría de vino tinto",
        price: "7,50",
-       aperitive: true
+       aperitive: true,
+       name_cat:"Gerra de 1/2 L de sangria",
+       name_fr:"Cruche de sangria de 1/2 L",
+       name_en:"Jar of sangria 1/2 L",
+       description_cat:"Gerra de sangria de vi negre",
+       description_fr:"Cruche de sangria au vin rouge",
+       description_en:"Jar of red wine sangria",
+       
 )
 
 medio_sangria.menu_id = aperitivo.id
@@ -1489,7 +1685,13 @@ jarra_sangria= Drink.new(
        name:"Jarra de 1,5 L de sangría",
        description: "Jarra de sangría de vino tinto",
        price: "12,90",
-       aperitive: true
+       aperitive: true,
+       name_cat:"Gerra de 1,5 L de sangria",
+       name_fr:"Cruche de sangria de 1,5 L",
+       name_en:"Jar of sangria 1,5 L",
+       description_cat:"Gerra de sangria de vi negre",
+       description_fr:"Cruche de sangria au vin rouge",
+       description_en:"Jar of red wine sangria",
 )
 
 jarra_sangria.menu_id = aperitivo.id
@@ -1500,7 +1702,13 @@ sangria_cava= Drink.new(
        name:"Jarra de 1/2 L de sangría de cava",
        description: "Sangría de cava, vermuth blanco, zumo, frutas y menta",
        price: "12,00",
-       aperitive: true
+       aperitive: true,
+       name_cat:"Gerra de 1/2 L de sangria de cava",
+       name_fr:"Cruche de sangria au cava de 1/2 L",
+       name_en:"Jar of cava sangria 1/2 L",
+       description_cat:"Sangria de cava, vermut blanc, suc, fruites i menta",
+       description_fr:"Sangria au cava, vermouth blanc, jus, fruits et menthe",
+       description_en:"Cava sangria, white vermouth, juice, fruits and mint",
 )
 
 sangria_cava.menu_id = aperitivo.id
@@ -1511,7 +1719,13 @@ big_cava_sangria= Drink.new(
        name:"Jarra de 1,5 L de sangría de cava",
        description: "Sangría de cava, vermuth blanco, zumo, frutas y menta",
        price: "18,50",
-       aperitive: true
+       aperitive: true,
+       name_cat:"Gerra de 1,5 L de sangria de cava",
+       name_fr:"Cruche de sangria au cava de 1,5 L de cava",
+       name_en:"Jar of cava sangria 1,5 L",
+       description_cat:"Sangria de cava, vermut blanc, suc, fruites i menta",
+       description_fr:"Sangria au cava, vermouth blanc, jus, fruits et menthe",
+       description_en:"Cava sangria, white vermouth, juice, fruits and mint",
 )
 
 big_cava_sangria.menu_id = aperitivo.id
@@ -1521,7 +1735,10 @@ p big_cava_sangria
 seagrams= Drink.new(
        name:"Seagrams",
        price: "7,00",
-       gin: true
+       gin: true,
+       name_cat:"Seagrams",
+       name_fr:"Seagrams",
+       name_en:"Seagrams"
 )
 
 seagrams.menu_id = aperitivo.id
@@ -1531,7 +1748,10 @@ p seagrams
 tanqueray= Drink.new(
        name:"Tanqueray",
        price: "7,00",
-       gin: true
+       gin: true,
+       name_cat:"Tanqueray",
+       name_fr:"Tanqueray",
+       name_en:"Tanqueray"
 )
 
 tanqueray.menu_id = aperitivo.id
@@ -1541,7 +1761,10 @@ p tanqueray
 ampersand= Drink.new(
        name:"Ampersand",
        price: "7,00",
-       gin: true
+       gin: true,
+       name_cat:"Ampersand",
+       name_fr:"Ampersand",
+       name_en:"Ampersand"
 )
 
 ampersand.menu_id = aperitivo.id
@@ -1551,7 +1774,10 @@ p ampersand
 bombay= Drink.new(
        name:"Bombay Sapphire",
        price: "9,00",
-       gin: true
+       gin: true,
+       name_cat:"Bombay Sapphire",
+       name_fr:"Bombay Sapphire",
+       name_en:"Bombay Sapphire"
 )
 
 bombay.menu_id = aperitivo.id
@@ -1561,7 +1787,10 @@ p bombay
 citadelle= Drink.new(
        name:"Citadelle",
        price: "9,00",
-       gin: true
+       gin: true,
+       name_cat:"Citadelle",
+       name_fr:"Citadelle",
+       name_en:"Citadelle"
 )
 
 citadelle.menu_id = aperitivo.id
@@ -1571,7 +1800,10 @@ p citadelle
 puerto= Drink.new(
        name:"Puerto de Indias",
        price: "9,00",
-       gin: true
+       gin: true,
+       name_cat:"Puerto de Indias",
+       name_fr:"Puerto de Indias",
+       name_en:"Puerto de Indias"
 )
 
 puerto.menu_id = aperitivo.id
@@ -1581,7 +1813,10 @@ p puerto
 hendriks= Drink.new(
        name:"Hendricks",
        price: "11,00",
-       gin: true
+       gin: true,
+       name_cat:"Hendricks",
+       name_fr:"Hendricks",
+       name_en:"Hendricks"
 )
 
 hendriks.menu_id = aperitivo.id
@@ -1591,7 +1826,10 @@ p hendriks
 london= Drink.new(
        name:"London nº3",
        price: "11,00",
-       gin: true
+       gin: true,
+       name_cat:"London nº3",
+       name_fr:"London nº3",
+       name_en:"London nº3"
 )
 
 london.menu_id = aperitivo.id
@@ -1601,7 +1839,10 @@ p london
 mare= Drink.new(
        name:"Gin Mare",
        price: "11,00",
-       gin: true
+       gin: true,
+       name_cat:"Gin Mare",
+       name_fr:"Gin Mare",
+       name_en:"Gin Mare"
 )
 
 mare.menu_id = aperitivo.id
@@ -1611,47 +1852,36 @@ p mare
 moskovskaya= Drink.new(
        name:"Moskovskaya",
       price: "7,00",
-       vodka: true
+       vodka: true,
+       name_cat:"Moskovskaya",
+       name_fr:"Moskovskaya",
+       name_en:"Moskovskaya"
 )
 
 moskovskaya.menu_id = aperitivo.id
 moskovskaya.save
 p moskovskaya
 
-moskovskayaa= Drink.new(
-       name:"Moskovskaya",
-      price: "7,00",
-       vodka: true
-)
-
-moskovskayaa.menu_id = aperitivo.id
-moskovskayaa.save
-p moskovskayaa
-
 absolut= Drink.new(
        name:"Absolut",
        price: "9,00",
-       vodka: true
+       vodka: true,
+       name_cat:"Absolut",
+       name_fr:"Absolut",
+       name_en:"Absolut"
 )
 
 absolut.menu_id = aperitivo.id
 absolut.save
 p absolut
 
-absolutt= Drink.new(
-       name:"Absolut",
-       price: "9,00",
-       vodka: true
-)
-
-absolutt.menu_id = aperitivo.id
-absolutt.save
-p absolut
-
 santa_teresa= Drink.new(
        name:"Santa Teresa",
        price: "7,00",
-       rum: true
+       rum: true,
+       name_cat:"Santa Teresa",
+       name_fr:"Santa Teresa",
+       name_en:"Santa Teresa"
 )
 
 santa_teresa.menu_id = aperitivo.id
@@ -1661,7 +1891,10 @@ p santa_teresa
 cacique= Drink.new(
        name:"Cacique",
        price: "7,00",
-       rum: true
+       rum: true,
+       name_cat:"Cacique",
+       name_fr:"Cacique",
+       name_en:"Cacique"
 )
 
 cacique.menu_id = aperitivo.id
@@ -1671,7 +1904,10 @@ p cacique
 havana= Drink.new(
        name:"Havana 7",
        price: "9,00",
-       rum: true
+       rum: true,
+       name_cat:"Havana 7",
+       name_fr:"Havana 7",
+       name_en:"Havana 7"
 )
 
 havana.menu_id = aperitivo.id
@@ -1681,7 +1917,10 @@ p havana
 bacardi= Drink.new(
        name:"Bacardi",
        price: "7,00",
-       rum: true
+       rum: true,
+       name_cat:"Bacardi",
+       name_fr:"Bacardi",
+       name_en:"Bacardi"
 )
 
 bacardi.menu_id = aperitivo.id
@@ -1691,7 +1930,10 @@ p bacardi
 cutty= Drink.new(
        name:"Cutty Sark",
        price: "7,00",
-       whiskey: true
+       whiskey: true,
+       name_cat:"Cutty Sark",
+       name_fr:"Cutty Sark",
+       name_en:"Cutty Sark"
 )
 
 cutty.menu_id = aperitivo.id
@@ -1701,7 +1943,10 @@ p cutty
 jb= Drink.new(
        name:"J & B",
        price: "7,00",
-       whiskey: true
+       whiskey: true,
+       name_cat:"J & B",
+       name_fr:"J & B",
+       name_en:"J & B"
 )
 
 jb.menu_id = aperitivo.id
@@ -1711,7 +1956,10 @@ p jb
 jim= Drink.new(
        name:"Jim Beam",
        price: "7,00",
-       whiskey: true
+       whiskey: true,
+       name_cat:"Jim Beam",
+       name_fr:"Jim Beam",
+       name_en:"Jim Beam"
 )
 
 jim.menu_id = aperitivo.id
@@ -1721,7 +1969,10 @@ p jim
 ballentines= Drink.new(
        name:"Ballentines",
        price: "7,00",
-       whiskey: true
+       whiskey: true,
+       name_cat:"Ballentines",
+       name_fr:"Ballentines",
+       name_en:"Ballentines"
 )
 
 ballentines.menu_id = aperitivo.id
@@ -1731,7 +1982,10 @@ p ballentines
 jack_daniels= Drink.new(
        name:"Jack Daniel's",
        price: "9,00",
-       whiskey: true
+       whiskey: true,
+       name_cat:"Jack Daniel's",
+       name_fr:"Jack Daniel's",
+       name_en:"Jack Daniel's"
 )
 
 jack_daniels.menu_id = aperitivo.id
@@ -1743,7 +1997,10 @@ p jack_daniels
 cardhu= Drink.new(
        name:"Cardhu",
        price: "11,00",
-       whiskey: true
+       whiskey: true,
+       name_cat:"Cardhu",
+       name_fr:"Cardhu",
+       name_en:"Cardhu"
 )
 
 cardhu.menu_id = aperitivo.id
