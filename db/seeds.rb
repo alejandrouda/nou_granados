@@ -2010,3 +2010,16 @@ p cardhu
 p "Drinks created..."
 
 p "Seeds completed!"
+
+cremacat= Meal.new(
+       name:"Crumble de manzana",
+       name_cat:"Crumble de poma",
+       name_fr:"Apple Crumble",
+       name_en:"Apple crumble",
+       price: "6,25",
+       dessert: true
+)
+
+cremacat.menu_id = carta.id
+cremacat.save
+p cremacat
