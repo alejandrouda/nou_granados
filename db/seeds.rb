@@ -83,22 +83,39 @@ coca.menu_id = carta.id
 coca.save
 p coca
 
-berenjenas= Meal.new(
-       name: "Berenjenas en tempura",
-       name_cat:"Albergínies en tempura",
-       name_fr:"Aubergines en tempura",
-       name_en:"Tempura aubergines",
-       description: "Berenjenas en tempura de cerveza y miel",
-       description_cat:"Albergínies en tempura de cervesa i mel",
-       description_fr:"aubergines à la bière et au miel tempura",
-       description_en:"Beer buttered aubergine slices served with honey",
-       price: "5,50",
+coca_gf= Meal.new(
+       name:"Pan sin gluten con tomate",
+       name_cat:"Pa sense gluten amb tomàquet",
+       name_fr:"Pain aux tomates sans gluten",
+       name_en:"Tomato bread",
+       description: "Pan sin gluten tostado, con tomate restregado, aceite de oliva y sal gruesa",
+       description_cat:"Pa sense gluten amb tomàquet",
+       description_fr:"Pain sans gluten grillé, avec tomate récurée, huile d'olive et gros sel",
+       description_en:"Crunchy catalan tomato gluten free bread",
+       price: "3,25",
        tapa: true
 )
 
-berenjenas.menu_id = carta.id
-berenjenas.save
-p berenjenas
+coca_gf.menu_id = carta.id
+coca_gf.save
+p coca_gf
+
+fregidas= Meal.new(
+       name: "Patatas fritas",
+       name_cat:"Patates fregides",
+       name_fr:"Patatas fritas",
+       name_en:"Chips",
+       description: "Patatas fritas de paquete",
+       description_cat:"Patates fregides",
+       description_fr:"Patatas fritas de paquete",
+       description_en:"Patatas fritas de paquete",
+       price: "2,90",
+       tapa: true
+)
+
+fregidas.menu_id = carta.id
+fregidas.save
+p fregidas
 
 bravas= Meal.new(
        name:"Bravas",
@@ -109,7 +126,7 @@ bravas= Meal.new(
        description_cat:"Les nostres braves amb salse de xile chipotle",
        description_fr:"Nos bravas avec sauce chili chipotle et ali oli",
        description_en:"Crispy fried potatoes served with chipotle sauce and ali-oli",
-       price: "5,50",
+       price: "4.90",
        tapa: true
 )
 
@@ -117,39 +134,22 @@ bravas.menu_id = carta.id
 bravas.save
 p bravas
 
-cr_carrillera= Meal.new(
-       name:"Croquetón de boletus",
-       name_cat:"Croquetó de ceps",
-       name_fr:"Croquette de champignon",
-       name_en:"Mushrooms croquette",
-       description: "Croquetón casero de cèpes y trufa (precio por unidad)",
-       description_cat:"Croquetó casolà de ceps i tòfona (preu per unitat)",
-       description_fr:"Croquette aux cèpes et truffes maison (prix unitaire)",
-       description_en:"Home made mushrooms croquette (price per piece)",
-       price: "1,80",
-       tapa: true
-)
-
-cr_carrillera.menu_id = carta.id
-cr_carrillera.save
-p cr_carrillera
-
-cr_ceps= Meal.new(
+cr_galta= Meal.new(
        name:"Croquetón de carrillera",
        name_cat:"Croquetó de galta",
        name_fr:"Croquetón de porc",
        name_en:"Pork croquette",
-       description: "Croquetón casero de carrillera con jugo de asado (precio por unidad)",
-       description_cat:"Croquetó casolà de galta rostida amb el seu suc (preu per unitat)",
-       description_fr:"Croquette de porc maison au jus de rôti (prix unitaire)",
-       description_en:"Home made roast pork croquette, with glazing sauce (price per piece)",
-       price: "1,80",
+       description: "Croquetón casero de carrillera asada(precio por unidad)",
+       description_cat:"Croquetó casolà de galta rostida(preu per unitat)",
+       description_fr:"Croquette de porc maison rôti (prix unitaire)",
+       description_en:"Home made roast pork croquette (price per piece)",
+       price: "1,75",
        tapa: true
 )
 
-cr_ceps.menu_id = carta.id
-cr_ceps.save
-p cr_ceps
+cr_galta.menu_id = carta.id
+cr_galta.save
+p cr_galta
 
 hummus= Meal.new(
        name:"Hummus de garbanzos",
@@ -160,7 +160,7 @@ hummus= Meal.new(
        description_cat:"Amb iogurt, llima, rabanets i torradetes cruixents",
        description_fr:"Avec yogourt, citron vert, radis et toasts croustillants",
        description_en:"With yogurt, lime, and radish served with crostini",
-       price: "6,50",
+       price: "5,75",
        tapa: true
 )
 
@@ -177,7 +177,7 @@ edamame= Meal.new(
        description_cat:"Amb salsa miso, ceba tendra i mostassa de Dijon",
        description_fr:"Avec sauce miso, oignon tendre et moutarde de Dijon",
        description_en:"Served with a miso sauce, spring onions, and a Dijon mustard vinagrette",
-       price: "5,50",
+       price: "4,75",
        tapa: true
 )
 
@@ -194,8 +194,7 @@ jamon= Meal.new(
        description_cat:"tapa 50g / racció 100g",
        description_fr:"tapa 50g / ración 100g",
        description_en:"tapa 50g / dish 100g",
-       price: "7,75",
-       price_racion: "15,00",
+       price: "12,90",
        tapa: true
 )
 
@@ -212,30 +211,13 @@ quesos= Meal.new(
        description_cat:"Amb compota i nous",
        description_fr:"Avec compote et noix",
        description_en:"Selection of local cheese",
-       price: "7,95",
+       price: "6,75",
        tapa: true
 )
 
 quesos.menu_id = carta.id
 quesos.save
 p quesos
-
-taco= Meal.new(
-       name:"Taco de confit de pato",
-       description:"con trufa, crema agria y jalapeños",
-       name_cat:"Taco de confit d'ànec",
-       name_fr:"Taco au canard confit",
-       name_en:"Confit duck tacos",
-       description_cat:"Amb trufa, crema agre i jalapeños",
-       description_fr:"à la truffe, à la crème sure et avec piments jalapeños",
-       description_en:"with truffle, sour cream, and jalapeños",
-       price: "4,50",
-       tapa: true
-)
-
-taco.menu_id = carta.id
-taco.save
-p taco
 
 tiras= Meal.new(
        name:"Tiras de pollo",
@@ -271,158 +253,6 @@ gambas_tapa.menu_id = carta.id
 gambas_tapa.save
 p gambas_tapa
 
-calamares_tapa= Meal.new(
-       name:"Calamares",
-       name_cat:"Calamars",
-       name_fr:"Calamars",
-       name_en:"Calamari",
-       description:"Calamares a la andaluza",
-       description_cat:"Calamars a l'Andalusa",
-       description_fr:"Calamars au style Andaluza",
-       description_en:"Fried Calamari Andalusian style",
-       price: "6,50",
-       tapa: true
-)
-calamares_tapa.menu_id = carta.id
-calamares_tapa.save
-p calamares_tapa
-
-fishnchips_tapa= Meal.new(
-       name:"Fish & Chips",
-       name_cat:"Fish & Chips",
-       name_fr:"Fish & Chips",
-       name_en:"Fish & Chips",
-       description:"De lomo de bacalao de Islandia, con chutney de mango y salsa tártara",
-       description_cat:"de llom de bacallà d'Islandia amb xutney de mango i salsa tàrtara",
-       description_fr:"Longe de morue islandaise, chutney de mangue et sauce tartare",
-       description_en:"Crunchy Iceland's cod, mango chutney and tartara sauce",
-       price: "6,90",
-       tapa: true
-)
-
-fishnchips_tapa.menu_id = carta.id
-fishnchips_tapa.save
-p fishnchips_tapa
-
-tataki_tapa= Meal.new(
-       name: "Tataki de atun",
-       name_cat:"Tataki de tonyina",
-       name_fr:"Tataki au thon",
-       name_en:"Tuna Tataki",
-       description:"con aguacate, pico de gallo y salsa ponzu",
-       description_cat:"amb alvocat, pico de gallo i salsa ponzu",
-       description_fr:"Avec avocat, pico de gallo et sauce ponzu",
-       description_en:"With avocado, pico de gallo, and ponzu sauce",
-       price: "7,75",
-       tapa: true
-)
-
-tataki_tapa.menu_id = carta.id
-tataki_tapa.save
-p tataki_tapa
-
-pulpo_tapa= Meal.new(
-       name:"Pulpo a la parrilla",
-       name_cat:"Pop a la graella",
-       name_fr:"Poulpe sur le gril",
-       name_en:"Grilled octopus",
-       description:"Con patatas confitadas y pimentón",
-       description_cat:"Pop a la graella amb patates confitades, oli extra verge i pebre vermell",
-       description_fr:"Avec pommes de terre confites et paprika",
-       description_en:"With potato confit seasoned with paprika and local olive oil",
-       price: "8,50",
-       tapa: true
-)
-
-pulpo_tapa.menu_id = carta.id
-pulpo_tapa.save
-p pulpo_tapa
-
-lubina_tapa= Meal.new(
-       name:"Suprema de lubina",
-       name_cat:"Suprema de llobarro",
-       name_fr:"Loup de mer",
-       name_en:"Seabass",
-       description:"Suprema de lubina fresca a la plancha con verduritas y salsa de maracuyá",
-       description_cat:"Suprema de llobarro fresc a la planxa amb verduretes i salsa de maracuyà",
-       description_fr:"Suprême de bar frais grillé aux légumes et sauce aux fruits de la passion",
-       description_en:"Fresh grilled sea bass with vegetables and a passion fruit sauce",
-       price: "7,50",
-       tapa: true
-)
-
-lubina_tapa.menu_id = carta.id
-lubina_tapa.save
-p lubina_tapa
-
-corte_tapa= Meal.new(
-       name:"Corte argentino",
-       name_cat:"Tall Argentí",
-       name_fr:"Viande argentine",
-       name_en:"Argentinian steak",
-       description:"De ternera a la plancha con patatas fritas, padrones, y salsa de Idiazábal",
-       description_cat:"De vedella a la planxa amb patates fregides, padró, i salsa de formatge Idiazàbal",
-       description_fr:"Veau grillé avec frites, patrons et sauce Idiazábal",
-       description_en:"Veal argentinian steak grilled, with fries, padron peppers, and Idiazabal sauce",
-       price: "5,95",
-       tapa: true
-)
-
-corte_tapa.menu_id = carta.id
-corte_tapa.save
-p corte_tapa
-
-tartar_tapa= Meal.new(
-       name:"Steak tartar",
-       name_cat:"Steak tàrtar",
-       name_fr:"Steak tartar",
-       name_en:"Steak tartar",
-       description:"de ternera, yema de huevo, mostaza de hierbas y tostaditas",
-       description_cat:"De vedella, rovell d'ou, mostassa d'herbes i torradetes",
-       description_fr:"boeuf, jaune d'oeuf, moutarde aux herbes et toasts",
-       description_en:"With egg, herbs, mustard, and crostini (served raw)",
-       price: "6,90",
-       tapa: true
-)
-
-tartar_tapa.menu_id = carta.id
-tartar_tapa.save
-p tartar_tapa
-
-cordero_tapa= Meal.new(
-       name:"Meloso de cordero",
-       name_cat:"Melós de xai",
-       name_fr:"Agneau",
-       name_en:"Honeyed lamb",
-       description:"A baja temperatura con parmentier, setas, y salsa de miel y romero",
-       description_cat:"A baixa temperatura amb parmentier, bolets, i salsa de mel i romaní",
-       description_fr:"À basse température avec parmentier, champignons et sauce miel et romarin",
-       description_en:"Cooked at low temperature with parmentier, mushrooms, and glaze sauce",
-       price: "7,95",
-       tapa: true
-)
-
-cordero_tapa.menu_id = carta.id
-cordero_tapa.save
-p cordero_tapa
-
-costillar_tapa= Meal.new(
-       name:"Costillar de cerdo",
-       name_cat:"Costellar de porc",
-       name_fr:"Côtes de porc",
-       name_en:"Roasted pork ribs",
-       description:"Costillar de cerdo lacado con salsa barbacoa casera y patatas fritas",
-       description_cat:"Costellar de porc lacat amb salsa barbacoa feta a casa i patates fregides",
-       description_fr:"Côtes de porc laquées avec sauce barbecue maison et pommes de terre sautées",
-       description_en:"With a homemade barbecue sauce and french fries",
-       price: "5,95",
-       tapa: true
-)
-
-costillar_tapa.menu_id = carta.id
-costillar_tapa.save
-p costillar_tapa
-
 
 # ----ENTRANTES----
 ensalada= Meal.new(
@@ -434,9 +264,8 @@ ensalada= Meal.new(
        description_cat:"Amb alvocats, mango, fruits secs, i vinagreta de mel i mostassa antiga",
        description_fr:"Salade de feuilles avec avocat, mangue, fruits secs et miel et vinaigrette à la moutarde ancienne",
        description_en:"With avocado, mango, nuts, and a honey-mustard vinagrette",
-       price: "6,90",
-       price_racion: "9,75",
-       starter: true
+       price: "8,50",
+       meat: true
 )
 
 ensalada.menu_id = carta.id
@@ -444,16 +273,16 @@ ensalada.save
 p ensalada
 
 burratina= Meal.new(
-       name:"Burratina",
-       name_cat:"Burratina",
-       name_fr:"Burratina",
-       name_en:"Burratina",
-       description:"Con pesto de albahaca, pistacho y tomate confitado",
-       description_cat:"Amb pesto d'alfàbrega, pistatxo i tomàquet confitat",
-       description_fr:"Au pesto de basilic, pistache et tomates confites",
-       description_en:"Italian fresh cheese with pesto, tomato confit, and a postaccio dressing",
-       price: "10,50",
-       starter: true
+       name:"Ensalada de queso de cabra",
+       name_cat:"Amanida de formatge de cabra,",
+       name_fr:"Ensalada de queso de cabra",
+       name_en:"Goat cheese salad",
+       description:"Ensalada de queso de cabra, membrillo, y vinagreta de avellanas",
+       description_cat:"Amanida de formatge de cabra, codonyat i vinagreta d'avellanes",
+       description_fr:"Salade de chèvre, coing et vinaigrette aux noisettes",
+       description_en:"Goat cheese salad, quince, and hazelnut vinaigrette",
+       price: "7,90",
+       meat: true
 )
 
 burratina.menu_id = carta.id
@@ -461,16 +290,16 @@ burratina.save
 p burratina
 
 timbal= Meal.new(
-       name:"Timbal de escalivada",
-       name_cat:"Timbal d´escalivada",
-       name_fr:"Timbale végétale",
-       name_en:"Oven-baked vegetables",
-       description:"Con queso de cabra caramelizado y salsa romesco casera",
-       description_cat:"Amb formatge de cabra caramelitzat i salsa romesco casolana",
-       description_fr:"Avec fromage de chèvre caramélisé et sauce romesco maison",
+       name:"Pasta fresca",
+       name_cat:"Pasta fresca",
+       name_fr:"Pasta fraîches",
+       name_en:"Fresh pasta",
+       description:"Ravioli de ternera con crema trufada (125gr)",
+       description_cat:"Ravioli de vedella amb crema trufada (125gr)",
+       description_fr:"Beef ravioli with truffle cream (125gr)",
        description_en:"Oven-baked vegetables timbal, with caramelized goat cheese and our homemade romesco",
-       price: "7,95",
-       starter: true
+       price: "8,25",
+       meat: true
 )
 
 timbal.menu_id = carta.id
@@ -486,8 +315,8 @@ rollo= Meal.new(
        description_cat: "Al forn amb formatge taleggio fos, ruca, olivada i tomàquets secs",
        description_fr:"Cuit au four avec fromage taleggio fondu, roquette, olive et tomates séchées",
        description_en:"With melted taleggio cheese, sun dried tomatoes, olive pate and arugula",
-       price: "8,50",
-       starter: true
+       price: "6,95",
+       meat: true
 )
 
 rollo.menu_id = carta.id
@@ -499,54 +328,25 @@ canelones= Meal.new(
        name_cat:"Canelons",
        name_fr:"Cannellonis",
        name_en:"Canelloni",
-       description:"De carne asada y setas, con crema trufada y dulce de piquillos (tapa 1u / ración 3u)",
-       description_cat:"Canelons de carn rostida i bolets, amb crema trufada i dolç de piquillos (tapa 1 u / racció 3u)",
-       description_fr:"Rôti de boeuf et champignons, avec crème truffée et piquillos sucrés (tapa 1u / portion 3u)",
-       description_en:"Canelloni stuffed with roast meat, truffle sauce, and red bell pepper compote (tapa 1 piece / dish 3 pieces)",
-       price: "4,75",
-       price_racion: "12,50",
-       starter: true
+       description:"De carne asada y setas, con crema trufada y dulce de piquillos (ración 3u)",
+       description_cat:"Canelons de carn rostida i bolets, amb crema trufada i dolç de piquillos (racció 3u)",
+       description_fr:"Rôti de boeuf et champignons, avec crème truffée et piquillos sucrés (portion 3u)",
+       description_en:"Canelloni stuffed with roast meat, truffle sauce, and red bell pepper compote (3 pieces)",
+       price: "9,90",
+       meat: true
 )
 
 canelones.menu_id = carta.id
 canelones.save
 p canelones
 
-huevos= Meal.new(
-       name:"Huevos estrellados",
-       name_cat:"Ous estrellats",
-       name_fr:"Huevos estrellados",
-       name_en:"Huevos estrellados",
-       description:"Huevos de corral estrellados, con patatas fritas, jamón ibérico y foie",
-       description_cat:"Ous de corral estrellats, amb patates fregides, pernil ibèric i foie",
-       description_fr:"Œufs fermiers grillés, pommes de terre sautées, jambon ibérique et foie",
-       description_en:"Organic ffried eggs with iberian ham, foie gras, and french fries",
-       price: "10,90",
-       starter: true
-)
-
-huevos.menu_id = carta.id
-huevos.save
-p huevos
-
-carpaccio= Meal.new(
-       name:"Carpaccio de lomo",
-       name_cat:"Carpaccio de llom",
-       name_fr:"Carpaccio de longe",
-       name_en:"Loin Carpaccio",
-       description:" Carpaccio de lomo de vaca madurada, con Idiazábal, piñones y vinagreta de fresones y lima",
-       description_cat:"Carpaccio de llom de vaca madurat, amb Idiazàbal, pinyons, i vinagreta de maduixots i llima",
-       description_fr:"Carpaccio de longe de vache affinée, avec Idiazábal, pignons de pin et vinaigrette aux fraises et citron vert",
-       description_en:"Aged beef loin carpaccio, with Idiazábal sauce, nuts, and a strawberry-lime vinagrette",
-       price: "12,50",
-       starter: true
-)
-
-carpaccio.menu_id = carta.id
-carpaccio.save
-p carpaccio
 
 # ----PRINCIPALES----
+
+
+
+
+# ----PESCADOS----
 
 hamburguesa= Meal.new(
        name:"Hamburguesa vegetariana",
@@ -558,49 +358,30 @@ hamburguesa= Meal.new(
        description_fr:"Burger végétarien à la betterave avec sauce tzatziki et pain artisanal brun foncé",
        description_en:"Beetroot and soy veggie burger, with tzatziki sauce in a black beer artisanal bread ",
        price: "9,90",
-       main: true
+       fish: true
 )
 
 hamburguesa.menu_id = carta.id
 hamburguesa.save
 p hamburguesa
 
-arroz= Meal.new(
-       name:"Arroz marinero con sepia",
-       name_cat:"Arròs de Pals",
-       name_fr:"Paella de mer",
-       name_en:"Paella",
-       description:"Arroz marinero con sepia y gamba de Huelva (mínimo 2 personas | precio por persona) 25 minutos",
-       description_cat:"Mariner amb sipia i gambes (minim 2 persones | preu per persona ) 25 minuts",
-       description_fr:"Riz aux fruits de mer avec seiche et gambas de Huelva (minimum 2 personnes | prix par personne) 25 minutes",
-       description_en:"Home made paella with red prawns and cuttlefish (price per person | minimum 2 persons) 25 minutes",
-       price: "16,75",
+hamburguesa_c= Meal.new(
+       name:"Hamburguesa de ternera",
+       name_cat:"Hamburguesa de vedella",
+       name_fr:"Hamburgesa de ternera",
+       name_en:"Beef burger",
+       description:"Hamburguesa de ternera 100% con beicon, cebolla caramelizada, queso taleggio fuera, tomate y lechuga con mayonesa de mostaza antigua y un pan artesano de cerveza",
+       description_cat:"Hamburguesa de vedella 100% amb bacó, ceba caramel·litzada, taleggio fora, tomàquet i enciam amb maionesa de mostassa antiga i un pa artesà de cervesa",
+       description_fr:"Hamburguesa de ternera 100% con beicon, cebolla caramelizada, queso taleggio fuera, tomate y lechuga con mayonesa de mostaza antigua y un pan artesano de cerveza",
+       description_en:"
+       100% beef burger with bacon, caramelized onion, taleggio cheese outside, tomato and lettuce with old-fashioned mustard mayonnaise and an artisan beer bread",
+       price: "10,90",
        fish: true
 )
 
-arroz.menu_id = carta.id
-arroz.save
-p arroz
-
-# ----PESCADOS----
-
-fishnchips= Meal.new(
-       name:"Fish & Chips",
-       name_cat:"Fish & Chips",
-       name_fr:"Fish & Chips",
-       name_en:"Fish & Chips",
-       description:"De lomo de bacalao de Islandia, con chutney de mango y salsa tártara",
-       description_cat:"de llom de bacallà d'Islandia amb xutney de mango i salsa tàrtara",
-       description_fr:"Longe de morue islandaise, chutney de mangue et sauce tartare",
-       description_en:"Crunchy Iceland's cod, mango chutney and tartara sauce",
-       price: "6,90",
-       price_racion: "12,90",
-       fish: true
-)
-
-fishnchips.menu_id = carta.id
-fishnchips.save
-p fishnchips
+hamburguesa_c.menu_id = carta.id
+hamburguesa_c.save
+p hamburguesa_c
 
 tataki= Meal.new(
        name: "Tataki de atun",
@@ -611,8 +392,7 @@ tataki= Meal.new(
        description_cat:"amb alvocat, pico de gallo i salsa ponzu",
        description_fr:"Avec avocat, pico de gallo et sauce ponzu",
        description_en:"With avocado, pico de gallo, and ponzu sauce",
-       price: "7,75",
-       price_racion: "14,50",
+       price: "11,95",
        fish: true
 )
 
@@ -625,12 +405,11 @@ pulpo= Meal.new(
        name_cat:"Pop a la graella",
        name_fr:"Poulpe sur le gril",
        name_en:"Grilled octopus",
-       description:"Con patatas confitadas y pimentón",
-       description_cat:"Pop a la graella amb patates confitades, oli extra verge i pebre vermell",
-       description_fr:"Avec pommes de terre confites et paprika",
-       description_en:"With potato confit seasoned with paprika and local olive oil",
-       price: "8,50",
-       price_racion: "15,90",
+       description:"Con parmentier de patatas y aceite de pimentón",
+       description_cat:"Pop a la graella amb parmentier, oli extra verge i pebre vermell",
+       description_fr:"Avec parmentier et paprika",
+       description_en:"With parmentier, seasoned with paprika and local olive oil",
+       price: "12,95",
        fish: true
 )
 
@@ -638,38 +417,19 @@ pulpo.menu_id = carta.id
 pulpo.save
 p pulpo
 
-lubina= Meal.new(
-       name:"Suprema de lubina",
-       name_cat:"Suprema de llobarro",
-       name_fr:"Loup de mer",
-       name_en:"Seabass",
-       description:"Suprema de lubina fresca a la plancha con verduritas y salsa de maracuyá",
-       description_cat:"Suprema de llobarro fresc a la planxa amb verduretes i salsa de maracuyà",
-       description_fr:"Suprême de bar frais grillé aux légumes et sauce aux fruits de la passion",
-       description_en:"Fresh grilled sea bass with vegetables and a passion fruit sauce",
-       price: "7,50",
-       price_racion: "13,90",
-       fish: true
-)
-
-lubina.menu_id = carta.id
-lubina.save
-p lubina
-
 # ----CARNES----
 
 corte= Meal.new(
-       name:"Corte argentino",
-       name_cat:"Tall Argentí",
-       name_fr:"Viande argentine",
-       name_en:"Argentinian steak",
-       description:"De ternera a la plancha con patatas fritas, padrones, y salsa de Idiazábal",
-       description_cat:"De vedella a la planxa amb patates fregides, padron, i salsa de formatge Idiazàbal",
-       description_fr:"Veau grillé avec frites, patrons et sauce Idiazábal",
-       description_en:"Veal argentinian steak grilled, with fries, padron peppers, and Idiazabal sauce",
-       price: "5,95",
-       price_racion: "11,90",
-       meat: true
+       name:"Confit de pato",
+       name_cat:"Confit d'ànec",
+       name_fr:"Confit de pato",
+       name_en:"Confit de pato",
+       description:"Confit de pato con jugo de asado y chutney de mango",
+       description_cat:"Confit d'ànec amb suc de rostit i xutney de mango",
+       description_fr:"Confit de pato con jugo de asado y chutney de mango",
+       description_en:"Confit de pato con jugo de asado y chutney de mango",
+       price: "9,75",
+       fish: true
 )
 
 corte.menu_id = carta.id
@@ -685,9 +445,8 @@ tartar= Meal.new(
        description_cat:"De vedella, rovell d'ou, mostassa d'herbes i torradetes",
        description_fr:"boeuf, jaune d'oeuf, moutarde aux herbes et toasts",
        description_en:"With egg, herbs, mustard, and crostini (served raw)",
-       price: "6,90",
-       price_racion: "12,90",
-       meat: true
+       price: "10,50",
+       fish: true
 )
 
 tartar.menu_id = carta.id
@@ -703,68 +462,28 @@ cordero= Meal.new(
        description_cat:"A baixa temperatura amb parmentier, bolets, i salsa de mel i romani",
        description_fr:"À basse température avec parmentier, champignons et sauce miel et romarin",
        description_en:"Cooked at low temperature with parmentier, mushrooms, and glaze sauce",
-       price: "7,95",
-       price_racion: "14,75",
-       meat: true
+       price: "11,50",
+       fish: true
 )
 
 cordero.menu_id = carta.id
 cordero.save
 p cordero
 
-costillar= Meal.new(
-       name:"Costillar de cerdo",
-       name_cat:"Costellar de porc",
-       name_fr:"Côtes de porc",
-       name_en:"Roasted pork ribs",
-       description:"Costillar de cerdo lacado con salsa barbacoa casera y patatas fritas",
-       description_cat:"Costellar de porc lacat amb salsa barbacoa feta a casa i patates fregides",
-       description_fr:"Côtes de porc laquées avec sauce barbecue maison et pommes de terre sautées",
-       description_en:"With a homemade barbecue sauce and french fries",
-       price: "5,95",
-       price_racion: "11,90",
-       meat: true
-)
-
-costillar.menu_id = carta.id
-costillar.save
-p costillar
-
 # ----POSTRES----
 
 cremacat= Meal.new(
-       name:"Crema catalana",
-       name_cat:"Crema Cremada",
-       name_fr:"Crema catalana",
-       name_en:"Crema catalana",
-       description:"Crema catalana cremada con galleta crujiente",
-       description_cat:"Crema cremada amb galeta cruixent",
-       description_fr:"Crème catalane avec biscuit croustillant",
-       description_en:"Crema catalana with crispy biscuit ",
-       price: "4,95",
+       name:"Miel y mató",
+       name_cat:"Mató amb mel i nous",
+       name_fr:"Miel y mató",
+       name_en:"Miel y mató",
+       price: "3,90",
        dessert: true
 )
 
 cremacat.menu_id = carta.id
 cremacat.save
 p cremacat
-
-flan= Meal.new(
-       name:"Flan de coco",
-       name_cat:"Flam de coco",
-       name_fr:"Flan de coco",
-       name_en:"Coconut flan",
-       description:"Flan de coco con nata montada",
-       description_cat:"Flam de coco amb crumble de galeta",
-       description_fr:"Flan de coco avec de la crème",
-       description_en:"With cookies crumble",
-       price: "5,50",
-       dessert: true
-)
-
-flan.menu_id = carta.id
-flan.save
-p flan
 
 cheesecake= Meal.new(
        name:"Cheese cake",
@@ -775,7 +494,7 @@ cheesecake= Meal.new(
        description_cat:"Cheese cake amb coulis de fruits vermells",
        description_fr:"Cheese cake avec coulis de fruits rouges",
        description_en:"With red fruits sauce",
-       price: "6,25",
+       price: "5,75",
        dessert: true
 )
 
@@ -784,15 +503,11 @@ cheesecake.save
 p cheesecake
 
 lemonpie= Meal.new(
-       name:"Lemon pot pie",
-       name_cat:"Lemon pot pie",
-       name_fr:"Lemon pot pie",
-       name_en:"Lemon pot pie",
-       description:"Lemon pot pie con crumble de galleta",
-       description_cat:"Lemon pot pie amb crumble de galeta",
-       description_fr:"Lemon pot pie avec crumble aux biscuits",
-       description_en:"With cookies crumble",
-       price: "5,75",
+       name:"Crumble de manzana",
+       name_cat:"Crumble de poma",
+       name_fr:"Crumble de manzana",
+       name_en:"Crumble de manzana",
+       price: "5,25",
        dessert: true
 )
 
@@ -809,7 +524,7 @@ coulant= Meal.new(
        description_cat:"Coulant de xocolata amb gelat",
        description_fr:"Coulant au chocolat avec glace à la vanille",
        description_en:"With vainilla ice cream ",
-       price: "5,95",
+       price: "4,50",
        dessert: true
 )
 
@@ -826,30 +541,13 @@ trufas= Meal.new(
        description_cat:"Trufes artesanes de xocolata amb un xarrup a elecció",
        description_fr:"Truffes artisanales au chocolat avec un shot de votre choix",
        description_en:"Artisanal chocolate truffles, with a chupito",
-       price: "5,75",
+       price: "4",
        dessert: true
 )
 
 trufas.menu_id = carta.id
 trufas.save
 p trufas
-
-helado= Meal.new(
-       name:"Helado",
-       name_cat:"Gelat",
-       name_fr:"Glacée",
-       name_en:"Ice cream",
-       description:"2 bolas de helado al gusto (pregunta por los sabores del día)",
-       description_cat:"2 boles de gelat al gust (demana al cambrer per als sabors del dia)",
-       description_fr:"2 boules de glace au goût (demandez les saveurs du jour)",
-       description_en:"2 Ice cream balls (ask for the daily flavours)",
-       price: "4,95",
-       dessert: true
-)
-
-helado.menu_id = carta.id
-helado.save
-p helado
 
 # ----MENU MEDIO DIA----
 
@@ -1381,41 +1079,6 @@ rovellats_brut.save
 p rovellats_brut
 
 # ----BEBIDAS----
-
-caña= Drink.new(
-       name:"Caña",
-       description: "Alhambra especial",
-       price: "2,50",
-       beer: true,
-       name_cat:"Canya",
-       name_fr:"Caña",
-       name_en:"Caña",
-       description_cat:"Alhambra especial",
-       description_fr:"Alhambra especial",
-       description_en:"Alhambra especial",
-)
-
-caña.menu_id = aperitivo.id
-caña.save
-p caña
-
-big_caña= Drink.new(
-       name:"Caña 0,5 L",
-       description: "Alhambra especial",
-       price: "4,00",
-       beer: true,
-       name_cat:"Canya 0.5L",
-       name_fr:"Caña 0,5 L",
-       name_en:"Caña 0,5 L",
-       description_cat:"Alhambra especial",
-       description_fr:"Alhambra especial",
-       description_en:"Alhambra especial",
-)
-
-big_caña.menu_id = aperitivo.id
-big_caña.save
-p big_caña
-
 alhambra_verde= Drink.new(
        name:"Alhambra verde",
        price: "3,50",
@@ -1533,466 +1196,7 @@ konig.menu_id = aperitivo.id
 konig.save
 p konig
 
-aperol= Drink.new(
-       name:"Aperol Spritz",
-       price: "5,50",
-       aperitive: true,
-       name_cat:"Aperol Spritz",
-       name_fr:"Aperol Spritz",
-       name_en:"Aperol Spritz"
-)
-
-aperol.menu_id = aperitivo.id
-aperol.save
-p aperol
-
-mojito= Drink.new(
-       name:"Mojito",
-       price: "5,25",
-       aperitive: true,
-       name_cat:"Mojito",
-       name_fr:"Mojito",
-       name_en:"Mojito"
-)
-
-mojito.menu_id = aperitivo.id
-mojito.save
-p mojito
-
-mimosa= Drink.new(
-       name:"Mimosa",
-       description: "Cava y zumo de naranja natural",
-       price: "4,50",
-       aperitive: true,
-       name_cat:"Mimosa",
-       name_fr:"Mimosa",
-       name_en:"Mimosa",
-       description_cat:"Cava i suc de taronja natural",
-       description_fr:"Cava et jus d'orange naturel",
-       description_en:"Cava and natural orange juice",
-)
-
-mimosa.menu_id = aperitivo.id
-mimosa.save
-p mimosa
-
-kir= Drink.new(
-       name:"Kir Royale",
-       description: "Cava y licor de cassís",
-       price: "4",
-       aperitive: true,
-       name_cat:"Kir Royale",
-       name_fr:"Kir Royale",
-       name_en:"Kir Royale",
-       description_cat:"Cava y licor de cassís",
-       description_fr:"Cava y licor de cassís",
-       description_en:"Cava y licor de cassís",
-)
-
-kir.menu_id = aperitivo.id
-kir.save
-p kir
-
-tinto_verano= Drink.new(
-       name:"Tinto de verano",
-       price: "3,00",
-       aperitive: true,
-       name_cat:"Tinto de verano",
-       name_fr:"Tinto de verano",
-       name_en:"Tinto de verano"
-)
-
-tinto_verano.menu_id = aperitivo.id
-tinto_verano.save
-p tinto_verano
-
-vermut= Drink.new(
-       name:"Vermut artesanal",
-       price: "2,90",
-       aperitive: true,
-       name_cat:"Vermut artesanal",
-       name_fr:"Vermut artesanal",
-       name_en:"Vermut artesanal"
-)
-
-vermut.menu_id = aperitivo.id
-vermut.save
-p vermut
-
-copa_sangria= Drink.new(
-       name:"Copa de sangría",
-       description: "Copa de sangría de vino tinto",
-       price: "3,90",
-       aperitive: true,
-       name_cat:"Copa de sangria",
-       name_fr:"Verre de sangria",
-       name_en:"Glass of sangria",
-       description_cat:"Copa de sangria de vi negre",
-       description_fr:"Verre de vin rouge sangria",
-       description_en:"Glass of red wine sangria",
-)
-
-copa_sangria.menu_id = aperitivo.id
-copa_sangria.save
-p copa_sangria
-
-medio_sangria= Drink.new(
-       name:"Jarra de 1/2 L de sangría",
-       description: "Jarra de sangría de vino tinto",
-       price: "7,50",
-       aperitive: true,
-       name_cat:"Gerra de 1/2 L de sangria",
-       name_fr:"Cruche de sangria de 1/2 L",
-       name_en:"Jar of sangria 1/2 L",
-       description_cat:"Gerra de sangria de vi negre",
-       description_fr:"Cruche de sangria au vin rouge",
-       description_en:"Jar of red wine sangria",
-       
-)
-
-medio_sangria.menu_id = aperitivo.id
-medio_sangria.save
-p medio_sangria
-
-jarra_sangria= Drink.new(
-       name:"Jarra de 1,5 L de sangría",
-       description: "Jarra de sangría de vino tinto",
-       price: "12,90",
-       aperitive: true,
-       name_cat:"Gerra de 1,5 L de sangria",
-       name_fr:"Cruche de sangria de 1,5 L",
-       name_en:"Jar of sangria 1,5 L",
-       description_cat:"Gerra de sangria de vi negre",
-       description_fr:"Cruche de sangria au vin rouge",
-       description_en:"Jar of red wine sangria",
-)
-
-jarra_sangria.menu_id = aperitivo.id
-jarra_sangria.save
-p jarra_sangria
-
-sangria_cava= Drink.new(
-       name:"Jarra de 1/2 L de sangría de cava",
-       description: "Sangría de cava, vermuth blanco, zumo, frutas y menta",
-       price: "12,00",
-       aperitive: true,
-       name_cat:"Gerra de 1/2 L de sangria de cava",
-       name_fr:"Cruche de sangria au cava de 1/2 L",
-       name_en:"Jar of cava sangria 1/2 L",
-       description_cat:"Sangria de cava, vermut blanc, suc, fruites i menta",
-       description_fr:"Sangria au cava, vermouth blanc, jus, fruits et menthe",
-       description_en:"Cava sangria, white vermouth, juice, fruits and mint",
-)
-
-sangria_cava.menu_id = aperitivo.id
-sangria_cava.save
-p sangria_cava
-
-big_cava_sangria= Drink.new(
-       name:"Jarra de 1,5 L de sangría de cava",
-       description: "Sangría de cava, vermuth blanco, zumo, frutas y menta",
-       price: "18,50",
-       aperitive: true,
-       name_cat:"Gerra de 1,5 L de sangria de cava",
-       name_fr:"Cruche de sangria au cava de 1,5 L de cava",
-       name_en:"Jar of cava sangria 1,5 L",
-       description_cat:"Sangria de cava, vermut blanc, suc, fruites i menta",
-       description_fr:"Sangria au cava, vermouth blanc, jus, fruits et menthe",
-       description_en:"Cava sangria, white vermouth, juice, fruits and mint",
-)
-
-big_cava_sangria.menu_id = aperitivo.id
-big_cava_sangria.save
-p big_cava_sangria
-
-seagrams= Drink.new(
-       name:"Seagrams",
-       price: "7,00",
-       gin: true,
-       name_cat:"Seagrams",
-       name_fr:"Seagrams",
-       name_en:"Seagrams"
-)
-
-seagrams.menu_id = aperitivo.id
-seagrams.save
-p seagrams
-
-tanqueray= Drink.new(
-       name:"Tanqueray",
-       price: "7,00",
-       gin: true,
-       name_cat:"Tanqueray",
-       name_fr:"Tanqueray",
-       name_en:"Tanqueray"
-)
-
-tanqueray.menu_id = aperitivo.id
-tanqueray.save
-p tanqueray
-
-ampersand= Drink.new(
-       name:"Ampersand",
-       price: "7,00",
-       gin: true,
-       name_cat:"Ampersand",
-       name_fr:"Ampersand",
-       name_en:"Ampersand"
-)
-
-ampersand.menu_id = aperitivo.id
-ampersand.save
-p ampersand
-
-bombay= Drink.new(
-       name:"Bombay Sapphire",
-       price: "9,00",
-       gin: true,
-       name_cat:"Bombay Sapphire",
-       name_fr:"Bombay Sapphire",
-       name_en:"Bombay Sapphire"
-)
-
-bombay.menu_id = aperitivo.id
-bombay.save
-p bombay
-
-citadelle= Drink.new(
-       name:"Citadelle",
-       price: "9,00",
-       gin: true,
-       name_cat:"Citadelle",
-       name_fr:"Citadelle",
-       name_en:"Citadelle"
-)
-
-citadelle.menu_id = aperitivo.id
-citadelle.save
-p citadelle
-
-puerto= Drink.new(
-       name:"Puerto de Indias",
-       price: "9,00",
-       gin: true,
-       name_cat:"Puerto de Indias",
-       name_fr:"Puerto de Indias",
-       name_en:"Puerto de Indias"
-)
-
-puerto.menu_id = aperitivo.id
-puerto.save
-p puerto
-
-hendriks= Drink.new(
-       name:"Hendricks",
-       price: "11,00",
-       gin: true,
-       name_cat:"Hendricks",
-       name_fr:"Hendricks",
-       name_en:"Hendricks"
-)
-
-hendriks.menu_id = aperitivo.id
-hendriks.save
-p hendriks
-
-london= Drink.new(
-       name:"London nº3",
-       price: "11,00",
-       gin: true,
-       name_cat:"London nº3",
-       name_fr:"London nº3",
-       name_en:"London nº3"
-)
-
-london.menu_id = aperitivo.id
-london.save
-p london
-
-mare= Drink.new(
-       name:"Gin Mare",
-       price: "11,00",
-       gin: true,
-       name_cat:"Gin Mare",
-       name_fr:"Gin Mare",
-       name_en:"Gin Mare"
-)
-
-mare.menu_id = aperitivo.id
-mare.save
-p mare
-
-moskovskaya= Drink.new(
-       name:"Moskovskaya",
-      price: "7,00",
-       vodka: true,
-       name_cat:"Moskovskaya",
-       name_fr:"Moskovskaya",
-       name_en:"Moskovskaya"
-)
-
-moskovskaya.menu_id = aperitivo.id
-moskovskaya.save
-p moskovskaya
-
-absolut= Drink.new(
-       name:"Absolut",
-       price: "9,00",
-       vodka: true,
-       name_cat:"Absolut",
-       name_fr:"Absolut",
-       name_en:"Absolut"
-)
-
-absolut.menu_id = aperitivo.id
-absolut.save
-p absolut
-
-santa_teresa= Drink.new(
-       name:"Santa Teresa",
-       price: "7,00",
-       rum: true,
-       name_cat:"Santa Teresa",
-       name_fr:"Santa Teresa",
-       name_en:"Santa Teresa"
-)
-
-santa_teresa.menu_id = aperitivo.id
-santa_teresa.save
-p santa_teresa
-
-cacique= Drink.new(
-       name:"Cacique",
-       price: "7,00",
-       rum: true,
-       name_cat:"Cacique",
-       name_fr:"Cacique",
-       name_en:"Cacique"
-)
-
-cacique.menu_id = aperitivo.id
-cacique.save
-p cacique
-
-havana= Drink.new(
-       name:"Havana 7",
-       price: "9,00",
-       rum: true,
-       name_cat:"Havana 7",
-       name_fr:"Havana 7",
-       name_en:"Havana 7"
-)
-
-havana.menu_id = aperitivo.id
-havana.save
-p havana
-
-bacardi= Drink.new(
-       name:"Bacardi",
-       price: "7,00",
-       rum: true,
-       name_cat:"Bacardi",
-       name_fr:"Bacardi",
-       name_en:"Bacardi"
-)
-
-bacardi.menu_id = aperitivo.id
-bacardi.save
-p bacardi
-
-cutty= Drink.new(
-       name:"Cutty Sark",
-       price: "7,00",
-       whiskey: true,
-       name_cat:"Cutty Sark",
-       name_fr:"Cutty Sark",
-       name_en:"Cutty Sark"
-)
-
-cutty.menu_id = aperitivo.id
-cutty.save
-p cutty
-
-jb= Drink.new(
-       name:"J & B",
-       price: "7,00",
-       whiskey: true,
-       name_cat:"J & B",
-       name_fr:"J & B",
-       name_en:"J & B"
-)
-
-jb.menu_id = aperitivo.id
-jb.save
-p jb
-
-jim= Drink.new(
-       name:"Jim Beam",
-       price: "7,00",
-       whiskey: true,
-       name_cat:"Jim Beam",
-       name_fr:"Jim Beam",
-       name_en:"Jim Beam"
-)
-
-jim.menu_id = aperitivo.id
-jim.save
-p jim
-
-ballentines= Drink.new(
-       name:"Ballentines",
-       price: "7,00",
-       whiskey: true,
-       name_cat:"Ballentines",
-       name_fr:"Ballentines",
-       name_en:"Ballentines"
-)
-
-ballentines.menu_id = aperitivo.id
-ballentines.save
-p ballentines
-
-jack_daniels= Drink.new(
-       name:"Jack Daniel's",
-       price: "9,00",
-       whiskey: true,
-       name_cat:"Jack Daniel's",
-       name_fr:"Jack Daniel's",
-       name_en:"Jack Daniel's"
-)
-
-jack_daniels.menu_id = aperitivo.id
-jack_daniels.save
-p jack_daniels
-
-
-
-cardhu= Drink.new(
-       name:"Cardhu",
-       price: "11,00",
-       whiskey: true,
-       name_cat:"Cardhu",
-       name_fr:"Cardhu",
-       name_en:"Cardhu"
-)
-
-cardhu.menu_id = aperitivo.id
-cardhu.save
-p cardhu
-
 p "Drinks created..."
 
 p "Seeds completed!"
 
-cremacat= Meal.new(
-       name:"Crumble de manzana",
-       name_cat:"Crumble de poma",
-       name_fr:"Apple Crumble",
-       name_en:"Apple crumble",
-       price: "6,25",
-       dessert: true
-)
-
-cremacat.menu_id = carta.id
-cremacat.save
-p cremacat

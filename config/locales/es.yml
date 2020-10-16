@@ -7,9 +7,7 @@ es:
         signed_out: "Sesión terminada"
 
   home:
-    hello: "¡Bienvenidos! Estamos trabajando cada día para ofrecerles una gran experiencia, 
-    y tomando las medidas de seguridad necesarias para el cuidado de nuestros clientes y 
-    nuestro personal. Gracias por elegirnos!"
+    hello: "¡Bienvenidos! Estamos trabajando cada día para seguir ofreciendo nuestros productos con la calidad de siempre, y cumpliendo con las normativas vigentes. Puedes hacer tu pedido al 934531129, con opcion de recogerlo en el local o entrega a domicilio. Gracias por elegirnos!"
     menus: "Nuestras cartas"
 
   menues:
@@ -50,8 +48,8 @@ es:
       tapa: "Tapas"
       entrante: "Entrantes"
       principal: "Platos"
-      carne: "Carnes"
-      pescado: "Pescados"
+      carne: "Entrantes"
+      pescado: "Principales"
       postre: "Postres"
     show_drink:
       tinto: "Tinto"
