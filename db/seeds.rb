@@ -23,11 +23,11 @@ p "Users created..."
 p "Creating menus..."
 
 menu_mediodia = Menu.new(
-              name: "Menú del medio día",
-              name_en: "Executive menu",
-              name_fr: "Menu du jour",
-              name_cat: "Menú de mig dia",
-              price: "12.75",
+              name: "Menú 9 granados",
+              name_en: "Menú 9 granados",
+              name_fr: "Menú 9 granados",
+              name_cat: "Menú 9 granados",
+              price: "",
               menu_type: false,
               medio_dia_type: true,
               drink_type: false
@@ -35,20 +35,6 @@ menu_mediodia = Menu.new(
        menu_mediodia.photo.attach(io: URI.open("https://res.cloudinary.com/dfyhqslry/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1594223632/Nou%20granados/Alimentos%20y%20bebidas/Medio_Dia_jxim3i.jpg"), filename: 'Medio_Dia_jxim3i.jpg', content_type: 'jpg')
        menu_mediodia.save
        p menu_mediodia
-
-menu_9granados = Menu.new(
-       name: "Menú 9 granados",
-       name_en: "Menú 9 granados",
-       name_fr: "Menú 9 granados",
-       name_cat: "Menú 9 granados",
-       price: "21.90",
-       menu_type: true,
-       drink_type: false
-)
-menu_9granados.photo.attach(io: URI.open("https://res.cloudinary.com/dfyhqslry/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1594373475/Nou%20granados/Alimentos%20y%20bebidas/menugrupos_vk53sp.jpg"), filename: 'menugrupos_vk53sp.jpg', content_type: 'jpg')
-menu_9granados.save
-p menu_9granados
-
 
 carta = Menu.new(
        name: "Carta",
@@ -73,19 +59,6 @@ bodega = Menu.new(
 bodega.photo.attach(io: URI.open("https://res.cloudinary.com/dfyhqslry/image/upload/v1594222955/Nou%20granados/Alimentos%20y%20bebidas/bodega_uuoqqo.jpg"), filename: 'bodega_uuoqqo.jpg', content_type: 'jpg')
 bodega.save
 p bodega
-
-aperitivo = Menu.new(
-       name: "Bebidas",
-       name_en: "Drinks",
-       name_fr: "Boissons",
-       name_cat: "Begudes",
-       menu_type: false,
-       aperitive_type: true
-)
-aperitivo.photo.attach(io: URI.open("https://res.cloudinary.com/dfyhqslry/image/upload/v1595580265/Nou%20granados/Alimentos%20y%20bebidas/gin-tonic-2_mjqbrt.jpg"), filename: 'gin-tonic-2_mjqbrt.jpg', content_type: 'jpg')
-aperitivo.save
-p aperitivo
-
 
 # p "Menus created..."
 
