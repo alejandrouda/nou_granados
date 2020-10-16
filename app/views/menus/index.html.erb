@@ -8,7 +8,7 @@
 </div>
 
 <% @menus.each do |menu| %>
-    <%@days = ["Monday", "Tuesday","Wednesday","Thursday","Friday"] %>
+    <%@days = ["Monday", "Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"] %>
     <% if @days.include? Date.today.strftime("%A")%>
         <%= link_to menu_path(menu) do%>
             <div class="menu">
