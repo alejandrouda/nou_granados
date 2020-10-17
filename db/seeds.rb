@@ -575,8 +575,7 @@ casa_tinto= Drink.new(
        description_cat:"D.O Navarra; Garnatxa",
        description_fr:"D.O Navarra; Garnatxa",
        description_en:"D.O Navarra; Garnatxa",
-       price: "10,00",
-       price_glass: "2,50",
+       price: "9,00",
        red: true
 )
 
@@ -593,8 +592,7 @@ viana= Drink.new(
        description_cat:"D.O Navarra; Syrah",
        description_fr:"D.O Navarra; Syrah",
        description_en:"D.O Navarra; Syrah",
-       price: "12,00",
-       price_glass: "2,90",
+       price: "10,80",
        red: true
 )
 
@@ -611,7 +609,7 @@ batan= Drink.new(
        description_cat:"D.O Somontano; Merlot",
        description_fr:"D.O Somontano; Merlot",
        description_en:"D.O Somontano; Merlot",
-       price: "14,50",
+       price: "13,00",
        red: true
 )
 
@@ -628,8 +626,7 @@ jan= Drink.new(
        description_cat:"D.O Costers del Segre; Garnatxa i Syrah",
        description_fr:"D.O Costers del Segre; Garnatxa i Syrah",
        description_en:"D.O Costers del Segre; Garnatxa i Syrah",
-       price: "14,50",
-       price_glass: "3,50",
+       price: "13,00",
        red: true
 )
 
@@ -646,8 +643,7 @@ atrepat= Drink.new(
        description_cat:"D.O Conca de barberá; Trepat",
        description_fr:"D.O Conca de barberá; Trepat",
        description_en:"D.O Conca de barberá; Trepat",
-       price: "14,95",
-       price_glass: "3,95",
+       price: "13,50",
        red: true
 )
 
@@ -664,7 +660,7 @@ gos= Drink.new(
        description_cat:"D.O Montsant; Garnatxa",
        description_fr:"D.O Montsant; Garnatxa",
        description_en:"D.O Montsant; Garnatxa",
-       price: "15,75",
+       price: "14,25",
        red: true
 )
 
@@ -681,8 +677,7 @@ matsu= Drink.new(
        description_cat:"D.O Toro; Tinta de toro",
        description_fr:"D.O Toro; Tinta de toro",
        description_en:"D.O Toro; Tinta de toro",
-       price: "15,75",
-       price_glass: "3,95",
+       price: "14,25",
        red: true
 )
 
@@ -699,8 +694,7 @@ haro_joven= Drink.new(
        description_cat:"D.O Rioja; Ull de llebre",
        description_fr:"D.O Rioja; Ull de llebre",
        description_en:"D.O Rioja; Ull de llebre",
-       price: "12,90",
-       price_glass: "3,25",
+       price: "11,70",
        red: true
 )
 
@@ -717,7 +711,7 @@ vega= Drink.new(
        description_cat:"D.O Rioja; Ull de llebre i Garnatxa",
        description_fr:"D.O Rioja; Ull de llebre i Garnatxa",
        description_en:"D.O Rioja; Ull de llebre i Garnatxa",
-       price: "17,95",
+       price: "16,25",
        red: true
 )
 
@@ -728,8 +722,7 @@ p vega
 haro_reserva= Drink.new(
        name:"López de Haro reserva",
        description: "D.O Rioja; Ull de llebre i Garnatxa",
-       price: "18,50",
-       price_glass: "4,50",
+       price: "16,70",
        red: true,
        name_cat:"López de Haro reserva",
        name_fr:"López de Haro reserva",
@@ -746,7 +739,7 @@ p haro_reserva
 berdugo= Drink.new(
        name:"Martín Berdugo",
        description: "D.O Ribera del Duero; Mencía",
-       price: "16,90",
+       price: "15,25",
        red: true,
        name_cat:"Martín Berdugo",
        name_fr:"Martín Berdugo",
@@ -763,8 +756,7 @@ p berdugo
 ferratus= Drink.new(
        name:"Ferratus",
        description: "D.O Ribera del duero; Ull de llebre",
-       price: "18,50",
-       price_glass: "4,50",
+       price: "16,75",
        red: true,
        name_cat:"Ferratus",
        name_fr:"Ferratus",
@@ -778,28 +770,10 @@ ferratus.menu_id = bodega.id
 ferratus.save
 p ferratus
 
-orto= Drink.new(
-       name:"Orto",
-       description: "D.O Montsant; Carinyena, Garnatxa, Cabernet Sauvignon, Ull de llebre",
-       price: "19,50",
-       red: true,
-       name_cat:"Orto",
-       name_fr:"Orto",
-       name_en:"Orto",
-       description_cat:"D.O Montsant; Carinyena, Garnatxa, Cabernet Sauvignon, Ull de llebre",
-       description_fr:"D.O Montsant; Carinyena, Garnatxa, Cabernet Sauvignon, Ull de llebre",
-       description_en:"D.O Montsant; Carinyena, Garnatxa, Cabernet Sauvignon, Ull de llebre",
-)
-
-orto.menu_id = bodega.id
-orto.save
-p orto
-
 atzar= Drink.new(
        name:"Atzar",
        description: "D.O Priorat; Garnatxa i Carinyenya",
-       price: "19,90",
-       price_glass: "4,90",
+       price: "17,90",
        red: true,
        name_cat:"Atzar",
        name_fr:"Atzar",
@@ -816,7 +790,7 @@ p atzar
 magnum= Drink.new(
        name:"Magnum número 9",
        description: "D.O Ribera del Queiles; Cabernet franc, Ull de llebre",
-       price: "45,00",
+       price: "40,50",
        red: true,
        name_cat:"Magnum número 9",
        name_fr:"Magnum número 9",
@@ -833,8 +807,7 @@ p magnum
 casa_blanco= Drink.new(
        name:"Vino de la casa",
        description: "D.O Navarra; Garnatxa",
-       price: "10,00",
-       price_glass: "2,50",
+       price: "9,00",
        white: true,
        name_cat:"Vi de la casa",
        name_fr:"Vin de la maison",
@@ -851,8 +824,7 @@ p casa_blanco
 moraleda= Drink.new(
        name:"Moraleda Blanc",
        description: "D.O Navarara; Chardonnay",
-       price: "12,50",
-       price_glass: "2,90",
+       price: "11,25",
        white: true,
        name_cat:"Moraleda Blanc",
        name_fr:"Moraleda Blanc",
@@ -869,8 +841,7 @@ p moraleda
 bardos= Drink.new(
        name:"Bardos",
        description: "D.O Rueda; Verdejo",
-       price: "13,90",
-       price_glass: "3,30",
+       price: "12,50",
        white: true,
        name_cat:"Bardos",
        name_fr:"Bardos",
@@ -887,8 +858,7 @@ p bardos
 primavera= Drink.new(
        name:"Blanc primavera",
        description: "D.O Penedes; Xarello, Macebeu, Parellada",
-       price: "14,50",
-       price_glass: "3,50",
+       price: "13,00",
        white: true,
        name_cat:"Blanc primavera",
        name_fr:"Blanc primavera",
@@ -905,8 +875,7 @@ p primavera
 libalis= Drink.new(
        name:"Libalis",
        description: "D.O Vall de Sadacia; Moscatell, Viura, Malvasia",
-       price: "14,50",
-       price_glass: "3,50",
+       price: "13,00",
        white: true,
        name_cat:"Libalis",
        name_fr:"Libalis",
@@ -923,8 +892,7 @@ p libalis
 pulpo= Drink.new(
        name:"Bienbebido pulpo",
        description: "D.O Galicia; Albariño",
-       price: "14,95",
-       price_glass: "3,75",
+       price: "13,50",
        white: true,
        name_cat:"Bienbebido pulpo",
        name_fr:"Bienbebido pulpo",
@@ -941,8 +909,7 @@ p pulpo
 sere= Drink.new(
        name:"Blanc de Seré",
        description: "D.O Costers del Segre; Macabeu, Parrellada, Chardonnay",
-       price: "15,50",
-       price_glass: "3,95",
+       price: "14,00",
        white: true,
        name_cat:"Blanc de Seré",
        name_fr:"Blanc de Seré",
@@ -959,8 +926,7 @@ p sere
 casa_rosado= Drink.new(
        name:"Vino de la casa",
        description: "D.O Navarra; Garnatxa",
-       price: "10,00",
-       price_glass: "2,50",
+       price: "9,00",
        rose: true,
        name_cat:"Vi de la casa",
        name_fr:"Vin de la maison",
@@ -978,7 +944,6 @@ rovellats= Drink.new(
        name:"Rovellats",
        description: "D.O Penedés; Merlot",
        price: "12,95",
-       price_glass: "3,25",
        rose: true,
        name_cat:"Rovellats",
        name_fr:"Rovellats",
@@ -995,7 +960,7 @@ p rovellats
 aroa= Drink.new(
        name:"Aroa Larrosa",
        description: "D.O Navarra; Garnatxa i Ull de llebre",
-       price: "16,90",
+       price: "15,20",
        rose: true,
        name_cat:"Aroa Larrosa",
        name_fr:"Aroa Larrosa",
@@ -1012,8 +977,7 @@ p aroa
 lujan= Drink.new(
        name:"Lujan Brut Nature",
        description: "Cava, Macabeu, Parrellada, Xarel-lo",
-       price: "11,95",
-       price_glass: "2,95",
+       price: "10,75",
        cava: true,
        name_cat:"Lujan Brut Nature",
        name_fr:"Lujan Brut Nature",
@@ -1030,7 +994,7 @@ p lujan
 premier= Drink.new(
        name:"Premier Brut Rovellats",
        description: "Cava, Macabeu i Parrellada",
-       price: "18,00",
+       price: "17,20",
        cava: true,
        name_cat:"Premier Brut Rovellats",
        name_fr:"Premier Brut Rovellats",
@@ -1047,7 +1011,7 @@ p premier
 rovellats= Drink.new(
        name:"Rovellats Gran Reserva Brut Nature",
        description: "Cava, Xarel-lo, Parrellada, Macabeu",
-       price: "25,00",
+       price: "22,50",
        cava: true,
        name_cat:"Rovellats Gran Reserva Brut Nature",
        name_fr:"Rovellats Gran Reserva Brut Nature",
@@ -1064,7 +1028,7 @@ p rovellats
 rovellats_brut= Drink.new(
        name:"Rovellats Brut Imperial Rose",
        description: "Cava, Garnatxa",
-       price: "19,50",
+       price: "17,50",
        cava: true,
        name_cat:"Rovellats Brut Imperial Rose",
        name_fr:"Rovellats Brut Imperial Rose",
