@@ -6,9 +6,10 @@ cat:
         signed_in: "Sesión iniciada"
         signed_out: "Sesión terminada"
   home:
-    hello: "Benvinguts! Estem treballant cada dia per oferir-los una 
-    gran experiència, i prenent les mesures de seguretat 
-    necessàries per a la cura dels nostres clients i el nostre personal. Gràcies per triar-nos!"
+    hello: "Benvinguts! Estem treballant cada dia per seguir oferint els nostres plats de sempre amb la mateixa 
+    qualitat i complint les normatives vigents. Pots fer la teva comanda al 934531120, o directament al nostre 
+    mail: info@9granados.com. Tenim l’ opció de recollir al local o d’ entrega a domicili.
+    Esperem que els disfruteu!"
 
     menus: "Les nostres cartes"
 

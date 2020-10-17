@@ -30,3 +30,19 @@
     background-size: cover;
     object-fit: cover;
 }
+
+.welcome {
+    font-size: 15px;
+    margin-top: 10px
+}
+    
+
+@media (max-width: 350px) {
+    .welcome {
+        font-size: 14px;
+        padding-bottom: 40px;
+    }
+    .banner {
+        height: 30vh;
+    }
+  }

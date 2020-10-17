@@ -7,7 +7,10 @@ es:
         signed_out: "Sesión terminada"
 
   home:
-    hello: "¡Bienvenidos! Estamos trabajando cada día para seguir ofreciendo nuestros productos con la calidad de siempre, y cumpliendo con las normativas vigentes. Puedes hacer tu pedido al 934531129, con opcion de recogerlo en el local o entrega a domicilio. Gracias por elegirnos!"
+    hello: "¡Bienvenidos! Estamos trabajando cada día para seguir ofreciendo nuestros productos con la calidad 
+    de siempre, y cumpliendo con las normativas vigentes. Puedes hacer tu pedido al 934531129, o directamente a 
+    nuestro mail: info@9granados.com. Tenemos opcion de recogerlo en el local o entrega a domicilio. Gracias por 
+    elegirnos!"
     menus: "Nuestras cartas"
 
   menues:

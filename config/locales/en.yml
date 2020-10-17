@@ -6,9 +6,11 @@ en:
         signed_in: "Sesión iniciada"
         signed_out: "Sesión terminada"
   home:
-    hello: "Welcome! We are working every day to offer you a great experience,
-    and following every safety messure to care our customers and staff.
-    Thanks for choosing us!"
+    hello: "
+Welcome! We are working every day to continue offering our products with the same quality as always, 
+and complying with current regulations. You can place your order at 934531129, or directly to our 
+mail: info@9granados.com. We have the option of picking it up at the local or home delivery. Thank you 
+for choosing us!"
     menus: "Our menu"
 
   menues:
