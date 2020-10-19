@@ -6,10 +6,9 @@ cat:
         signed_in: "Sesión iniciada"
         signed_out: "Sesión terminada"
   home:
-    hello: "Benvinguts! Estem treballant cada dia per seguir oferint els nostres plats de sempre amb la mateixa 
-    qualitat i complint les normatives vigents. Pots fer la teva comanda al 934531120, o directament al nostre 
-    mail: info@9granados.com. Tenim l’ opció de recollir al local o d’ entrega a domicili.
-    Esperem que els disfruteu!"
+    hello: "Benvingut! Treballem cada dia per continuar oferint els nostres productes amb la qualitat
+    sempre, i complint la normativa vigent. Podeu fer la vostra comanda de 12:30 a 15:30 i de 19:30 a 22:00, trucant al 934531120 o enviant la vostra comanda a info@9granados.com, on us respondrem amb un correu electrònic de confirmació. Tenim l’opció de recollir-lo al lliurament local o a domicili. Gràcies per
+    escolliu-nos!"
 
     menus: "Les nostres cartes"
 
