@@ -1,14 +1,11 @@
 en:
-
   devise:
     sessions:
       user:
         signed_in: "Sesión iniciada"
         signed_out: "Sesión terminada"
   home:
-    hello: "Welcome! We are working every day to continue offering our products with the quality
-    always, and complying with current regulations. You can place your order from 12:30 to 15:30 and from 19:30 to 22:00, by calling 934531120, or by sending your order to info@9granados.com where we will respond with a confirmation email. We have the option of picking it up at the local or home delivery. Thanks for
-    choose us!"
+    hello: "Welcome! We are working every day to continue offering our products with our same quality, and complying with current regulations. You can place your order every day from 12:30 to 15:30, by calling 934531120, or by sending your order to info@9granados.com where we will respond with a confirmation email. We have the option of picking it up at the local or home delivery. Thanks for choose us!"
     menus: "Our menu"
 
   menues:
@@ -55,7 +52,7 @@ en:
     show_drink:
       tinto: "Red wine"
       blanco: "White wine"
-      rosado: "Rosé wine"      
+      rosado: "Rosé wine"
       aperitivo: "Aperitive"
       cerveza: "Beer"
       ron: "Combinados"

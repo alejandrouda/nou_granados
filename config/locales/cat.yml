@@ -6,7 +6,8 @@ cat:
         signed_in: "Sesión iniciada"
         signed_out: "Sesión terminada"
   home:
-    hello: "Benvinguts! Estem treballant cada dia per a seguir oferint els nostres productes amb la qualitat de sempre i complint les normatives vigents. Pots fer les teves comandes de 12:30 a 15:30 i de 19:30 a 22:00 trucant al 934531120 o enviant un mail a info@9granados.com on respondrem amb un mail de confirmació. Tenim  l‘opció de recollida al local o d’entrega a domicili. Gràcies per escollir-nos!"
+    hello: "Benvinguts! Estem treballant cada dia per a seguir oferint els nostres productes amb la qualitat de sempre i complint les normatives vigents. Pots fer les teves comandes 
+tots els dies de 12:30 a 15:30, trucant al 934531120 o enviant un mail a info@9granados.com on respondrem amb un mail de confirmació. Tenim  l‘opció de recollida al local o d’entrega a domicili. Gràcies per escollir-nos!"
 
     menus: "Les nostres cartes"
 
