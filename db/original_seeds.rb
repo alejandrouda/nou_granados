@@ -882,9 +882,10 @@ p helado
 
  mediodia_meal= Meal.new(
                name: "Menú del medio día",
+               medio_dia_type: true
  )
 
- mediodia_meal.photo.attach(io: URI.open("https://res.cloudinary.com/dfyhqslry/image/upload/v1597226685/i63n86ryomj3v8km2ls5r7vzcmfh.jpg"), filename: 'i63n86ryomj3v8km2ls5r7vzcmfh.jpg', content_type: 'jpg')
+ mediodia_meal.photo.attach(io: URI.open("https://res.cloudinary.com/dfyhqslry/image/upload/v1604924721/224313rgf4a93wz3eyehman4c0st.jpg"), filename: '224313rgf4a93wz3eyehman4c0st.jpg', content_type: 'jpg')
  mediodia_meal.menu_id = menu_mediodia.id
  mediodia_meal.save
  p mediodia_meal
