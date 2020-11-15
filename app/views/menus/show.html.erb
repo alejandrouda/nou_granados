@@ -6,14 +6,7 @@
         <h2>9 Granados</h2>
     </div>
 </div>
-<% if @menu.menu_type == true %>
-    <%= render "shared/menushow" %>
-<% elsif @menu.drink_type == true  %>
-    <%= render "shared/carta_drinks_show" %>
-<% elsif @menu.aperitive_type == true  %>
-    <%= render "shared/carta_aperitive_show" %>
-<% elsif @menu.medio_dia_type == true  %>
-    <%= render "shared/medio_dia_show" %>
-<% else %>
-    <%= render "shared/cartashow" %>
-<% end %>
+
+<%# Original code for this page is in aperitive_show file%>
+
+<h5 style="padding: 250px 20px"><%= t('home.hello') %></h5>
